@@ -43,7 +43,7 @@ Here below are the things that set Windows apart for me. Each of these items mig
 
     More about this in the next section...
 
-### Setup and Workflow
+### Setup and workflow
 
 Currently, I maintain two personal Windows machines: (a) a compact yet robust Intel NUC (with an i5 processor) which I use whenever I am in my home office and (b) an adorable Surface Go 2 (with an m3 processor) for when I'm mobile. I generally keep the same settings and slew of apps across the two devices. However, I avoid auto-launching Docker Desktop on startup on the Surface to conserve battery.
 
