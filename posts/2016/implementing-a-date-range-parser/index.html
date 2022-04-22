@@ -30,7 +30,7 @@
 <p id="post-date" class="gray-text">2016.11.05</p>
 
 <p>Recently, I was tasked with writing an application in C# to scrape a web page on a schedule. Unfortunately, the dates on the web page followed a variety of formats, and there was no easy way to definitively predict which format was going to be used.</p>
-<p>To solve this dilemma, I gathered the different formats used in the web page and wrote a component <a href="https://gist.github.com/idianal/831779c6a88dc8a3eec77c03d93bf6a9">DateRangeParser.cs</a> to abstract away this date format issue.</p>
+<p>To solve this dilemma, I gathered the different formats used in the web page and wrote a component <a href="https://gist.github.com/idianal/9d5d6bec631c6c3abc590c2290e48b09">DateRangeParser.cs</a> to abstract away this date format issue.</p>
 <p>DateRangeParser accepts the following formats and returns a start date and end date, as shown below:</p>
 <table>
 <thead>
@@ -101,7 +101,7 @@
 </table>
 <p>Using the word bank and the proximity table, DateRangeParser looks for all dates (i.e. just the 07 in <em>07 December 2016</em>) in the given string. For each date found, the algorithm looks for the nearest month and nearest year and uses this information to form a complete date.</p>
 <p>The component returns a list of two dates — the start date and the end date in that order.</p>
-<p>View the entire component <a href="https://gist.github.com/idianal/831779c6a88dc8a3eec77c03d93bf6a9">here</a>.</p>
+<p>View the entire component <a href="https://gist.github.com/idianal/9d5d6bec631c6c3abc590c2290e48b09">here</a>.</p>
 
     </main>
 
