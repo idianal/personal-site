@@ -6,7 +6,7 @@ date: 2016-11-05
 
 Recently, I was tasked with writing an application in C# to scrape a web page on a schedule. Unfortunately, the dates on the web page followed a variety of formats, and there was no easy way to definitively predict which format was going to be used.
 
-To solve this dilemma, I gathered the different formats used in the web page and wrote a component [DateRangeParser.cs](https://gist.github.com/idianal/831779c6a88dc8a3eec77c03d93bf6a9) to abstract away this date format issue.
+To solve this dilemma, I gathered the different formats used in the web page and wrote a component [DateRangeParser.cs](https://gist.github.com/idianal/9d5d6bec631c6c3abc590c2290e48b09) to abstract away this date format issue.
 
 DateRangeParser accepts the following formats and returns a start date and end date, as shown below:
 
@@ -46,4 +46,4 @@ Using the word bank and the proximity table, DateRangeParser looks for all dates
 
 The component returns a list of two dates --- the start date and the end date in that order.
 
-View the entire component [here](https://gist.github.com/idianal/831779c6a88dc8a3eec77c03d93bf6a9).
+View the entire component [here](https://gist.github.com/idianal/9d5d6bec631c6c3abc590c2290e48b09).
