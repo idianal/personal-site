@@ -4,9 +4,7 @@ title: "OMSCS Course Review: Information Security"
 date: 2021-11-29
 ---
 
-Georgia Tech Online Master of Science in Computer Science (OMSCS) is an innovative, award-winning graduate program offered by the College of Computing at Georgia Tech. ([Wikipedia](https://en.wikipedia.org/wiki/Georgia_Tech_Online_Master_of_Science_in_Computer_Science))
-
-I have just about finished my first semester in OMSCS. As I gradually make my way through this program, I intend to write short, opinionated reviews of the courses I complete. My intended audience for this is the current or prospective OMSCS student who is considering taking these courses.
+{% include omscs-header.njk %}
 
 ### CS 6035: Introduction to Information Security
 
@@ -18,7 +16,9 @@ Topics covered in the course include software security, operating system securit
 
 #### Projects
 
-There were four full projects in the course this past semester, along with a short one for a little extra credit. A custom x86 VM image (either Debian or Kali) was provided for each of the projects below. This means Apple Silicon machines are not a viable option here. In my opinion, the projects were by far the most interesting and challenging part of this course. They also account for at least 80% of your grade.
+There were four full projects in the course this past semester, along with a short one for a little extra credit. A custom x86 VM image (either Debian or Kali) was provided for each of the projects below. This means Apple Silicon machines are not a viable option here.
+
+In my opinion, the projects were by far the most interesting and challenging part of this course. They also account for at least 80% of your grade.
 
 - Project 1 tasks students with exploiting a buffer overflow exploit in `C`. The bulk of this project involved reading and understanding `C`, applying buffer overflow concepts, and using `gdb` for debugging in order to successfully complete a buffer overflow attack to invoke a new shell. Familiarity with `c` and `gdb` is helpful here, as well as being comfortable with using a shell and perhaps a command-line editor like `vi`. Some review of low-level OS concepts like registers and memory is recommended.
 - Project 2 applies machine learning concepts to categorize malware using a tool called `malheur`. There is no programming here --- but general comfort with using a shell and introductory machine learning knowledge are helpful.
@@ -26,7 +26,7 @@ There were four full projects in the course this past semester, along with a sho
 - Project 4 is about web security and requires some ability to read and write JavaScript and PHP. While the programming component is easy to grasp even for beginners, the project more intensively tests for understanding of concepts like cross-site scripting (XSS), cross-site request forgery (CSRF), and SQL injection.
 - Project 5 is shorter and is done only for extra credit. It is a modified version of Project 1 which requires the insertion of shell code in a buffer to manipulate code execution into invoking a new shell. I believe there are plans to eventually turn this mini-project into a full one in the future.
 
-#### Lectures and texts
+#### Learning materials
 
 The lectures were all pre-recorded and are of generally good quality. I found them to be a good first pass at the material, before diving into the textbook readings.
 
@@ -34,7 +34,7 @@ The textbook *Computer Security* by Stallings is comprehensive (if a little dry)
 
 Several times in CS 6035, students are required to read from other provided sources which include journal articles and technical blogs. I found many of these interesting and almost always helpful towards completing the projects.
 
-#### Exams and quizzes
+#### Exams
 
 There were two exams. Both were closed-notes and proctored through Honorlock. There were also four quizzes, and they were open-notes and unproctored. Neither the exams or the quizzes were very difficult. I found them fair especially since they don't count for very much in the final grade.
 
