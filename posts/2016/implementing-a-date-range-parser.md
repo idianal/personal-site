@@ -4,7 +4,8 @@ title: Implementing a Date Range Parser
 date: 2016-11-05
 ---
 
-Recently, I was tasked with writing an application in C# to scrape a web page on a schedule. Unfortunately, the dates on the web page followed a variety of formats, and there was no easy way to definitively predict which format was going to be used.
+Recently, I was tasked with writing an application in C# to scrape a web page on a schedule.
+Unfortunately, the dates on the web page followed a variety of formats, and there was no easy way to definitively predict which format was going to be used.
 
 To solve this dilemma, I gathered the different formats used in the web page and wrote a component [DateRangeParser.cs](https://gist.github.com/idianal/9d5d6bec631c6c3abc590c2290e48b09) to abstract away this date format issue.
 
@@ -32,9 +33,13 @@ return parsedDates;
 
 Inspired by machine learning data processing techniques, DateRangeParser begins by creating a word bank and a proximity table.
 
-A word bank is a 1 x n matrix containing each word in the parsed string, where n is the number of words in the string. For example, the string *07 December 2016* has a word bank of size 1 x 3.
+A word bank is a 1 x n matrix containing each word in the parsed string, where n is the number of words in the string.
+For example, the string *07 December 2016* has a word bank of size 1 x 3.
 
-A proximity table is an m x n matrix which stores the distance of a word to every other word in the string. Each column i (ranging from 1 to n) corresponds to a word in the string. And each item j in column i (ranging from 1 to m) also corresponds to a word in the string. Therefore, the proximity table for *07 December 2016* is of size 3 x 3 and looks like the following:
+A proximity table is an m x n matrix which stores the distance of a word to every other word in the string.
+Each column i (ranging from 1 to n) corresponds to a word in the string.
+And each item j in column i (ranging from 1 to m) also corresponds to a word in the string.
+Therefore, the proximity table for *07 December 2016* is of size 3 x 3 and looks like the following:
 
 | | **07** | **December** | **2016** |
 | --- | --- | --- | --- |
@@ -42,7 +47,8 @@ A proximity table is an m x n matrix which stores the distance of a word to ever
 | **December** | 1 | 0 | 1 |
 | **2016** | 2 | 1 | 0 |
 
-Using the word bank and the proximity table, DateRangeParser looks for all dates (i.e. just the 07 in *07 December 2016*) in the given string. For each date found, the algorithm looks for the nearest month and nearest year and uses this information to form a complete date.
+Using the word bank and the proximity table, DateRangeParser looks for all dates (i.e. just the 07 in *07 December 2016*) in the given string.
+For each date found, the algorithm looks for the nearest month and nearest year and uses this information to form a complete date.
 
 The component returns a list of two dates --- the start date and the end date in that order.
 
