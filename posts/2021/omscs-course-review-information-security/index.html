@@ -33,36 +33,74 @@
     Georgia Tech Online Master of Science in Computer Science (OMSCS) is an innovative, award-winning graduate program offered by the College of Computing at Georgia Tech. (<a href="https://en.wikipedia.org/wiki/Georgia_Tech_Online_Master_of_Science_in_Computer_Science">Wikipedia</a>)
 </p>
 <p>
-    As I make my way through this program, I intend to write short, opinionated reviews of the courses I complete. My intended audience for this is the current or prospective OMSCS student who is considering taking these courses.
+    As I make my way through this program, I intend to write short, opinionated reviews of the courses I complete.
+    My intended audience for this is the current or prospective OMSCS student who is considering taking these courses.
 </p>
 <h3>CS 6035: Introduction to Information Security</h3>
 <h4>Overview</h4>
-<p>CS 6035 is a true introductory graduate course. It assumes an undergraduate-level familiarity with the course material and tackles a breadth of topics across the Information Security field. CS 6035 gives students the lay of the land in Information Security and aims to prepare them for more focused study in one or more of its subfields.</p>
+<p>CS 6035 is a true introductory graduate course.
+It assumes an undergraduate-level familiarity with the course material and tackles a breadth of topics across the Information Security field.
+CS 6035 gives students the lay of the land in Information Security and aims to prepare them for more focused study in one or more of its subfields.</p>
 <p>Topics covered in the course include software security, operating system security, authentication, database security, malware and malicious code, cryptography and encryption, and web security.</p>
 <h4>Projects</h4>
-<p>There were four full projects in the course this past semester, along with a short one for a little extra credit. A custom x86 VM image (either Debian or Kali) was provided for each of the projects below. This means Apple Silicon machines are not a viable option here.</p>
-<p>In my opinion, the projects were by far the most interesting and challenging part of this course. They also account for at least 80% of your grade.</p>
+<p>There were four full projects in the course this past semester, along with a short one for a little extra credit.
+A custom x86 VM image (either Debian or Kali) was provided for each of the projects below.
+This means Apple Silicon machines are not a viable option here.</p>
+<p>In my opinion, the projects were by far the most interesting and challenging part of this course.
+They also account for at least 80% of your grade.</p>
 <ul>
-<li>Project 1 tasks students with exploiting a buffer overflow exploit in <code>C</code>. The bulk of this project involved reading and understanding <code>C</code>, applying buffer overflow concepts, and using <code>gdb</code> for debugging in order to successfully complete a buffer overflow attack to invoke a new shell. Familiarity with <code>c</code> and <code>gdb</code> is helpful here, as well as being comfortable with using a shell and perhaps a command-line editor like <code>vi</code>. Some review of low-level OS concepts like registers and memory is recommended.</li>
-<li>Project 2 applies machine learning concepts to categorize malware using a tool called <code>malheur</code>. There is no programming here — but general comfort with using a shell and introductory machine learning knowledge are helpful.</li>
-<li>Project 3 uses <code>python</code> to complete some interesting cryptography-related exercises. For instance, it explores interesting ways the RSA protocol can be broken (due to its mathematical idiosyncrasies). This is the most programming-intensive project in this course — but it is mostly just filling out stub methods and writing helper functions. A basic-to-intermediate-level knowledge of <code>python</code> is sufficient. The ability and willingness to quickly grok mathematical relationships (e.g. modular math) is helpful here.</li>
-<li>Project 4 is about web security and requires some ability to read and write JavaScript and PHP. While the programming component is easy to grasp even for beginners, the project more intensively tests for understanding of concepts like cross-site scripting (XSS), cross-site request forgery (CSRF), and SQL injection.</li>
-<li>Project 5 is shorter and is done only for extra credit. It is a modified version of Project 1 which requires the insertion of shell code in a buffer to manipulate code execution into invoking a new shell. I believe there are plans to eventually turn this mini-project into a full one in the future.</li>
+<li>Project 1 tasks students with exploiting a buffer overflow exploit in <code>C</code>.
+The bulk of this project involved reading and understanding <code>C</code>, applying buffer overflow concepts, and using <code>gdb</code> for debugging in order to successfully complete a buffer overflow attack to invoke a new shell.
+Familiarity with <code>c</code> and <code>gdb</code> is helpful here, as well as being comfortable with using a shell and perhaps a command-line editor like <code>vi</code>.
+Some review of low-level OS concepts like registers and memory is recommended.</li>
+<li>Project 2 applies machine learning concepts to categorize malware using a tool called <code>malheur</code>.
+There is no programming here — but general comfort with using a shell and introductory machine learning knowledge are helpful.</li>
+<li>Project 3 uses <code>python</code> to complete some interesting cryptography-related exercises.
+For instance, it explores interesting ways the RSA protocol can be broken (due to its mathematical idiosyncrasies).
+This is the most programming-intensive project in this course — but it is mostly just filling out stub methods and writing helper functions.
+A basic-to-intermediate-level knowledge of <code>python</code> is sufficient.
+The ability and willingness to quickly grok mathematical relationships (e.g. modular math) is helpful here.</li>
+<li>Project 4 is about web security and requires some ability to read and write JavaScript and PHP.
+While the programming component is easy to grasp even for beginners, the project more intensively tests for understanding of concepts like cross-site scripting (XSS), cross-site request forgery (CSRF), and SQL injection.</li>
+<li>Project 5 is shorter and is done only for extra credit.
+It is a modified version of Project 1 which requires the insertion of shell code in a buffer to manipulate code execution into invoking a new shell.
+I believe there are plans to eventually turn this mini-project into a full one in the future.</li>
 </ul>
 <h4>Learning materials</h4>
-<p>The lectures were all pre-recorded and are of generally good quality. I found them to be a good first pass at the material, before diving into the textbook readings.</p>
-<p>The textbook <em>Computer Security</em> by Stallings is comprehensive (if a little dry). In my opinion, anyone taking this course should get it. Since the quizzes are all open-book and many questions are derived from the textbook, it helps to have a digital version handy so you can <code>ctrl + f</code>. I found that as I naturally progressed in the course, I read almost the entire book.</p>
-<p>Several times in CS 6035, students are required to read from other provided sources which include journal articles and technical blogs. I found many of these interesting and almost always helpful towards completing the projects.</p>
+<p>The lectures were all pre-recorded and are of generally good quality.
+I found them to be a good first pass at the material, before diving into the textbook readings.</p>
+<p>The textbook <em>Computer Security</em> by Stallings is comprehensive (if a little dry).
+In my opinion, anyone taking this course should get it.
+Since the quizzes are all open-book and many questions are derived from the textbook, it helps to have a digital version handy so you can <code>ctrl + f</code>.
+I found that as I naturally progressed in the course, I read almost the entire book.</p>
+<p>Several times in CS 6035, students are required to read from other provided sources which include journal articles and technical blogs.
+I found many of these interesting and almost always helpful towards completing the projects.</p>
 <h4>Exams</h4>
-<p>There were two exams. Both were closed-notes and proctored through Honorlock. There were also four quizzes, and they were open-notes and unproctored. Neither the exams or the quizzes were very difficult. I found them fair especially since they don’t count for very much in the final grade.</p>
+<p>There were two exams.
+Both were closed-notes and proctored through Honorlock.
+There were also four quizzes, and they were open-notes and unproctored.
+Neither the exams or the quizzes were very difficult.
+I found them fair especially since they don’t count for very much in the final grade.</p>
 <h4>Teaching staff</h4>
-<p>The course feels like it is run solely by the TAs. The professor (along with a colleague) appeared mostly only in the pre-recorded lectures. This might be a deliberate strategy on the part of the teaching staff. I found I did not mind this at all — I don’t think I would have taken away more from the course if the professor was more involved in office hours or in the discussion boards.</p>
-<p>The TAs were usually patient, helpful, and responsive. In general, they will not spoon-feed information to students (which is to be expected in a graduate-level course). Interestingly, the TAs can also be quite stingy in giving out solutions to projects even after the due date. Students would need to find the answers by researching the material themselves.</p>
+<p>The course feels like it is run solely by the TAs.
+The professor (along with a colleague) appeared mostly only in the pre-recorded lectures.
+This might be a deliberate strategy on the part of the teaching staff.
+I found I did not mind this at all — I don’t think I would have taken away more from the course if the professor was more involved in office hours or in the discussion boards.</p>
+<p>The TAs were usually patient, helpful, and responsive.
+In general, they will not spoon-feed information to students (which is to be expected in a graduate-level course).
+Interestingly, the TAs can also be quite stingy in giving out solutions to projects even after the due date.
+Students would need to find the answers by researching the material themselves.</p>
 <h4>Difficulty</h4>
-<p>This course was mostly easy. There were certainly components of the projects that I had to wrestle with for many hours but I was always able to complete the projects with time to spare. The exams and quizzes were fair, and ample time was provided to complete each component of the course.</p>
-<p>I spent around 10-15 hours per week on this course. If you don’t meet some of the prerequisites, expect to spend a little extra time to get yourself up to speed.</p>
+<p>This course was mostly easy.
+There were certainly components of the projects that I had to wrestle with for many hours but I was always able to complete the projects with time to spare.
+The exams and quizzes were fair, and ample time was provided to complete each component of the course.</p>
+<p>I spent around 10-15 hours per week on this course.
+If you don’t meet some of the prerequisites, expect to spend a little extra time to get yourself up to speed.</p>
 <h4>Conclusion</h4>
-<p>CS 6035 was an excellent first course in OMSCS. The material covered is mostly interesting and not overly challenging. Although some aspects of security is exciting to me (e.g. operating system security, cryptography, etc.), I was not as keen on the organizational security topics in the course. CS 6035 did for me exactly what an introductory graduate course should do: tell me which parts of the Information Security field I might want to study more deeply.</p>
+<p>CS 6035 was an excellent first course in OMSCS.
+The material covered is mostly interesting and not overly challenging.
+Although some aspects of security is exciting to me (e.g. operating system security, cryptography, etc.), I was not as keen on the organizational security topics in the course.
+CS 6035 did for me exactly what an introductory graduate course should do: tell me which parts of the Information Security field I might want to study more deeply.</p>
 
     </main>
 
