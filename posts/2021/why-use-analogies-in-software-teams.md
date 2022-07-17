@@ -1,6 +1,6 @@
 ---
 layout: post.njk
-title: "Why Use Analogies in Software Teams?"
+title: Why Use Analogies in Software Teams?
 date: 2021-08-15
 ---
 

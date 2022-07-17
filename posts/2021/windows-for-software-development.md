@@ -1,6 +1,6 @@
 ---
 layout: post.njk
-title: "Windows for Software Development"
+title: Windows for Software Development
 date: 2021-07-21
 ---
 

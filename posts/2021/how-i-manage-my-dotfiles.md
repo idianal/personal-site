@@ -1,6 +1,6 @@
 ---
 layout: post.njk
-title: "How I Manage My Dotfiles"
+title: How I Manage My Dotfiles
 date: 2021-04-28
 ---
 

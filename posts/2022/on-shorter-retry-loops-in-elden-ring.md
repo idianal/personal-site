@@ -1,6 +1,6 @@
 ---
 layout: post.njk
-title: "On Shorter Retry Loops in Elden Ring"
+title: On Shorter Retry Loops in Elden Ring
 date: 2022-04-17
 ---
 
