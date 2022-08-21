@@ -1,6 +1,6 @@
 ---
 layout: post.njk
-title: "OMSCS Course Review: Information Security"
+title: "Course Review: Introduction to Information Security"
 date: 2021-11-29
 ---
 

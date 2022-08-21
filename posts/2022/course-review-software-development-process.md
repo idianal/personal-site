@@ -1,6 +1,6 @@
 ---
 layout: post.njk
-title: "OMSCS Course Review: Software Development"
+title: "Course Review: Software Development Process"
 date: 2022-08-20
 ---
 

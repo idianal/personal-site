@@ -1,6 +1,6 @@
 ---
 layout: post.njk
-title: "OMSCS Course Review: Computer Networks"
+title: "Course Review: Computer Networks"
 date: 2022-04-24
 ---
 
