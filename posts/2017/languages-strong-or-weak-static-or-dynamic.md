@@ -12,7 +12,7 @@ In truth, strong-ness and static-ness have an orthogonal relationship, i.e. a pr
 -   strong-static (Java, C#),
 -   strong-dynamic (Python),
 -   weak-static (C), or
--   weak-dynamic (Javascript).
+-   weak-dynamic (JavaScript).
 
 While I find that definitions for strong/weak typing and static/dynamic typing are plentiful and sometimes contradictory, I will attempt to put forth definitions that makes sense to me --- and more importantly, preserve the usefulness of these terms.
 

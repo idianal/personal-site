@@ -55,7 +55,7 @@ for (let elemIndex = 0; elemIndex < elements.length; elemIndex++) {
 }
 
 // Example: foreach loop
-// Note: Javascript has deprecated the old 'for each' syntax.
+// Note: JavaScript has deprecated the old 'for each' syntax.
 // Instead, a 'for in' syntax is used.
 Nevertheless, it is still a foreach loop.
 for (let element in elements) {

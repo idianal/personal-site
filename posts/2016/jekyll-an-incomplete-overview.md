@@ -7,7 +7,7 @@ date: 2016-04-28
 ### What is it?
 
 Jekyll is a static website generator known for its tight integration with GitHub Pages.
-It converts dynamic content into web-friendly files (HTML, CSS, Javascript) and uses no server-side language or database.
+It converts dynamic content into web-friendly files (HTML, CSS, JavaScript) and uses no server-side language or database.
 Static websites and static website generators like Jekyll can be limiting, but when used for a suitable task, their benefits are numerous and clear.
 
 Unlike non-static website platforms which process content and templates on every request, Jekyll does so only once, at the moment the code is compiled.
