@@ -1,4 +1,9 @@
+:root {
+  --darkgray: #1e1e1e;
+}
+
 body {
+    color: var(--darkgray);
     font-family: "Inconsolata", monospace;
 }
 
@@ -25,7 +30,7 @@ a {
 header {
     padding: 15px 20px;
     margin: -10px -10px 10px -10px;
-    background-color: black;
+    background-color: var(--darkgray);
 }
 
 footer {
