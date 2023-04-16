@@ -19,13 +19,14 @@ h6 {
 }
 
 a {
+    color: teal;
     text-decoration: none;
 }
 
 header {
     padding: 15px 20px;
     margin: -10px -10px 10px -10px;
-    background-color: tomato;
+    background-color: teal;
 }
 
 footer {
@@ -46,6 +47,7 @@ td {
     padding-left: 20px;
     padding-right: 20px;
 }
+
 #site-title,
 #site-title a {
     color: white;
