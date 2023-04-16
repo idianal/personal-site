@@ -6,13 +6,11 @@ date: 2022-04-24
 
 {% include omscs-header.njk %}
 
-### CS 6250: Computer Networks
-
 #### Overview
 
-CS 6250 is a broad exploration of modern and traditional internet architecture.
+CS6250 is a broad exploration of modern and traditional internet architecture.
 It is light on prerequisites, making it an ideal first course to take in the OMSCS program.
-CS 6250 deepens student knowledge on many internet-related technologies used in software development and computer science.
+CS6250 deepens student knowledge on many internet-related technologies used in software development and computer science.
 
 Topics covered in the course include internet history and architecture, protocols and technologies used, router design, software-defined networking, internet security, and internet applications.
 
@@ -96,6 +94,6 @@ I spent around 10-15 hours per week on this course.
 
 #### Conclusion
 
-CS 6250 delivered on its goal of deepening my knowledge of internet technologies and computer networking in general.
+CS6250 delivered on its goal of deepening my knowledge of internet technologies and computer networking in general.
 The material covered is interesting, and I think every computer science professional should probably know the contents of this course.
 Although I don't foresee myself working directly on the technologies discussed here, they are ubiquitous enough to be helpful no matter which area of computer science I end up in.

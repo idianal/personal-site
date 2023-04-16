@@ -6,11 +6,9 @@ date: 2022-08-20
 
 {% include omscs-header.njk %}
 
-### CS 6300: Software Development Process
-
 #### Overview
 
-CS 6300 is an introductory course on the software development process.
+CS6300 is an introductory course on the software development process.
 It emphasizes skills and knowledge essential to anyone joining a modern software team and is probably one of the least challenging courses in the OMSCS program.
 If you have experience working in a software development team, expect to already know many of the things covered in this course.
 
@@ -51,7 +49,7 @@ Simple end-of-module (mini-) quizzes are provided to help gauge student engageme
 
 #### Teaching staff
 
-Unlike all other courses I have taken so far in OMSCS, the professor is heavily involved in the day-to-day of CS 6300.
+Unlike all other courses I have taken so far in OMSCS, the professor is heavily involved in the day-to-day of CS6300.
 He holds weekly office hours and is responsive (as much as can be expected) in the course discussion board.
 
 In general, the course is managed impeccably by the professor and his TAs.
@@ -61,7 +59,7 @@ Project and assignment results were provided within an acceptable timeframe, and
 
 #### Difficulty
 
-CS 6300 is the easiest course I have taken so far in the OMSCS program.
+CS6300 is the easiest course I have taken so far in the OMSCS program.
 Having had significant work experience as a software developer, this was something I expected.
 I was unsure of how the group project would go but I was fortunately teamed up with some great performers who wanted to succeed in the course just as much as I did.
 
@@ -69,6 +67,6 @@ On average, I spent less than ten hours per week on this course.
 
 #### Conclusion
 
-CS 6300 is well-run but does not really seem to be a graduate-level course.
+CS6300 is well-run but does not really seem to be a graduate-level course.
 It is a great one to take for those with little-to-no work experience in a software development team.
-Taking CS 6300 in the summer allowed me to ease off and recharge in preparation for a heavy semester ahead in the fall.
+Taking CS6300 in the summer allowed me to ease off and recharge in preparation for a heavy semester ahead in the fall.

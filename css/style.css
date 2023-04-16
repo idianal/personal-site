@@ -1,4 +1,9 @@
+:root {
+  --darkgray: #1e1e1e;
+}
+
 body {
+    color: var(--darkgray);
     font-family: "Inconsolata", monospace;
 }
 
@@ -25,7 +30,7 @@ a {
 header {
     padding: 15px 20px;
     margin: -10px -10px 10px -10px;
-    background-color: tomato;
+    background-color: var(--darkgray);
 }
 
 footer {
@@ -46,6 +51,7 @@ td {
     padding-left: 20px;
     padding-right: 20px;
 }
+
 #site-title,
 #site-title a {
     color: white;
@@ -103,7 +109,7 @@ td {
 }
 
 .highlight-line-active {
-    background-color: teal;
+    background-color: brown;
 }
 
 @media only screen and (max-width: 799px) {

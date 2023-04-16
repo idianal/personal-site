@@ -5,12 +5,8 @@ const markdownItSup = require("markdown-it-sup");
 const markdownIt = require("markdown-it");
 
 module.exports = eleventyConfig => {
-    eleventyConfig.addFilter("htmlDateString", dateObj => {
+    eleventyConfig.addFilter("dateString", dateObj => {
         return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd");
-    });
-
-    eleventyConfig.addFilter("displayDateString", dateObj => {
-        return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy.LL.dd");
     });
 
     eleventyConfig.addFilter("findElement", (array, propToCompare, valToCompare, propToReturn) => {

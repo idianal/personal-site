@@ -6,13 +6,11 @@ date: 2021-11-29
 
 {% include omscs-header.njk %}
 
-### CS 6035: Introduction to Information Security
-
 #### Overview
 
-CS 6035 is a true introductory graduate course.
+CS6035 is a true introductory graduate course.
 It assumes an undergraduate-level familiarity with the course material and tackles a breadth of topics across the Information Security field.
-CS 6035 gives students the lay of the land in Information Security and aims to prepare them for more focused study in one or more of its subfields.
+CS6035 gives students the lay of the land in Information Security and aims to prepare them for more focused study in one or more of its subfields.
 
 Topics covered in the course include software security, operating system security, authentication, database security, malware and malicious code, cryptography and encryption, and web security.
 
@@ -52,7 +50,7 @@ In my opinion, anyone taking this course should get it.
 Since the quizzes are all open-book and many questions are derived from the textbook, it helps to have a digital version handy so you can `ctrl + f`.
 I found that as I naturally progressed in the course, I read almost the entire book.
 
-Several times in CS 6035, students are required to read from other provided sources which include journal articles and technical blogs.
+Several times in CS6035, students are required to read from other provided sources which include journal articles and technical blogs.
 I found many of these interesting and almost always helpful towards completing the projects.
 
 #### Exams
@@ -86,7 +84,7 @@ If you don't meet some of the prerequisites, expect to spend a little extra time
 
 #### Conclusion
 
-CS 6035 was an excellent first course in OMSCS.
+CS6035 was an excellent first course in OMSCS.
 The material covered is mostly interesting and not overly challenging.
 Although some aspects of security is exciting to me (e.g. operating system security, cryptography, etc.), I was not as keen on the organizational security topics in the course.
-CS 6035 did for me exactly what an introductory graduate course should do: tell me which parts of the Information Security field I might want to study more deeply.
+CS6035 did for me exactly what an introductory graduate course should do: tell me which parts of the Information Security field I might want to study more deeply.

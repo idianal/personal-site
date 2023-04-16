@@ -2,7 +2,7 @@
 layout: base.njk
 ---
 
-<h1 id="post-title">{{ title }}</h1>
-<p id="post-date" class="gray-text">{{ date | displayDateString }}</p>
+<h2 id="post-title">{{ title }}</h2>
+<p id="post-date" class="gray-text">{{ date | dateString }}</p>
 
 {{ content | safe }}
