@@ -1,8 +1,9 @@
 :root {
   --color-background: ghostwhite;
   --color-foreground: #1e1e1e;
+  --color-header-background: #1e1e1e;
+  --color-header-text: ghostwhite;
   --color-links: blue;
-  --darkgray: #1e1e1e;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -14,9 +15,8 @@
 }
 
 body {
-    color: var(--darkgray);
-    background-color: var(--color-background);
     color: var(--color-foreground);
+    background-color: var(--color-background);
     font-family: "Inconsolata", monospace;
 }
 
@@ -44,7 +44,7 @@ a {
 header {
     padding: 15px 20px;
     margin: -10px -10px 10px -10px;
-    background-color: var(--darkgray);
+    background-color: var(--color-header-background);
 }
 
 footer {
@@ -68,7 +68,7 @@ td {
 
 #site-title,
 #site-title a {
-    color: ghostwhite;
+    color: var(--color-header-text);
 }
 
 #post-title {
