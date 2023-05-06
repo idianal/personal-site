@@ -1,9 +1,22 @@
 :root {
-  --darkgray: #1e1e1e;
+  --color-background: whitesmoke;
+  --color-foreground: #1e1e1e;
+  --color-header-background: #1e1e1e;
+  --color-header-text: whitesmoke;
+  --color-links: blue;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+      --color-background: #1e1e1e;
+      --color-foreground: whitesmoke;
+      --color-links: cornflowerblue;
+    }
 }
 
 body {
-    color: var(--darkgray);
+    color: var(--color-foreground);
+    background-color: var(--color-background);
     font-family: "Inconsolata", monospace;
 }
 
@@ -24,13 +37,14 @@ h6 {
 }
 
 a {
+    color: var(--color-links);
     text-decoration: none;
 }
 
 header {
     padding: 15px 20px;
     margin: -10px -10px 10px -10px;
-    background-color: var(--darkgray);
+    background-color: var(--color-header-background);
 }
 
 footer {
@@ -54,7 +68,7 @@ td {
 
 #site-title,
 #site-title a {
-    color: white;
+    color: var(--color-header-text);
 }
 
 #post-title {
@@ -125,5 +139,5 @@ td {
 @media only screen and (min-width: 800px) {
     .small-screen-only {
         display: none;
-   }
+    }
 }
