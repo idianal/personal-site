@@ -1,15 +1,15 @@
 :root {
-  --color-background: ghostwhite;
+  --color-background: whitesmoke;
   --color-foreground: #1e1e1e;
   --color-header-background: #1e1e1e;
-  --color-header-text: ghostwhite;
+  --color-header-text: whitesmoke;
   --color-links: blue;
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
       --color-background: #1e1e1e;
-      --color-foreground: ghostwhite;
+      --color-foreground: whitesmoke;
       --color-links: cornflowerblue;
     }
 }
