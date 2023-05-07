@@ -1,8 +1,6 @@
 :root {
   --color-background: whitesmoke;
   --color-foreground: #1e1e1e;
-  --color-header-background: #1e1e1e;
-  --color-header-text: whitesmoke;
   --color-links: blue;
 }
 
@@ -44,7 +42,7 @@ a {
 header {
     padding: 15px 20px;
     margin: -10px -10px 10px -10px;
-    background-color: var(--color-header-background);
+    background-color: var(--color-background);
 }
 
 footer {
@@ -68,7 +66,7 @@ td {
 
 #site-title,
 #site-title a {
-    color: var(--color-header-text);
+    color: var(--color-text);
 }
 
 #post-title {
@@ -79,6 +77,16 @@ td {
 #post-date {
     margin-top: 0px;
     padding-bottom: 10px;
+}
+
+.avatar {
+    border: 3px solid gray;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    width: 200px;
 }
 
 .table-title {
