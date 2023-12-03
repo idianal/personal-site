@@ -1,6 +1,5 @@
 [
     { "name": "Books", "url": "https://www.goodreads.com/idianal" },
-    { "name": "Films", "url": "https://www.letterboxd.com/idianal" },
     { "name": "GitHub", "url": "https://www.github.com/idianal" },
     { "name": "Photos", "url": "https://pixelfed.social/idian.io"}
 ]
