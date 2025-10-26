@@ -1,7 +1,8 @@
 ---
 layout: post.njk
-title: What's in my Tool Stack for 2017?
+title: "What's in my Tool Stack for 2017?"
 date: 2017-01-27
+description: "Read about my software tool stack for 2017&mdash;from Visual Studio Code for lightweight editing, to ReSharper + Visual Studio for C#, PyCharm for Python, and WebStorm for JavaScript&mdash;along with the rationale behind each choice."
 ---
 
 After some planning and testing, I've come up with a small list of applications that will compose my tool stack for the rest of the year.

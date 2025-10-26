@@ -1,10 +1,11 @@
 ---
 layout: post.njk
-title: "Course Review: Introduction to Information Security"
+title: "Course Review: Information Security"
 date: 2021-11-29
+description: "A review of the CS6035 Information Security graduate course from Georgia Tech's Online Master of Science in Computer Science (OMSCS) program&mdash;covering projects, exams, learning materials, and how well it sets you up for deeper security study."
 ---
 
-{% include omscs-header.njk %}
+{% include "_includes/omscs-header.njk" %}
 
 #### Overview
 

@@ -1,7 +1,8 @@
 ---
 layout: post.njk
-title: Demystifying Delegates in C#
+title: "Demystifying Delegates in C#"
 date: 2018-10-22
+description: "Explore how delegates work in C#&mdash;what they are, how to declare and assign them, and how they enable methods to be treated like variables. A clear, example-driven guide."
 ---
 
 ### A bit of context

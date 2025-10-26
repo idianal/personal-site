@@ -1,7 +1,8 @@
 ---
 layout: post.njk
-title: A Classic Case of Simpson's Paradox
+title: "A Classic Case of Simpson's Paradox"
 date: 2016-10-27
+description: "Simpson's Paradox occurs when trends in separate groups of data reverse when combined. This article illustrates how data can be misleading and why context matters in analysis."
 ---
 
 I was introduced to Simpson's Paradox at an introductory statistics course in university.
@@ -41,7 +42,7 @@ While Simpson's Paradox has been studied for decades and has essentially been so
 
 Just another reminder to maintain a healthy level of skepticism and unbelief, especially when faced with extraordinary claims.
 
-{% include section-divider.njk %}
+{% include "_includes/section-divider.njk" %}
 
 ### References
 

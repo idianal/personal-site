@@ -1,7 +1,8 @@
 ---
 layout: post.njk
-title: A Simple Example of Big-O Analysis
+title: "A Simple Example of Big-O Analysis"
 date: 2016-05-09
+description: "Big-O notation can reveal differences in algorithmic efficiency between function implementations. This type of efficiency matters especially as input size grows."
 ---
 
 What makes an algorithm better than another? One measure is Big-O.

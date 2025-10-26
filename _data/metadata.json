@@ -1,6 +1,9 @@
 {
     "title": "Al Idian",
-    "description": "A personal site about software development",
+    "description": "A personal site about software engineering, computer science, and open source development",
+    "baseUrl": "https://idian.io",
     "sourceUrl": "https://github.com/idianal/personal-site",
-    "licenseUrl": "https://github.com/idianal/personal-site/blob/main/LICENSE"
+    "licenseUrl": "https://github.com/idianal/personal-site/blob/main/LICENSE",
+    "authorName": "Al Idian",
+    "authorEmail": "al.idian@acm.org"
 }

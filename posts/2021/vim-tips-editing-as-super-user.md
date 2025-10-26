@@ -2,6 +2,7 @@
 layout: post.njk
 title: "Vim Tips: Editing as Super User"
 date: 2021-05-09
+description: "Learn how to edit system files with Vim using a safer, more flexible alternative to launching Vim as root, preserving your personal configuration and avoiding potential pitfalls."
 ---
 
 On machines I manage, I often need to edit system-level configuration files in Vim.

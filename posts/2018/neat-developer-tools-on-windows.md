@@ -1,7 +1,8 @@
 ---
 layout: post.njk
-title: Neat Developer Tools on Windows
+title: "Neat Developer Tools on Windows"
 date: 2018-08-20
+description: "Explore a curated list of powerful developer tools for Windows&mdash;from package management with Chocolatey to the Windows Subsystem for Linux (WSL), and modern scripting with PowerShell&mdash;showing how the Windows environment is becoming developer-friendly."
 ---
 
 Among the three big operating systems, Windows still carries the reputation of being the least developer-friendly.

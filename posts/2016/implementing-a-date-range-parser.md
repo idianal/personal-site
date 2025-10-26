@@ -1,7 +1,8 @@
 ---
 layout: post.njk
-title: Implementing a Date Range Parser
+title: "Implementing a Date Range Parser"
 date: 2016-11-05
+description: "Build a simple date range parser in C# that handles multiple human-readable formats by using a word bank and proximity table."
 ---
 
 Recently, I was tasked with writing an application in C# to scrape a web page on a schedule.

@@ -1,7 +1,8 @@
 ---
 layout: post.njk
-title: When is Tail Recursion Worth the Trouble?
+title: "When is Tail Recursion Worth the Trouble?"
 date: 2017-07-05
+description: "Explore when using tail recursion is actually worth the effort&mdash;how making the recursive call your final step enables compiler optimizations (if supported), and why in languages like C# and Java it may be better to stick with loops."
 ---
 
 ### Recursion

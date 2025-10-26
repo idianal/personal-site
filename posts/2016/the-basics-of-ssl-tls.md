@@ -1,7 +1,8 @@
 ---
 layout: post.njk
-title: The Basics of SSL/TLS
+title: "The Basics of SSL/TLS"
 date: 2016-08-05
+description: "Transport Layer Security (TLS) and its predecessor Secure Sockets Layer (SSL) enable secure communication between clients and servers. Read about how a handshake establishes trust, how certificates and public/private keys generate a shared secret, and how that secret is used to encrypt data for the session."
 ---
 
 ### What is it?
@@ -62,7 +63,7 @@ Because only they have access to the shared secret, they can use it to ensure th
 
 It is only after this handshake that the actual transaction can begin.
 
-{% include section-divider.njk %}
+{% include "_includes/section-divider.njk" %}
 
 ### References
 

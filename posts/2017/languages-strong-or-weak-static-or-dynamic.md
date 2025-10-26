@@ -2,6 +2,7 @@
 layout: post.njk
 title: "Languages: Strong or Weak, Static or Dynamic"
 date: 2017-09-08
+description: "Read about the concepts of strong vs weak typing and static vs dynamic typing in programming languages, and understand how they are orthogonal (not interchangeable) through concrete examples in C#, Python, and JavaScript."
 ---
 
 ### What gives?

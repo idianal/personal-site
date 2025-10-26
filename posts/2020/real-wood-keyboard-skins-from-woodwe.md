@@ -1,7 +1,8 @@
 ---
 layout: post.njk
-title: Real Wood Keyboard Skins from WoodWe
+title: "Real Wood Keyboard Skins from WoodWe"
 date: 2020-08-07
+description: "Explore a detailed review of the walnut keyboard skin from WoodWe for MacBooks&mdash;luxury feel, premium build, anti-smudge appeal, and one major compatibility caveat."
 ---
 
 [WoodWe](https://woodwe.com) is an online retailer based out of Europe that makes ornamental add-ons to Apple products (like MacBooks, iPhones, iPads, and even the bluetooth Magic Keyboard).

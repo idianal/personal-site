@@ -1,7 +1,8 @@
 ---
 layout: post.njk
-title: JavaScript Pitfalls, Part 1
+title: "JavaScript Pitfalls, Part 1"
 date: 2018-06-28
+description: "Discover lesser-known quirks of JavaScript in part 1 of this series&mdash;from automatic semi-colon insertion to primitive constructors and strict equality pitfalls&mdash;written for developers who want to go beyond the usual complaints."
 ---
 
 JavaScript is known among software developers for both its popularity and its unconventional, sometimes frustrating design.

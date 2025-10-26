@@ -1,7 +1,8 @@
 ---
 layout: post.njk
-title: Static Classes vs Singleton Pattern
+title: "Static Classes vs Singleton Pattern"
 date: 2017-02-10
+description: "Compare the use of static classes and the Singleton pattern in C#: learn when to choose a non-instantiable utility class vs a single-instance class, and understand their trade-offs for extensibility, state, and lifecycle."
 ---
 
 ### Classes and objects

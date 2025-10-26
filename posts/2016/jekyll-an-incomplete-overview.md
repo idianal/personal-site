@@ -2,6 +2,7 @@
 layout: post.njk
 title: "Jekyll: An Incomplete Overview"
 date: 2016-04-28
+description: "Jekyll is a static website generator ideal for high-performance, version-controlled sites. Learn how it is used to manage templates and integrate with GitHub Pages."
 ---
 
 ### What is it?

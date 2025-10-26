@@ -1,7 +1,8 @@
 ---
 layout: post.njk
-title: Changes to this Site for 2021
+title: "Changes to this Site for 2021"
 date: 2020-12-30
+description: "Discussing updates to this site heading into 2021&mdash;from migrating to the Eleventy site generator, securing a new custom domain, to a refined minimalist design and code snippet enhancements."
 ---
 
 Over the last four and a half years, this blog has been invaluable to me as a tool to encourage and reinforce my intellectual curiosity and learning processes.

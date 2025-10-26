@@ -1,7 +1,8 @@
 ---
 layout: post.njk
-title: The JavaScript Scope Chain
+title: "The JavaScript Scope Chain"
 date: 2017-10-31
+description: "Dive into how the JavaScript scope chain determines variable visibility&mdash;how inner functions look outward through lexical scopes, why shadowing happens, and how understanding this helps with closures and avoiding bugs."
 ---
 
 JavaScript is notorious for having mechanisms that seem to work in unintuitive and unexpected ways.
@@ -91,7 +92,7 @@ foo(); // prints 1
 It is identical to the previous except *bar()* is declared within *foo()*, rather than in the global scope.
 It makes sense then that calling *bar()* logs the value '1' --- the value of *someNumber* declared in its outer environment *foo()*.
 
-{% include section-divider.njk %}
+{% include "_includes/section-divider.njk" %}
 
 ### Notes
 

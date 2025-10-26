@@ -2,6 +2,8 @@
 layout: post.njk
 title: "Vim Tips: Macros"
 date: 2021-02-15
+description: "Master Vim macros: learn how to record, edit, and replay complex editing sequences with precision&mdash;
+boosting efficiency for repetitive tasks like formatting lists or refactoring code."
 ---
 
 While Vim's dot operator allows us to repeat very small chunks of work, Vim macros are the full-fat version.

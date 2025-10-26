@@ -1,7 +1,8 @@
 ---
 layout: post.njk
-title: Multiple Inheritance in Python
+title: "Multiple Inheritance in Python"
 date: 2016-12-21
+description: "Python supports multiple inheritance in many ways. Explore simple single-inheritance examples and complex cases involving the method resolution order (MRO)."
 ---
 
 Multiple inheritance is supported but usually not recommended in Python.

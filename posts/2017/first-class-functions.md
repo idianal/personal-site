@@ -1,7 +1,8 @@
 ---
 layout: post.njk
-title: First-class Functions
+title: "First-class Functions"
 date: 2017-05-12
+description: "Discover what first-class functions are in JavaScript: how you can assign functions to variables, pass them as arguments, and return them from other functions, enabling more flexible and functional-style code."
 ---
 
 ### What is it?
@@ -125,7 +126,7 @@ With a map function available (i.e. *simpleMap()*), we are able to abstract away
 The concept of first-class functions constitutes a paradigm shift for programmers who have only ever worked with non-functional languages.
 Learning both and pondering their differences can be a worthwhile and enjoyable experience.
 
-{% include section-divider.njk %}
+{% include "_includes/section-divider.njk" %}
 
 ### Notes
 

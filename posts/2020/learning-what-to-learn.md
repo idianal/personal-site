@@ -1,7 +1,8 @@
 ---
 layout: post.njk
-title: Learning What to Learn
+title: "Learning What to Learn"
 date: 2020-06-28
+description: "As a developer, it's impossible to learn everything&mdash;this post explores how to become a selective learner by asking what to learn and how prioritizing usefulness, interest, and long-term value can boost productivity and enjoyment."
 ---
 
 Working as a software developer, I am often reminded it is simply impossible to learn it all.
@@ -25,12 +26,12 @@ In practice, one way I have tried to become a more selective learner is simply t
 -   Is it likely to be useful long-term?
 
 Given two interesting technologies that are likely to become part of my future tech stack, the method above prioritizes the one that is immediately useful to me.
-By modifying the criteria to one’s own situation, it is easy to see how the method can be helpful in making the important choice of what to learn.
+By modifying the criteria to one's own situation, it is easy to see how the method can be helpful in making the important choice of what to learn.
 
 Having a system (even a rough one like above) of assigning value to potential areas of study can help in deciding which areas of study to pursue.
-And carefully selecting where to invest one’s study time can have a large impact on a developer’s productivity and enjoyment.
+And carefully selecting where to invest one's study time can have a large impact on a developer's productivity and enjoyment.
 
-{% include section-divider.njk %}
+{% include "_includes/section-divider.njk" %}
 
 ### Notes
 

@@ -1,7 +1,8 @@
 ---
 layout: post.njk
-title: Why Use Analogies in Software Teams?
+title: "Why Use Analogies in Software Teams?"
 date: 2021-08-15
+description: "Explore how analogies help software teams bridge communication gaps, simplify complex concepts, and align stakeholders&mdash;making technical ideas more relatable without oversimplifying."
 ---
 
 Software developers and technologists are often afforded the time to learn niche and complex material through study and deep interaction.

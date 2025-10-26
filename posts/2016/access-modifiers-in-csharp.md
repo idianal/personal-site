@@ -1,7 +1,8 @@
 ---
 layout: post.njk
-title: Access Modifiers in C#
+title: "Access Modifiers in C#"
 date: 2016-07-29
+description: "C# offers several access modifiers that control how and where class members can be accessed. Understanding these modifiers is key to implementing encapsulation and designing maintainable, robust code."
 ---
 
 ### Encapsulation
@@ -55,7 +56,7 @@ internal class Animal
 
 For more details on Access Modifiers in C#, have a look at this [guide](https://msdn.microsoft.com/en-CA/library/ms173121.aspx) from MSDN.
 
-{% include section-divider.njk %}
+{% include "_includes/section-divider.njk" %}
 
 ### Notes
 

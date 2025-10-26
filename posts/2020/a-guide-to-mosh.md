@@ -1,7 +1,8 @@
 ---
 layout: post.njk
-title: A Guide to Mosh
+title: "A Guide to Mosh"
 date: 2020-07-11
+description: "Mosh (Mobile Shell) enhances remote terminal sessions by supporting roaming, intermittent connectivity and intelligent local echo."
 ---
 
 ### Where SSH falls short
@@ -100,7 +101,7 @@ Only after authentication is the SSH connection dropped and the new Mosh connect
 Mosh has real and distinctive benefits over SSH, especially when working over an unreliable network connection.
 Set up and daily use of Mosh alongside SSH is easy so there is little reason for any remote tech worker not to add it to their toolbelt.
 
-{% include section-divider.njk %}
+{% include "_includes/section-divider.njk" %}
 
 ### References
 

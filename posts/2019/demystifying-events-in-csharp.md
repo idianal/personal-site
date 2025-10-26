@@ -1,7 +1,8 @@
 ---
 layout: post.njk
-title: Demystifying Events in C#
+title: "Demystifying Events in C#"
 date: 2019-01-14
+description: "Unpack how events work in C#&mdash;see how delegates power event-publishing with real code examples and clear explanation."
 ---
 
 In a previous [post](/posts/2018/demystifying-delegates-in-csharp), I talked briefly about delegates as a way to reference one or more methods in C#.

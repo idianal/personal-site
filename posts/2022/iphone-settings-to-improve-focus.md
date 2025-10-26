@@ -1,7 +1,8 @@
 ---
 layout: post.njk
-title: iPhone Settings to Improve Focus
+title: "iPhone Settings to Improve Focus"
 date: 2022-09-20
+description: "Discover essential iPhone settings and features to boost your focus and productivity. Learn how to minimize distractions, customize notifications, and make your device work for you, not against you."
 ---
 
 Our attention is constantly under attack.

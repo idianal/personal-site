@@ -1,7 +1,8 @@
 ---
 layout: post.njk
-title: Setting Up a Home Server
+title: "Setting Up a Home Server"
 date: 2021-03-07
+description: "A practical walkthrough for setting up a home server&mdash;installing SSH, handling dynamic IPs with Dynamic DNS and port forwarding, securing your entry point, and using a mini PC like the Intel NUC for remote development."
 ---
 
 ### Background

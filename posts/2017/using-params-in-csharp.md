@@ -1,7 +1,8 @@
 ---
 layout: post.njk
-title: Using params in C#
+title: "Using params in C#"
 date: 2017-03-20
+description: "Understand how to use the `params` keyword in C# to allow a method to accept a variable number of arguments&mdash;learn when it is useful, how the syntax works, and key rules and pitfalls."
 ---
 
 ### Overloading

@@ -1,7 +1,8 @@
 ---
 layout: post.njk
-title: Insert Row and Return an Auto-Generated Id in Oracle
+title: "Insert Row and Return an Auto-Generated Id in Oracle"
 date: 2017-08-01
+description: "Learn how to insert a row in Oracle with an auto-generated Id and immediately retrieve that Id using the `RETURNING ... INTO` clause. No need for separate lookup queries."
 ---
 
 ### Problem

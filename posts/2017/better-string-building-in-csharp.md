@@ -1,7 +1,8 @@
 ---
 layout: post.njk
-title: Better String Building in C#
+title: "Better String Building in C#"
 date: 2017-06-12
+description: "Build strings more efficiently in C# by switching from immutable string concatenation to the mutable `StringBuilder` class. Understand why it matters and how to implement the better approach."
 ---
 
 ### Strings in C#

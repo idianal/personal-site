@@ -1,7 +1,8 @@
 ---
 layout: post.njk
-title: Software Development as Craft
+title: "Software Development as Craft"
 date: 2021-06-19
+description: "Explore the distinction between software development as a job and as a craft&mdash;why making time for play, tinkering and personal projects helps sustain enthusiasm when most work is about productivity."
 ---
 
 Software development is a job --- but it is also a craft.

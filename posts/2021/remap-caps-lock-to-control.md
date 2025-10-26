@@ -1,7 +1,8 @@
 ---
 layout: post.njk
-title: Remap Caps Lock to Control
+title: "Remap Caps Lock to Control"
 date: 2021-10-30
+description: "Learn how to remap the Caps Lock key to become an extra Control key&mdash;why it's a smart move for developers and how to do it easily in macOS, Windows, and Linux."
 ---
 
 ### Displace the Caps Lock key

@@ -1,7 +1,8 @@
 ---
 layout: post.njk
-title: Synchrony and Event Handling in JavaScript
+title: "Synchrony and Event Handling in JavaScript"
 date: 2016-06-13
+description: "JavaScript handles execution and event-queue flow in interesting ways. Uncover how its synchronous engine works, how the execution stack and event queue interact, and why long-running tasks can delay your event handlers."
 ---
 
 ### Synchronous execution and the execution stack
@@ -58,9 +59,9 @@ Each of these newly-declared variables are given the reserved value undefined un
 Note that undefined is not equivalent to null; undefined is an actual value that occupies memory.
 
 Moreover, JavaScript maintains something called the execution stack which always begins with the global execution context.
-When the call to function b is made, function b’s execution context is pushed onto the stack --- on top of the global execution context.
+When the call to function b is made, function b's execution context is pushed onto the stack --- on top of the global execution context.
 At that point, no code in the global execution context is run.
-Similarly, when function b makes a call to function a, function a’s execution context is pushed onto the execution stack, and no code in function b or the global execution context gets executed.
+Similarly, when function b makes a call to function a, function a's execution context is pushed onto the execution stack, and no code in function b or the global execution context gets executed.
 Once code in the top-most execution context finishes, that execution context is popped off the stack, and the one that was immediately below it is resumed.
 
 ### Event handlers and the event queue

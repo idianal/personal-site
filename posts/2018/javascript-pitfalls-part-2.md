@@ -1,7 +1,8 @@
 ---
 layout: post.njk
-title: JavaScript Pitfalls, Part 2
+title: "JavaScript Pitfalls, Part 2"
 date: 2018-09-28
+description: "Discover lesser-known quirks of JavaScript in part 2 of this series&mdash;uncover issues with constructors, the `new` keyword, loop quirks, and `this` in inner functions that trip up many developers."
 ---
 
 This blog post is part two of series JavaScript Pitfalls where I attempt to demonstrate design flaws in the JavaScript language.

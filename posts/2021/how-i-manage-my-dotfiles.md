@@ -1,7 +1,8 @@
 ---
 layout: post.njk
-title: How I Manage My Dotfiles
+title: "How I Manage My Dotfiles"
 date: 2021-04-28
+description: "How I manage my dotfiles: a developer's personal workflow for keeping shell configs, editor settings and environment preferences version-controlled and in sync across machines."
 ---
 
 ### What are dotfiles?

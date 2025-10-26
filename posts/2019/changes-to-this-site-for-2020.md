@@ -1,7 +1,8 @@
 ---
 layout: post.njk
-title: Changes to this Site for 2020
+title: "Changes to this Site for 2020"
 date: 2019-12-02
+description: "Discussing updates to this site heading into 2020&mdash;covering containerization with Docker, domain changes, and streamlined tooling to keep the site fresh and developer-friendly."
 ---
 
 It has been a long while since my last post.

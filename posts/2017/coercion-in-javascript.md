@@ -1,7 +1,8 @@
 ---
 layout: post.njk
-title: Coercion in JavaScript
+title: "Coercion in JavaScript"
 date: 2017-04-02
+description: "Explore how type coercion works in JavaScript, why the == operator can behave unexpectedly, and how to write more robust, elegant code by understanding ===, ||, and other coercion-related patterns."
 ---
 
 ### Static vs dynamic typing
@@ -108,7 +109,7 @@ If c is either *null* or *undefined*, the alternate value "Hello world" is print
 
 Understanding coercion (along with *equality* and *strict equality* in JavaScript) allows developers to avoid common pitfalls and write cleaner, more elegant code.
 
-{% include section-divider.njk %}
+{% include "_includes/section-divider.njk" %}
 
 ### Notes
 

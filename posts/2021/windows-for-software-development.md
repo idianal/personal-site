@@ -1,7 +1,8 @@
 ---
 layout: post.njk
-title: Windows for Software Development
+title: "Windows for Software Development"
 date: 2021-07-21
+description: "A personal perspective on why Windows is a compelling choice for software development in 2021&mdash;highlighting its polished UI, powerful window management, and seamless integration with Windows Subsystem for Linux (WSL) for a hybrid development environment."
 ---
 
 As an operating system for software development, Windows gets a bad rap.

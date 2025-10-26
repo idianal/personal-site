@@ -2,9 +2,10 @@
 layout: post.njk
 title: "Course Review: Computer Networks"
 date: 2022-04-24
+description: "A review of the CS6250 Computer Networks graduate course from Georgia Tech's Online Master of Science in Computer Science (OMSCS) program&mdash;covering curriculum, projects, exams, workload, and whether it is worth taking for software and computer science professionals."
 ---
 
-{% include omscs-header.njk %}
+{% include "_includes/omscs-header.njk" %}
 
 #### Overview
 

@@ -2,9 +2,10 @@
 layout: post.njk
 title: "Course Review: Software Development Process"
 date: 2022-08-20
+description: "A review of the CS6300 Software Development Process graduate course from Georgia Tech's Online Master of Science in Computer Science (OMSCS) program&mdash;from curriculum and assignments to workload, projects, and insights on whether it's a good fit for aspiring software engineers."
 ---
 
-{% include omscs-header.njk %}
+{% include "_includes/omscs-header.njk" %}
 
 #### Overview
 

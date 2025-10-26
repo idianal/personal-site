@@ -1,7 +1,8 @@
 ---
 layout: post.njk
-title: Practical Vim by Drew Neil
+title: "Practical Vim by Drew Neil"
 date: 2021-02-21
+description: "A review of Practical Vim by Drew Neil&mdash;how its tip-based structure helps intermediate Vim users shift their editing mindset, not just learn commands."
 ---
 
 [Practical Vim](https://www.goodreads.com/book/show/13607232-practical-vim) by Drew Neil is a rich, approachable book on the Vim editor.

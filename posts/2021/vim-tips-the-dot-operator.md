@@ -2,6 +2,7 @@
 layout: post.njk
 title: "Vim Tips: The Dot Operator"
 date: 2021-01-13
+description: "Unlock the power of Vim's dot operator to repeat the last change&mdash;ideal for formatting, editing, and refactoring tasks. Learn how to make your edits repeatable and efficient with this simple yet powerful command."
 ---
 
 Conventional editors have conditioned us to think about the act of editing text in certain ways:
