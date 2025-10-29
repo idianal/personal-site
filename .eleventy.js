@@ -29,7 +29,7 @@ module.exports = eleventyConfig => {
 
     eleventyConfig.addPlugin(feedPlugin, {
         type: "rss",
-        outputPath: "/feed.xml",
+        outputPath: metadata.feedUrl,
         collection: { name: "post", limit: 10 },
         metadata: {
             language: "en",

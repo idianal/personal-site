@@ -2,6 +2,7 @@
     "title": "Al Idian",
     "description": "A personal site about software engineering, computer science, and open source development",
     "baseUrl": "https://idian.io",
+    "feedUrl": "/feed.xml",
     "sourceUrl": "https://github.com/idianal/personal-site",
     "licenseUrl": "https://github.com/idianal/personal-site/blob/main/LICENSE",
     "authorName": "Al Idian",

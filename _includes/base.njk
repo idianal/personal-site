@@ -32,7 +32,10 @@
     </main>
 
     <footer>
-        <p class="center-text no-margin no-padding"><a href="{{ metadata.licenseUrl | url }}">MIT License</a></p>
+        <p class="center-text no-margin no-padding">
+            <a href="{{ metadata.licenseUrl | url }}">MIT License</a> |
+            <a href="{{ metadata.feedUrl | url }}">RSS Feed</a>
+        </p>
         <p class="center-text no-margin no-padding"><a href="{{ metadata.sourceUrl | url }}">/idianal</a></p>
     </footer>
 </body>
