@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="https://idian.io/" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Al Idian</title>
+    <link>https://idian.io/</link>
+    <atom:link href="https://idian.io/feed.xml" rel="self" type="application/rss+xml" />
+    <description>A personal site about software engineering, computer science, and open source development</description>
+    <language>en</language>
+    <item>
+      <title>iPhone Settings to Improve Focus</title>
+      <link>https://idian.io/posts/2022/iphone-settings-to-improve-focus/</link>
+      <description>&lt;p&gt;Our attention is constantly under attack.
+Most news and media organizations, ad-slinging tech companies, and internet influencers and personalities ultimately seek to convert our attention into profit.
+In &lt;a href=&quot;https://www.goodreads.com/work/quotes/90770433-stolen-focus&quot;&gt;&lt;em&gt;Stolen Focus&lt;/em&gt;&lt;/a&gt; (2022), Johann Hari writes, “The sensation of being alive in the early twenty-first century consisted of the sense that our ability to pay attention — to focus — was cracking and breaking.”&lt;/p&gt;
+&lt;p&gt;The ability to pay attention for extended periods is important for creativity, self-reflection and satisfaction, and productivity.
+And curing our current environment of attention-deprivation will likely require great political change.
+Until then, we can do what we can to preserve and improve our own ability to focus.&lt;/p&gt;
+&lt;p&gt;In my case, I find that my iPhone has the potential to be the largest attack vector to my attention.
+I suppose the same is true for most people I know.
+Fortunately, the iPhone can be configured to minimize distractions and encourage improved focus.&lt;/p&gt;
+&lt;p&gt;Here below, I describe iPhone settings that have helped me personally.
+These are, of course, opinionated recommendations that will not work for everyone.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Use the Focus Modes feature&lt;/p&gt;
+&lt;p&gt;Focus Modes was introduced in iOS 15.
+At its most basic form, it is an enhanced Do Not Disturb feature.
+Beyond a conventional Do Not Disturb, Focus Modes are highly-configurable and well-integrated with the rest of iOS.
+For example, users can create a Focus Mode for driving that switches on automatically if the phone detects that the user might be driving a vehicle and disables all calls.
+Another Focus Mode might be for bedtime which will hide apps that are too stimulating or distracting.&lt;/p&gt;
+&lt;p&gt;I like to have the following Focus Modes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Do Not Disturb&lt;/p&gt;
+&lt;p&gt;This is your typical Do Not Disturb feature.
+It disables all calls, messages, and notifications.
+Typically, I use this setting when walking, running, working out, or reading.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Work&lt;/p&gt;
+&lt;p&gt;I use this at the start of focused work sessions when I am doing either paid or personal work.
+Unlike the more generic Do Not Disturb setting above, it allows notifications from my authentication app, something I use heavily to interface with remote systems.
+All other notifications, calls, and messages are disabled.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Sleep&lt;/p&gt;
+&lt;p&gt;This Focus Mode is toggled on automatically at 930pm, which is when I should be getting ready for bed.
+It hides apps that might keep me from falling asleep.
+Effectively, this Focus Mode turns my iPhone into a great little ebook reader.
+All calls, messages, and notifications are disabled.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Driving&lt;/p&gt;
+&lt;p&gt;I use this when I am driving or biking.
+Currently, the settings are identical to the Do Not Disturb one above, but I still prefer to keep a dedicated Focus Mode for this activity.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Drastically reduce notifications&lt;/p&gt;
+&lt;p&gt;Notifications are dangerous.
+If left unchecked, they can very quickly sap away one’s attention and focus.&lt;/p&gt;
+&lt;p&gt;My advice here has three parts:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Notifications for most apps on your iPhone should be completely disabled.
+Some of your apps will continually bug you to turn notifications back on but you must resist.
+Like with the &lt;a href=&quot;https://en.wikipedia.org/wiki/Marie_Kondo#KonMari_method&quot;&gt;KonMari method&lt;/a&gt;, try to put as many apps as you can in this bucket.
+When in doubt, lean towards disabling notifications.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Enable notifications for only a select few apps.
+Ones that come to mind are Messages, Phone, and FaceTime.
+Note that you can easily disable these at certain times only using the Focus Modes features described in item 1 above.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Use the least distracting &lt;em&gt;type&lt;/em&gt; of notification that you can get away with.
+For the Mail app, do you really need a notification on your lock screen or a banner to dynamically appear whenever you get mail?
+For me, a badge notification on the Mail app icon is sufficient.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Disable all Siri features&lt;/p&gt;
+&lt;p&gt;In Apple products, Siri pertains not only to the voice-activated smart assistant but also to a slew of “intelligence features” that includes suggestions.
+These suggestions are driven by user behaviour and data.
+For example, if a user habitually uses their Books app before bed, Siri might suggest this app to the user every evening.&lt;/p&gt;
+&lt;p&gt;I personally dislike features like these, ones that try to learn user behaviour and make suggestions.
+I prefer to to interact with my devices with intent and agency.
+And so, I feel strongly about keeping this feature disabled.
+Unfortunately, iOS does not make this convenient: disabling Siri suggestions involves going into each app’s individual settings.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;In the future, I hope to see Apple implement easy ways to opt out of software design paradigms that corrode user focus and attention.
+I think this is a genuine possibility given the positive action Apple has already taken in other important areas like privacy and repairability.
+For now, the settings described above help me maintain a healthy relationship with my iPhone.&lt;/p&gt;
+</description>
+      <pubDate>Tue, 20 Sep 2022 00:00:00 GMT</pubDate>
+      <dc:creator>Al Idian</dc:creator>
+      <guid>https://idian.io/posts/2022/iphone-settings-to-improve-focus/</guid>
+    </item>
+    <item>
+      <title>Course Review: Software Development Process</title>
+      <link>https://idian.io/posts/2022/course-review-software-development-process/</link>
+      <description>&lt;p&gt;
+    Georgia Tech Online Master of Science in Computer Science (OMSCS) is an innovative, award-winning graduate program offered by the College of Computing at Georgia Tech. (&lt;a href=&quot;https://en.wikipedia.org/wiki/Georgia_Tech_Online_Master_of_Science_in_Computer_Science&quot;&gt;Wikipedia&lt;/a&gt;)
+&lt;/p&gt;
+&lt;p&gt;
+    As I make my way through this program, I intend to write short, opinionated reviews of the courses I complete.
+    My intended audience for this is the current or prospective OMSCS student who is considering taking these courses.
+&lt;/p&gt;
+&lt;h4&gt;Overview&lt;/h4&gt;
+&lt;p&gt;CS6300 is an introductory course on the software development process.
+It emphasizes skills and knowledge essential to anyone joining a modern software team and is probably one of the least challenging courses in the OMSCS program.
+If you have experience working in a software development team, expect to already know many of the things covered in this course.&lt;/p&gt;
+&lt;p&gt;Topics covered include the software development life cycle, version control systems, the fundamentals of system architecture and design, and software testing.
+Before taking this, make sure you are comfortable with Java and object-oriented programming.&lt;/p&gt;
+&lt;h4&gt;Projects&lt;/h4&gt;
+&lt;p&gt;This past semester, there were six assignments and two projects composed of several deliverables.
+All assignments and projects can be completed on any reasonably-modern machine, regardless of processor or operating system.&lt;/p&gt;
+&lt;p&gt;Each assignment was relatively short, meant to be completed in a week.
+Some could be as trivial as completing a survey or doing basic-to-intermediate operations in git and GitHub.
+The most time-intensive assignments involved designing and writing unit tests for a small Java app.
+Each assignment was weighted differently, ranging between 2 and 18 percent of the final grade.&lt;/p&gt;
+&lt;p&gt;The two projects were more intensive.
+One was completed as part of a group and the other was individual:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The group project (28% of the final grade) was the most rewarding part of the course (and potentially the most troublesome).
+It involved designing and writing an Android application that allows a user to input and compare job offers.
+Just as important as the programming (done in Java or Kotlin) are ancillary tasks like project management, requirements engineering, software design, and testing.&lt;/li&gt;
+&lt;li&gt;The individual project (25% of the final grade) involved systematically defining the necessary unit tests for a console app written in Java and then implementing those unit tests.
+The ideal number of tests were between 50 and 90.
+Surprisingly, I found this exercise interesting and novel but, using the wrong approach, I can see how it can quickly become tedious.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Learning materials&lt;/h4&gt;
+&lt;p&gt;Lectures were all pre-recorded and are of better quality than any other course I’ve seen so far in the OMSCS program.
+Much credit here goes to the instructor, Dr. Alessandro Orso, who succeeds at communicating his passion for the topics at hand.&lt;/p&gt;
+&lt;p&gt;There is no course textbook but two readings cited near the end of the semester are well worth reading for any software development professional: &lt;em&gt;The Cathedral and the Bazaar&lt;/em&gt; by Eric Raymonds and &lt;em&gt;No Silver Bullet&lt;/em&gt; by Frederick Brooks.&lt;/p&gt;
+&lt;h4&gt;Exams&lt;/h4&gt;
+&lt;p&gt;There are no graded exams in this course.
+Simple end-of-module (mini-) quizzes are provided to help gauge student engagement and understanding.&lt;/p&gt;
+&lt;h4&gt;Teaching staff&lt;/h4&gt;
+&lt;p&gt;Unlike all other courses I have taken so far in OMSCS, the professor is heavily involved in the day-to-day of CS6300.
+He holds weekly office hours and is responsive (as much as can be expected) in the course discussion board.&lt;/p&gt;
+&lt;p&gt;In general, the course is managed impeccably by the professor and his TAs.
+TA Justin Durkin stands out as an absolute rockstar in the way he engages with students in the discussion board.&lt;/p&gt;
+&lt;p&gt;Project and assignment results were provided within an acceptable timeframe, and students are always apprised of any changes in schedule.&lt;/p&gt;
+&lt;h4&gt;Difficulty&lt;/h4&gt;
+&lt;p&gt;CS6300 is the easiest course I have taken so far in the OMSCS program.
+Having had significant work experience as a software developer, this was something I expected.
+I was unsure of how the group project would go but I was fortunately teamed up with some great performers who wanted to succeed in the course just as much as I did.&lt;/p&gt;
+&lt;p&gt;On average, I spent less than ten hours per week on this course.&lt;/p&gt;
+&lt;h4&gt;Conclusion&lt;/h4&gt;
+&lt;p&gt;CS6300 is well-run but does not really seem to be a graduate-level course.
+It is a great one to take for those with little-to-no work experience in a software development team.
+Taking CS6300 in the summer allowed me to ease off and recharge in preparation for a heavy semester ahead in the fall.&lt;/p&gt;
+</description>
+      <pubDate>Sat, 20 Aug 2022 00:00:00 GMT</pubDate>
+      <dc:creator>Al Idian</dc:creator>
+      <guid>https://idian.io/posts/2022/course-review-software-development-process/</guid>
+    </item>
+    <item>
+      <title>Writing an App Uninstaller for macOS</title>
+      <link>https://idian.io/posts/2022/writing-an-app-uninstaller-for-macos/</link>
+      <description>&lt;h3&gt;What did I make?&lt;/h3&gt;
+&lt;p&gt;The process of uninstalling apps on macOS can be disorienting for new users.
+While on Windows, users typically use an uninstaller or the &lt;em&gt;Add or Remove Programs&lt;/em&gt; utility, uninstalling apps on macOS simply means dragging the .app file to trash.
+For many, this minimalistic process triggers distrust and disbelief.
+What about preference files and other gunk written by the application that presumably remain in the system?&lt;/p&gt;
+&lt;p&gt;I recently wrote an app uninstaller called &lt;a href=&quot;https://github.com/idianal/zap&quot;&gt;&lt;code&gt;zap&lt;/code&gt;&lt;/a&gt; that deals with this problem.
+It is command-line only and is packaged as a script that can be downloaded from GitHub and run without installation.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;zap&lt;/code&gt; is similar to other uninstaller applications on macOS like &lt;a href=&quot;http://freemacsoft.net/appcleaner/&quot;&gt;AppCleaner&lt;/a&gt; in that it tries to accomplish the same task.
+Unlike AppCleaner, &lt;code&gt;zap&lt;/code&gt; is free and open source.
+Users can be confident that &lt;code&gt;zap&lt;/code&gt; does only what it says it does.&lt;/p&gt;
+&lt;p&gt;For a short usage guide, see the readme &lt;a href=&quot;https://github.com/idianal/zap&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;Decisions, decisions…&lt;/h3&gt;
+&lt;p&gt;To find files to remove, &lt;code&gt;zap&lt;/code&gt; first checks inside the .app file.
+In macOS, .app files are directories that contain the binaries and ancillary files related to the application.
+&lt;code&gt;zap&lt;/code&gt; expects to find a file called Info.plist, which contain identifiers for the application.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;zap&lt;/code&gt; looks in some common directories for any files that contain the retrieved identifiers.
+Instead of deleting, it moves these files to trash.&lt;/p&gt;
+&lt;p&gt;In my testing, the approach used provides a good balance of reliability and protection.
+&lt;code&gt;zap&lt;/code&gt; intentionally casts a wide net to gather files for deletion but it requires a manual review from the user to mitigate any false positives.&lt;/p&gt;
+&lt;p&gt;There are also obvious limitations:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;To find files to delete, &lt;code&gt;zap&lt;/code&gt; relies on identifiers in Info.plist.
+If an unrelated file’s name somehow contains one of the identifiers, it will be moved to trash.&lt;/li&gt;
+&lt;li&gt;Only a static list of directories are searched.
+Any files written to unconventional locations in the file system will be missed.&lt;/li&gt;
+&lt;li&gt;Manual intervention is required to completely delete any files found.
+This step is required to give the user a chance to restore any false matches.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;The state of uninstallers&lt;/h3&gt;
+&lt;p&gt;The process of uninstalling apps is imperfect and messy on macOS, and the situation isn’t much better on Windows and Linux.
+Mass-market operating systems generally allow apps the freedom to write to unconventional locations on the file system.
+As a result, app uninstallation often leaves behind unnecessary files.
+While these files are usually unobtrusive and insignificant, some users certainly prefer that these files be removed as part of the uninstallation process.&lt;/p&gt;
+&lt;h3&gt;Recommendations&lt;/h3&gt;
+&lt;p&gt;In my opinion, it is unlikely the situation will improve anytime soon for personal computers.
+I recommend the following multi-part approach:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Mostly follow the officially-supported way of uninstalling apps.
+On macOS, this typically means simply dragging the .app to the trash.&lt;/li&gt;
+&lt;li&gt;On a regular basis (perhaps once every 1-2 years), completely refresh your computer.
+This means removing files and directories and reinstalling the OS.
+To make this process easier, one can use a Time Machine image &lt;em&gt;from a freshly-installed state&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;In rare instances where you want to purge an app from your system without doing a complete refresh, use &lt;code&gt;zap&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+      <pubDate>Tue, 16 Aug 2022 00:00:00 GMT</pubDate>
+      <dc:creator>Al Idian</dc:creator>
+      <guid>https://idian.io/posts/2022/writing-an-app-uninstaller-for-macos/</guid>
+    </item>
+    <item>
+      <title>Course Review: Computer Networks</title>
+      <link>https://idian.io/posts/2022/course-review-computer-networks/</link>
+      <description>&lt;p&gt;
+    Georgia Tech Online Master of Science in Computer Science (OMSCS) is an innovative, award-winning graduate program offered by the College of Computing at Georgia Tech. (&lt;a href=&quot;https://en.wikipedia.org/wiki/Georgia_Tech_Online_Master_of_Science_in_Computer_Science&quot;&gt;Wikipedia&lt;/a&gt;)
+&lt;/p&gt;
+&lt;p&gt;
+    As I make my way through this program, I intend to write short, opinionated reviews of the courses I complete.
+    My intended audience for this is the current or prospective OMSCS student who is considering taking these courses.
+&lt;/p&gt;
+&lt;h4&gt;Overview&lt;/h4&gt;
+&lt;p&gt;CS6250 is a broad exploration of modern and traditional internet architecture.
+It is light on prerequisites, making it an ideal first course to take in the OMSCS program.
+CS6250 deepens student knowledge on many internet-related technologies used in software development and computer science.&lt;/p&gt;
+&lt;p&gt;Topics covered in the course include internet history and architecture, protocols and technologies used, router design, software-defined networking, internet security, and internet applications.&lt;/p&gt;
+&lt;h4&gt;Projects&lt;/h4&gt;
+&lt;p&gt;There were five full projects in the course this past semester, along with an optional one for extra credit.
+A custom x86 VM image (running Ubuntu) was provided for all of the projects below.
+While some projects can be completed on any reasonable host OS or in a Docker container, others require the use of the VM provided.
+Apple Silicon machines may be a viable option for some projects — but not all!&lt;/p&gt;
+&lt;p&gt;In my opinion, the projects were by far the most interesting and challenging part of this course.
+They account for 66% of your grade.
+Each project uses Python, and an intermediate knowledge of Python is sufficient.
+It is helpful to know basic ways to keep Python performant (e.g. using the correct collection types and using nested loops with appropriate caution).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Project 1 tasks students with implementing the Spanning Tree algorithm in the context of preventing forwarding loops in the Data Link layer of the internet.&lt;/li&gt;
+&lt;li&gt;Project 2 involves implementing a distributed Bellman-Ford algorithm in the context of calculating routing paths in a computer network.&lt;/li&gt;
+&lt;li&gt;Project 3 involves implementing a configurable firewall using OpenFlow.
+Popular tools like Mininet and Wireshark are used to complete requirements and test your solution.
+Familiarity with using a shell and perhaps a command-line editor like &lt;code&gt;vi&lt;/code&gt; is helpful here.&lt;/li&gt;
+&lt;li&gt;Project 4 tasks students with demonstrating the vulnerabilities of Border Gateway Protocol (BGP).
+Like project 3, this project uses Mininet and benefits from familiarity with using the command-line.&lt;/li&gt;
+&lt;li&gt;Project 5 uses BGPStream and its Python interface PyBGPStream to analyze and manipulate BGP data.
+The goal is to take useful measurements based on snapshots from an actual production network.&lt;/li&gt;
+&lt;li&gt;Project 6 is shorter and counts only for extra credit.
+It is also much more open-ended and involves using BGPStream and PyBGPStream to identify and examine real-world data involving a global event that has significantly affected the internet.
+Students are encouraged to use resources like IODA and Netblocks.org to identify candidates for study.
+Unlike the other projects, students are asked to use a Jupyter Notebook and the &lt;code&gt;matplotlib&lt;/code&gt; library to present findings and methodology.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Learning materials&lt;/h4&gt;
+&lt;p&gt;Learning materials for the course is primarily provided in text form.
+Some modules have accompanying videos but many do not.
+Even when videos are present, they don’t offer more than the text.
+I found both text and video materials for this course to be decent but quite dry.
+Thankfully, the modules are relatively small and involve frequent ungraded quizzes to test understanding.&lt;/p&gt;
+&lt;p&gt;At the start of the term, a study guide is provided to students.
+The study guide is a detailed set of questions for each of the twelve modules.
+This resource was invaluable because it allowed me to systematically find the answers to the study guide questions as I completed the modules.
+In the process, I constructed a resource that helped me do well in the exams and quizzes.&lt;/p&gt;
+&lt;p&gt;There is no required textbook but &lt;em&gt;Computer Networking&lt;/em&gt; by Kurose and Ross is frequently cited as an optional resource.
+Aside from this, each module has a collection of optional resources students can look into should they want to dig deeper.&lt;/p&gt;
+&lt;p&gt;Some projects direct students to read tooling documentation or journal articles to provide guidance and context.
+I found it was enough just to scan these external materials and to only read more if I got stuck.&lt;/p&gt;
+&lt;h4&gt;Exams&lt;/h4&gt;
+&lt;p&gt;There were two exams.
+Both were closed-notes and proctored through Honorlock.
+There were also end-of-module quizzes for each of the twelve modules, which were open-notes and unproctored.
+None of the exams or quizzes were difficult.&lt;/p&gt;
+&lt;p&gt;To do well on the exams and quizzes, I found it was enough to rely on the study guide provided at the start of the term.
+The study guide is a detailed set of questions for each of the twelve modules.
+It is easy to find answers to these questions as students are going through each module.&lt;/p&gt;
+&lt;h4&gt;Teaching staff&lt;/h4&gt;
+&lt;p&gt;For the most part, this course is run by TAs.
+The professor appears in the pre-recorded lectures and sometimes conducts office hours and responds in Ed, the course’s discussion platform.
+I did not mind this at all — I don’t think I would have taken away more from the course if the professor was more involved.&lt;/p&gt;
+&lt;p&gt;TAs were helpful and polite but I think they could have been more responsive to posts on the discussion board.
+Not only do the TAs conduct weekly office hours, they have daily timeslots where students can ask questions.
+Although I never made use of these daily timeslots, I believe this is going above and beyond and deserves a kudos! I can also point to specific instances in the course where TAs made reasonable adjustments on-the-fly to accommodate student requests.&lt;/p&gt;
+&lt;p&gt;Lastly, project and exam results were provided within an acceptable timeframe.
+When there were delays (always due to students getting approved extensions), the class was informed.&lt;/p&gt;
+&lt;h4&gt;Difficulty&lt;/h4&gt;
+&lt;p&gt;I found this course mostly engaging yet easy.
+At no time during this course was I stuck on a problem that required some sort of mental leap.
+The projects were interesting but I was always able to complete the projects with time to spare.
+The exams and quizzes were fair.&lt;/p&gt;
+&lt;p&gt;I spent around 10-15 hours per week on this course.&lt;/p&gt;
+&lt;h4&gt;Conclusion&lt;/h4&gt;
+&lt;p&gt;CS6250 delivered on its goal of deepening my knowledge of internet technologies and computer networking in general.
+The material covered is interesting, and I think every computer science professional should probably know the contents of this course.
+Although I don’t foresee myself working directly on the technologies discussed here, they are ubiquitous enough to be helpful no matter which area of computer science I end up in.&lt;/p&gt;
+</description>
+      <pubDate>Sun, 24 Apr 2022 00:00:00 GMT</pubDate>
+      <dc:creator>Al Idian</dc:creator>
+      <guid>https://idian.io/posts/2022/course-review-computer-networks/</guid>
+    </item>
+    <item>
+      <title>On Shorter Retry Loops in Elden Ring</title>
+      <link>https://idian.io/posts/2022/on-shorter-retry-loops-in-elden-ring/</link>
+      <description>&lt;p&gt;Elden Ring is the newest game from acclaimed Dark Souls developer FromSoftware.
+It has released to near-universal praise and currently sits among the most highly-rated games of all time according to Metacritic.
+Elden Ring retains and refines many design patterns present in other FromSoftware games like Dark Souls, Bloodborne, and Sekiro.
+But unlike any other game from this developer, Elden Ring is situated in an expansive open-world setting, which has been compared to The Elder Scrolls V: Skyrim and The Legend of Zelda: Breath of the Wild.&lt;/p&gt;
+&lt;p&gt;In Elden Ring, FromSoftware has been able to expertly balance several complex game systems with jaw-dropping precision.
+In this post, I discuss how Elden Ring encourages learning from failure better than its predecessors and reflect on how this same pattern can be applied to writing software.&lt;/p&gt;
+&lt;p&gt;FromSoftware’s games are known to be “tough but fair”.
+By tradition, one of the first things each Souls game teaches its players is that death comes swiftly and often.
+This lesson is not taught through a conversation with an NPC or some pop-up text but through gameplay.
+Players are fully expected to have to fight important enemies many times to learn their attack patterns and weaknesses.
+However one aspect of Souls games that has been a cause of frustration for new and experienced players alike is the dreaded walk back to the boss after a defeat.&lt;/p&gt;
+&lt;p&gt;In Souls games, the walk back to a boss is traditionally unnecessarily long and dangerous.
+As a result, retrying a boss encounter becomes a long, arduous process.
+For games where players are expected to die several times to the same boss, it is obvious to see how this loop can cause many to quit in frustration.&lt;/p&gt;
+&lt;p&gt;Elden Ring breaks out of the mold by shortening the retry loop for many of its important enemies.
+In Elden Ring, when a player dies to a boss, the walk back is usually short and relatively safe.
+This is a significant improvement because it minimizes frustration and encourages looking at defeat as a genuine opportunity for learning.
+In Elden Ring, instead of feeling dejection, I often found myself smiling even after losing by the smallest of margins.
+I even found that I was better able to stay in a flow state across boss attempts.&lt;/p&gt;
+&lt;p&gt;This truncated retry loop in Elden Ring contributes highly to my enjoyment of the game.
+While in the other games I would start to feel some frustration after the second or third attempt at a boss encounter, in Elden Ring my mind was fully engaged with thinking up and executing on a game plan.&lt;/p&gt;
+&lt;p&gt;When writing software, a similar loop can come, for example, in the following forms:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Finding and fixing a bug,&lt;/li&gt;
+&lt;li&gt;Calling an unfamiliar API, or&lt;/li&gt;
+&lt;li&gt;Analyzing an prorgam’s behaviour or performance.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Like bosses in Souls games, these programming tasks require cycling many times through compiling, running, debugging, and modifying code.
+Whenever a loop like this exists for a software development task, it is worth considering whether something can be done to shorten the retry loop.
+Doing so can save time and prevent frustration.
+It is also usually much more satisfying to solve the problem of shortening a retry loop than mindlessly repeating a set of tasks.&lt;/p&gt;
+&lt;p&gt;This practice of reducing dull repetition can also give developers opportunities to write small, focused programs to make their jobs easier.
+The following quote by Abraham Lincoln comes to mind: “Give me six hours to chop down a tree and I will spend the first four sharpening the axe.”&lt;/p&gt;
+</description>
+      <pubDate>Sun, 17 Apr 2022 00:00:00 GMT</pubDate>
+      <dc:creator>Al Idian</dc:creator>
+      <guid>https://idian.io/posts/2022/on-shorter-retry-loops-in-elden-ring/</guid>
+    </item>
+    <item>
+      <title>Course Review: Information Security</title>
+      <link>https://idian.io/posts/2021/course-review-information-security/</link>
+      <description>&lt;p&gt;
+    Georgia Tech Online Master of Science in Computer Science (OMSCS) is an innovative, award-winning graduate program offered by the College of Computing at Georgia Tech. (&lt;a href=&quot;https://en.wikipedia.org/wiki/Georgia_Tech_Online_Master_of_Science_in_Computer_Science&quot;&gt;Wikipedia&lt;/a&gt;)
+&lt;/p&gt;
+&lt;p&gt;
+    As I make my way through this program, I intend to write short, opinionated reviews of the courses I complete.
+    My intended audience for this is the current or prospective OMSCS student who is considering taking these courses.
+&lt;/p&gt;
+&lt;h4&gt;Overview&lt;/h4&gt;
+&lt;p&gt;CS6035 is a true introductory graduate course.
+It assumes an undergraduate-level familiarity with the course material and tackles a breadth of topics across the Information Security field.
+CS6035 gives students the lay of the land in Information Security and aims to prepare them for more focused study in one or more of its subfields.&lt;/p&gt;
+&lt;p&gt;Topics covered in the course include software security, operating system security, authentication, database security, malware and malicious code, cryptography and encryption, and web security.&lt;/p&gt;
+&lt;h4&gt;Projects&lt;/h4&gt;
+&lt;p&gt;There were four full projects in the course this past semester, along with a short one for a little extra credit.
+A custom x86 VM image (either Debian or Kali) was provided for each of the projects below.
+This means Apple Silicon machines are not a viable option here.&lt;/p&gt;
+&lt;p&gt;In my opinion, the projects were by far the most interesting and challenging part of this course.
+They also account for at least 80% of your grade.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Project 1 tasks students with exploiting a buffer overflow exploit in &lt;code&gt;C&lt;/code&gt;.
+The bulk of this project involved reading and understanding &lt;code&gt;C&lt;/code&gt;, applying buffer overflow concepts, and using &lt;code&gt;gdb&lt;/code&gt; for debugging in order to successfully complete a buffer overflow attack to invoke a new shell.
+Familiarity with &lt;code&gt;c&lt;/code&gt; and &lt;code&gt;gdb&lt;/code&gt; is helpful here, as well as being comfortable with using a shell and perhaps a command-line editor like &lt;code&gt;vi&lt;/code&gt;.
+Some review of low-level OS concepts like registers and memory is recommended.&lt;/li&gt;
+&lt;li&gt;Project 2 applies machine learning concepts to categorize malware using a tool called &lt;code&gt;malheur&lt;/code&gt;.
+There is no programming here — but general comfort with using a shell and introductory machine learning knowledge are helpful.&lt;/li&gt;
+&lt;li&gt;Project 3 uses &lt;code&gt;python&lt;/code&gt; to complete some interesting cryptography-related exercises.
+For instance, it explores interesting ways the RSA protocol can be broken (due to its mathematical idiosyncrasies).
+This is the most programming-intensive project in this course — but it is mostly just filling out stub methods and writing helper functions.
+A basic-to-intermediate-level knowledge of &lt;code&gt;python&lt;/code&gt; is sufficient.
+The ability and willingness to quickly grok mathematical relationships (e.g. modular math) is helpful here.&lt;/li&gt;
+&lt;li&gt;Project 4 is about web security and requires some ability to read and write JavaScript and PHP.
+While the programming component is easy to grasp even for beginners, the project more intensively tests for understanding of concepts like cross-site scripting (XSS), cross-site request forgery (CSRF), and SQL injection.&lt;/li&gt;
+&lt;li&gt;Project 5 is shorter and is done only for extra credit.
+It is a modified version of Project 1 which requires the insertion of shell code in a buffer to manipulate code execution into invoking a new shell.
+I believe there are plans to eventually turn this mini-project into a full one in the future.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Learning materials&lt;/h4&gt;
+&lt;p&gt;The lectures were all pre-recorded and are of generally good quality.
+I found them to be a good first pass at the material, before diving into the textbook readings.&lt;/p&gt;
+&lt;p&gt;The textbook &lt;em&gt;Computer Security&lt;/em&gt; by Stallings is comprehensive (if a little dry).
+In my opinion, anyone taking this course should get it.
+Since the quizzes are all open-book and many questions are derived from the textbook, it helps to have a digital version handy so you can &lt;code&gt;ctrl + f&lt;/code&gt;.
+I found that as I naturally progressed in the course, I read almost the entire book.&lt;/p&gt;
+&lt;p&gt;Several times in CS6035, students are required to read from other provided sources which include journal articles and technical blogs.
+I found many of these interesting and almost always helpful towards completing the projects.&lt;/p&gt;
+&lt;h4&gt;Exams&lt;/h4&gt;
+&lt;p&gt;There were two exams.
+Both were closed-notes and proctored through Honorlock.
+There were also four quizzes, and they were open-notes and unproctored.
+Neither the exams or the quizzes were very difficult.
+I found them fair especially since they don’t count for very much in the final grade.&lt;/p&gt;
+&lt;h4&gt;Teaching staff&lt;/h4&gt;
+&lt;p&gt;The course feels like it is run solely by the TAs.
+The professor (along with a colleague) appeared mostly only in the pre-recorded lectures.
+This might be a deliberate strategy on the part of the teaching staff.
+I found I did not mind this at all — I don’t think I would have taken away more from the course if the professor was more involved in office hours or in the discussion boards.&lt;/p&gt;
+&lt;p&gt;The TAs were usually patient, helpful, and responsive.
+In general, they will not spoon-feed information to students (which is to be expected in a graduate-level course).
+Interestingly, the TAs can also be quite stingy in giving out solutions to projects even after the due date.
+Students would need to find the answers by researching the material themselves.&lt;/p&gt;
+&lt;h4&gt;Difficulty&lt;/h4&gt;
+&lt;p&gt;This course was mostly easy.
+There were certainly components of the projects that I had to wrestle with for many hours but I was always able to complete the projects with time to spare.
+The exams and quizzes were fair, and ample time was provided to complete each component of the course.&lt;/p&gt;
+&lt;p&gt;I spent around 10-15 hours per week on this course.
+If you don’t meet some of the prerequisites, expect to spend a little extra time to get yourself up to speed.&lt;/p&gt;
+&lt;h4&gt;Conclusion&lt;/h4&gt;
+&lt;p&gt;CS6035 was an excellent first course in OMSCS.
+The material covered is mostly interesting and not overly challenging.
+Although some aspects of security is exciting to me (e.g. operating system security, cryptography, etc.), I was not as keen on the organizational security topics in the course.
+CS6035 did for me exactly what an introductory graduate course should do: tell me which parts of the Information Security field I might want to study more deeply.&lt;/p&gt;
+</description>
+      <pubDate>Mon, 29 Nov 2021 00:00:00 GMT</pubDate>
+      <dc:creator>Al Idian</dc:creator>
+      <guid>https://idian.io/posts/2021/course-review-information-security/</guid>
+    </item>
+    <item>
+      <title>Remap Caps Lock to Control</title>
+      <link>https://idian.io/posts/2021/remap-caps-lock-to-control/</link>
+      <description>&lt;h3&gt;Displace the Caps Lock key&lt;/h3&gt;
+&lt;p&gt;The Caps Lock key occupies a prominent position on modern keyboards.
+This placement was inherited from the Shift Lock key on mechanical typewriters where pressing the key physically shifted the mechanism allowing consecutive typing of uppercase letters.
+The key was relatively large and prominently placed because it required more force to press compared to other keys, which often meant that typists preferred to push it down with two fingers.
+(&lt;a href=&quot;https://ux.stackexchange.com/a/41877&quot;&gt;Stack Overflow&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Today, the Caps Lock key has a much less important role.
+For most typists, typing in all caps is rare.
+In internet-based communication, like email, instant messaging, or social media, typing in all caps is generally frowned upon as it is associated with yelling (&lt;a href=&quot;https://en.wikipedia.org/wiki/All_caps&quot;&gt;Wikipedia&lt;/a&gt;).
+Even when a few consecutive uppercase words are required, it is usually easy enough for a capable typist to use the shift key/s instead.
+This makes the Caps Lock key an excellent candidate to remap to a more useful key instead.&lt;/p&gt;
+&lt;h3&gt;Promote the Control key&lt;/h3&gt;
+&lt;p&gt;As a software developer and an avid user of Vim and Vim-style keybindings, my preference is to remap Caps Lock to Control.
+Not only is the Control key heavily-used within a typical software development workflow, the Control key on most keyboards is usually relatively difficult to reach.&lt;/p&gt;
+&lt;p&gt;Here are some examples of keyboard shortcuts involving the Control key that I use frequently:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Vim
+&lt;ul&gt;
+&lt;li&gt;Control + [ - Escape&lt;/li&gt;
+&lt;li&gt;Control + f - Move down a page&lt;/li&gt;
+&lt;li&gt;Control + b - Move up a page&lt;/li&gt;
+&lt;li&gt;Control + d - Move down a half page&lt;/li&gt;
+&lt;li&gt;Control + u - Move up a half page&lt;/li&gt;
+&lt;li&gt;Control + r - Redo changes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Terminal
+&lt;ul&gt;
+&lt;li&gt;Control + a - Move to the beginning&lt;/li&gt;
+&lt;li&gt;Control + e - Move to the end&lt;/li&gt;
+&lt;li&gt;Control + f - Move forward one character&lt;/li&gt;
+&lt;li&gt;Control + b - Move backwards one character&lt;/li&gt;
+&lt;li&gt;Control + w - Delete all prior characters until the next space&lt;/li&gt;
+&lt;li&gt;Control + u - Delete all characters&lt;/li&gt;
+&lt;li&gt;Control + c - Send interrupt signal (SIGINT) to the current process&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Visual Studio Code
+&lt;ul&gt;
+&lt;li&gt;Control + Shift + p - Launch Command Palette (Windows and Linux)&lt;/li&gt;
+&lt;li&gt;Control + ` - Launch Terminal&lt;/li&gt;
+&lt;li&gt;Control + / - Toggle line comment (Windows and Linux)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Other
+&lt;ul&gt;
+&lt;li&gt;Control + x - Cut (Windows and Linux)&lt;/li&gt;
+&lt;li&gt;Control + c - Copy (Windows and Linux)&lt;/li&gt;
+&lt;li&gt;Control + v - Paste (Windows and Linux)&lt;/li&gt;
+&lt;li&gt;Control + z - Undo changes (Windows and Linux)&lt;/li&gt;
+&lt;li&gt;Control + y - Redo changes (Windows and Linux)&lt;/li&gt;
+&lt;li&gt;Control + t - Open new tab (Windows and Linux)&lt;/li&gt;
+&lt;li&gt;Control + w - Close current tab (Windows and Linux)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you use an IDE or another type of technical program, chances are that keyboard shortcuts in that program also make heavy use of the Control key.
+Clearly, the Control key deserves a prominent position on many software developers’ keyboards.&lt;/p&gt;
+&lt;h3&gt;How to Remap Caps Lock to Control&lt;/h3&gt;
+&lt;p&gt;The most convenient way to replace Caps Lock with Control is not to remap at all.
+An excellent line of keyboards called the &lt;a href=&quot;https://pixelfed.social/p/idian.io/360138290466426027&quot;&gt;Happy Hacking Keyboard&lt;/a&gt; (HHKB) is set up by default to have the Control key in the recommended position.
+Alternatively, any programmable keyboard (with onboard memory) can also be easily configured to have this feature.
+With one of these solutions, your operating system needs no further configuration; you can connect your keyboard to any computer and keep the same mapping you are used to.&lt;/p&gt;
+&lt;p&gt;Remapping Caps Lock to Control is most simple on macOS.
+All that is needed is to change the Modifier Keys configuration in the Keyboard settings.
+This performs the remapping on the OS-level.
+A similar setting exists on iPadOS.&lt;/p&gt;
+&lt;p&gt;On Windows, I recommend installing the &lt;a href=&quot;https://docs.microsoft.com/en-us/windows/powertoys/&quot;&gt;PowerToys&lt;/a&gt; utility from Microsoft.
+PowerToys is an excellent open-source project that give power users more ways to configure Windows.
+Note that you probably want to set PowerToys to run on startup and to run as administrator.
+The latter allows your PowerToys keymappings to take effect even when running an application as administrator.&lt;/p&gt;
+&lt;p&gt;Per usual, there are myriad ways to remap keys on Linux.
+The way you might want to do it would depend on your preference, your distro, and your desktop environment.
+On Pop!_OS 20.04 LTS (GNOME), my favourite way is to run this in the command line:&lt;/p&gt;
+&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;gsettings &lt;span class=&quot;token builtin class-name&quot;&gt;set&lt;/span&gt; org.gnome.desktop.input-sources xkb-options &lt;span class=&quot;token string&quot;&gt;&quot;[&#39;ctrl:nocaps&#39;]&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In my experience, this method is simple, reliable, and requires no additional installation.&lt;/p&gt;
+&lt;h3&gt;TL/DR&lt;/h3&gt;
+&lt;p&gt;The Caps Lock key has limited use but occupies a prominent position in modern keyboards.
+On the other hand, the Control key is much more useful but is more difficult to reach.
+In this post, I recommend remapping Caps Lock to Control and provide ways to do this in popular operating systems.
+As an alternative, I suggest using a keyboard that either has this layout by default or can be programmed with this layout.&lt;/p&gt;
+</description>
+      <pubDate>Sat, 30 Oct 2021 00:00:00 GMT</pubDate>
+      <dc:creator>Al Idian</dc:creator>
+      <guid>https://idian.io/posts/2021/remap-caps-lock-to-control/</guid>
+    </item>
+    <item>
+      <title>Why Use Analogies in Software Teams?</title>
+      <link>https://idian.io/posts/2021/why-use-analogies-in-software-teams/</link>
+      <description>&lt;p&gt;Software developers and technologists are often afforded the time to learn niche and complex material through study and deep interaction.
+Many times, it is simply part of the job to wrestle with obtuse concepts and systems in the process of delivering something of value to the company or organization.
+This learning can come from deliberate study or merely from doing regular work duties, such as creating or maintaining a computer program or system.&lt;/p&gt;
+&lt;p&gt;Colleagues in other roles, like managers, directors, and analysts, might not be provided the same opportunities to gain the specific knowledge developers pick up as part of the job.
+As a result, developers often become the natural subject matter experts on the things they work on.&lt;/p&gt;
+&lt;p&gt;As the technical experts, software developers are counted on to provide insight into the behaviour and effects of software systems.
+This is often not an easy task.
+Understanding how an application or a system works internally may require specialized knowledge that non-developers cannot be expected to pick up within a short conversation or meeting.&lt;/p&gt;
+&lt;p&gt;The question then is: &lt;em&gt;How can developers provide stakeholders just enough information to minimize complexity and yet allow them to understand important details and make informed decisions?&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Fortunately, as a matter of necessity, any good programmer is already intimately familiar with managing complexity.
+A pervasive Computer Science concept that comes to mind is &lt;em&gt;abstraction&lt;/em&gt;, which involves “filtering out — essentially, ignoring — the characteristics that we don’t need in order to concentrate on those that we do.” (&lt;a href=&quot;https://www.bbc.co.uk/bitesize/guides/zttrcdm/revision/1&quot;&gt;BBC&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;In programming, constructs like functions, classes, libraries, and APIs are all created as a means to reduce complexity while allowing informed interaction.
+In conversation and writing, analogies take a similar role.
+Analogies convey the rough shape of an idea by comparing it to something already familiar to the recipient.
+The good use of analogy is a tool developers can use to communicate the important bits of information to stakeholders in a way that is easy to understand and reason about.&lt;/p&gt;
+&lt;p&gt;Of course, all analogies break down — and so they are not meant to take the place of technical descriptions or documentation.
+But in situations  where time and energy is constrained such that people cannot be expected to pour swathes of time into reading documentation, good analogies are often sufficient.&lt;/p&gt;
+</description>
+      <pubDate>Sun, 15 Aug 2021 00:00:00 GMT</pubDate>
+      <dc:creator>Al Idian</dc:creator>
+      <guid>https://idian.io/posts/2021/why-use-analogies-in-software-teams/</guid>
+    </item>
+    <item>
+      <title>Windows for Software Development</title>
+      <link>https://idian.io/posts/2021/windows-for-software-development/</link>
+      <description>&lt;p&gt;As an operating system for software development, Windows gets a bad rap.
+Although it is by far the most popular desktop OS, many discerning users fairly criticize Windows for the way it handles system updates, how it is often saddled with bloatware even on a fresh installation, and — perhaps most concerning — its unethical user data collection policies.&lt;/p&gt;
+&lt;p&gt;On the other hand, Mac users are often quick to cite that macOS is POSIX-compliant, which means a wide range of software for Unix-like systems can easily be made to run on it.
+Mac has also become synonymous with superior hardware aesthetics, reliability, and — more recently — extraordinary performance and efficiency (&lt;a href=&quot;https://en.wikipedia.org/wiki/Apple_M1#Performance_and_efficiency&quot;&gt;Wikipedia&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;Lastly, Linux users love their OS because it is open source, endlessly customizable, performant, and cutting-edge.
+In my opinion, knowing your way around a Linux system is essential for developers because it is ubiquitous in the field.
+Linux is dominant in the cloud, in containers, in IOT…
+perhaps the only subsection of computing it has not conquered is the desktop.&lt;/p&gt;
+&lt;h3&gt;Why Windows?&lt;/h3&gt;
+&lt;p&gt;I have used macOS heavily for the past fifteen years and Linux for the past five — but after some deliberation, I have decided to use Windows as my sole desktop OS.
+After some initial cleanup and settings management, I find that Windows simply fits the way I work and looks the way I want my desktop OS to look.
+To be clear, this was not always the case — but in 2021, I think Windows is a great choice for software developers.&lt;/p&gt;
+&lt;p&gt;Here below are the things that set Windows apart for me.
+Each of these items might also be found in Linux and macOS but — for each item below — I found the way Windows does things best suits my personal taste:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Beautiful UI&lt;/p&gt;
+&lt;p&gt;This might be a surprise to many but the first thing that sets Windows apart for me is its looks.
+Although I find it a bit busy by default, it is trivial to configure Windows to be clean, minimalistic, and very pleasing to look at.&lt;/p&gt;
+&lt;p&gt;Unlike the macOS dock, the Windows taskbar can stay visible without taking too much space.
+Personally, I have grown to dislike how the macOS dock leaves empty space to its left and right; I feel it really does not work with maximized app windows.&lt;/p&gt;
+&lt;p&gt;With Linux and its unmatched customizability on the other hand, I have struggled to no avail to configure a desktop to be as pretty as the near-default Windows desktop I have.
+I say this after dozens of hours tinkering with a number of Linux desktop environments, including GNOME, Plasma, LXQT, XFCE, MATE, Pantheon, and more.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Unmatched window management&lt;/p&gt;
+&lt;p&gt;True to the Windows name, window management really shines on Windows.
+Whether your workflow is mouse or keyboard-centric, it is incredibly easy to maximize and minimize windows, split your screen between multiple apps, switch applications, and switch desktops.&lt;/p&gt;
+&lt;p&gt;On the other hand, window management is perhaps macOS’ biggest weakness.
+In fact, many power users have taken to installing paid applications to improve the default macOS window management system.
+I have also done this myself — but even after having tried a couple of paid window managers, I found that none of them feel nearly as nice as the default Windows system.&lt;/p&gt;
+&lt;p&gt;Unlike macOS, Linux has some excellent window managers available.
+If you feel so inclined, you can even ditch floating window managers (i.e. Windows and macOS style) altogether and go for a tiling window manager instead.
+Still, I am partial to Windows-style window management.
+If I needed to use a Linux desktop environment, I feel I would be best served by looking for one that closely emulates Windows.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Supports real Linux&lt;/p&gt;
+&lt;p&gt;Perhaps the biggest developer-specific gripe about Windows is, unlike its two main competitors, it is not Unix-like.
+Its file system is different enough to be bothersome and its command-line tools pale in comparison to the plethora of Unix tools beloved by many developers.&lt;/p&gt;
+&lt;p&gt;Enter Windows Subsystem for Linux (WSL).
+Available in two distinct iterations (i.e. WSL1 and WSL2), users will do well to learn the differences between each one.
+In a nutshell, WSL1 allows better interoperability between your Windows and Linux systems, while WSL2 sacrifices interoperability for near-native performance and great compatibility on the Linux side.
+Essentially, WSL2 is much better if you can bear to treat your Linux subsystem more like an ever-available VPS rather than something that is fully-integrated into Windows.&lt;/p&gt;
+&lt;p&gt;In real-world use, I find that my Windows usage is usually limited to a browser and Visual Studio Code.
+The rest of my workflow happens through a terminal running packages (natively or in a container) on a Debian subsystem.
+This gives me access to all the great Unix tools I am used to, with great performance, while running my desktop environment of choice, Windows.&lt;/p&gt;
+&lt;p&gt;More about this in the next section…&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Setup and workflow&lt;/h3&gt;
+&lt;p&gt;Currently, I maintain two personal Windows machines: (a) a compact yet robust Intel NUC (with an i5 processor) which I use whenever I am in my home office and (b) an adorable Surface Go 2 (with an m3 processor) for when I’m mobile.
+I generally keep the same settings and slew of apps across the two devices.
+However, I avoid auto-launching Docker Desktop on startup on the Surface to conserve battery.&lt;/p&gt;
+&lt;p&gt;In general, I keep my use of Windows pretty minimalistic.
+As my default browser, I use Microsoft Edge, which I find impeccable in terms of features, performance, and UI.
+To interact with my Windows file system, I use a combination of File Explorer and Windows PowerShell.
+I also install Microsoft PowerToys, a fantastic bundle of utilities which includes a keymapper (I always remap &lt;em&gt;caps lock&lt;/em&gt; to &lt;em&gt;control&lt;/em&gt;) and a convenient shortcuts cheat sheet.
+I also install my favourite GUI text editor Visual Studio Code, which doubles as a feature-rich yet lightweight IDE when I need one.&lt;/p&gt;
+&lt;p&gt;Using WSL2, I also run a Debian subsystem on my Windows machines.
+To interact with Debian, I use Windows Terminal, a great terminal emulator that is apparently coming preinstalled with Windows 11.
+Inside my Debian system is all the Linux/Unix stuff I like, including Git, Vim, Docker, and Bash.
+The Debian installation is also configured with my latest dotfiles and security-related files (like my GnuPG and SSH keys).
+This way, I get a consistent Unix experience regardless of which machine I am using.&lt;/p&gt;
+&lt;p&gt;Whenever I can, I try to avoid installing specialized software development tooling straight onto Debian.
+Instead, I make heavy use of containerized developer environments.
+For instance, I maintain a customized LaTeX development container image on Docker Hub.
+Whenever I need to work on a TeX document, I just pull this image and I am able to spin up a fresh LaTeX environment in no time.
+I do something similar whenever I work on something like Node.js or .NET or even something I am entirely unfamiliar with.&lt;/p&gt;
+&lt;p&gt;This setup has worked out really well for me so far.
+And while I don’t use it for my day job (I use the company-issued laptop for that), I am able to make good use of it for personal study, tinkering with software, and contributing to open source projects.
+This fall, I intend to use the same setup and workflow as I go back to school part-time to take my Masters in CS.&lt;/p&gt;
+&lt;h3&gt;TL/DR&lt;/h3&gt;
+&lt;p&gt;Windows is a good fit for me as a desktop environment because I enjoy its simple yet beautiful UI and its sensible and powerful window management.
+While I am a fan of the Windows GUI, I prefer a Unix-like command-line environment and file system to do my work.
+Thankfully, Windows supports this with WSL2.
+I am currently happy with the workflow Windows enables me to have — and I plan to continue building on it as I tackle new and fun things in the near future.&lt;/p&gt;
+</description>
+      <pubDate>Wed, 21 Jul 2021 00:00:00 GMT</pubDate>
+      <dc:creator>Al Idian</dc:creator>
+      <guid>https://idian.io/posts/2021/windows-for-software-development/</guid>
+    </item>
+    <item>
+      <title>Software Development as Craft</title>
+      <link>https://idian.io/posts/2021/software-development-as-craft/</link>
+      <description>&lt;p&gt;Software development is a job — but it is also a craft.
+Unless you are fortunate enough to be able to dictate technological choices at your job, many of the software tools you use at work may have been selected for you.
+Depending on the type of development you do, this might include your operating system, your IDE, the programming languages and frameworks you use, and others.&lt;/p&gt;
+&lt;p&gt;Treating development as purely a craft however, there is no reason you shouldn’t be able to play around and tinker as much as you like.
+Because you are not maximizing profits, you are free to use even an obtuse variant of a dated programming language or to write an application entirely on your iPad.
+Many developers first took to programming through an affinity for tinkering with software, and as they move from being a student or hobbyist to a &lt;em&gt;real&lt;/em&gt; developer job, there is a tendency to trade in an attitude of exploration and play for maximizing productivity and monetary gain.&lt;/p&gt;
+&lt;h3&gt;Work or play?&lt;/h3&gt;
+&lt;p&gt;Over the years, I have noticed people discuss software development as a craft &lt;em&gt;XOR&lt;/em&gt; a job.
+But I don’t think it is especially novel to think of it as both.
+Something that I found works for me is to maintain a clear distinction of when I am doing development as one or the other.
+Keeping this distinction of craft or job in the back of my mind tends to simplify decisions like the following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Which scripting language should I use to automate this functionality: PowerShell or Python?&lt;/li&gt;
+&lt;li&gt;This seems like a fun thing to automate. Should I do it?&lt;/li&gt;
+&lt;li&gt;Should I go for my Masters in Computer Science?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In my experience, the problem with blurring the line between software development as a craft and software development as a job is the constant battle between productivity and play.
+And by identifying clearly in my mind which of the two an upcoming task falls under, I am able to reach a satisfactory decision more quickly.&lt;/p&gt;
+&lt;p&gt;When you’re on someone else’s clock, of course you might need to put personal preferences aside to maximize the productivity of the team.
+But when you’re off work — perhaps even when you’re writing something that might be useful &lt;em&gt;at&lt;/em&gt; work — then by all means, go with what you enjoy most.&lt;/p&gt;
+&lt;h3&gt;Make time for play&lt;/h3&gt;
+&lt;p&gt;This leads to my second point: if it sounds like something you want to do, take time outside of work to practice software development as craft.
+This means focusing on play, exploration, and personal fulfillment rather than productivity.&lt;/p&gt;
+&lt;p&gt;If you’ve always had an eye on learning a quirky programming language but it’s not likely to be a hot commodity on the job market, do it anyway.
+If you want to see whether you can churn out a non-trivial app using just your iPad, give it a try.
+And if you are considering going for a Masters even if it’s unlikely you’ll get a high enough raise to make it worthwhile, maybe just do it for learning and personal fulfillment.&lt;/p&gt;
+&lt;h3&gt;TL/DR&lt;/h3&gt;
+&lt;p&gt;Knowing the distinction between software development as craft and as work — and tracking which one my tasks fall under has helped me with certain kinds of decision-making.
+Making time to do software development as play has helped me sustain a high level of enthusiasm and interest in my field of work.&lt;/p&gt;
+</description>
+      <pubDate>Sat, 19 Jun 2021 00:00:00 GMT</pubDate>
+      <dc:creator>Al Idian</dc:creator>
+      <guid>https://idian.io/posts/2021/software-development-as-craft/</guid>
+    </item>
+  </channel>
+</rss>
