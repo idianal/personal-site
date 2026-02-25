@@ -12,18 +12,25 @@ module.exports = eleventyConfig => {
     });
 
     eleventyConfig.addFilter(
-            "findElement",
-            (array, propToCompare, valToCompare, propToReturn) => {
-        for (let index = 0; index < array.length; index++) {
-            const element = array[index];
-            if (element[propToCompare] === valToCompare)
-                return element[propToReturn];
-        }
-    });
+        "findElement",
+        (array, propertyToCompare, valueToCompare, propertyToReturn) => {
+            const foundElement = array.find(element =>
+                element[propertyToCompare] === valueToCompare);
 
-    eleventyConfig.addPassthroughCopy("css");
-    eleventyConfig.addPassthroughCopy("CNAME");
-    eleventyConfig.addPassthroughCopy("assets");
+            if (!foundElement)
+                throw new Error(
+                    "Element with " + propertyToCompare + "=\"" +
+                    valueToCompare + "\" not found");
+
+            return foundElement[propertyToReturn];
+        }
+    );
+
+    const staticAssets = ["css", "CNAME", "assets"];
+    staticAssets.forEach(path => eleventyConfig.addPassthroughCopy(path));
+
+    const templateFormats = ["html", "liquid", "md", "njk"];
+    eleventyConfig.setTemplateFormats(templateFormats);
 
     eleventyConfig.addPlugin(syntaxHighlight);
 
@@ -40,12 +47,10 @@ module.exports = eleventyConfig => {
         }
     });
 
-    eleventyConfig.setTemplateFormats([ "html", "liquid", "md", "njk" ]);
-
     eleventyConfig.setDataDeepMerge(true);
 
     eleventyConfig.setLibrary(
-            "md",
-            markdownIt({ html: true, typographer: true })
-        .use(markdownItSup));
+        "md",
+        markdownIt({ html: true, typographer: true })
+            .use(markdownItSup));
 };
