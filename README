@@ -1,15 +1,16 @@
-personal-site
-=============
+= personal-site
 
-Setup
------
+Setup:
 
-## Start a node container using Docker
-$ sudo docker run --rm -it -v "$(pwd)":/personal-site -p 8080:8080 node bash
+[source,bash]
+----
+# Start a node container using Docker
+docker run --rm -it -v "$(pwd)":/personal-site -p 8080:8080 node bash
 
-## Inside the container, install any missing packages
-$ cd personal-site
-$ npm ci
+# Inside the container, install any missing packages
+cd personal-site
+npm ci
 
-## Still in the container, start a development server
-$ npx @11ty/eleventy --serve
+# Still in the container, start a development server
+npx @11ty/eleventy --serve
+----
