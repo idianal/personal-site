@@ -7,6 +7,75 @@
     <description>A personal site about software engineering, computer science, and open source development</description>
     <language>en</language>
     <item>
+      <title>Keeping Your Place with Git Worktrees</title>
+      <link>https://idian.io/posts/2026/keeping-your-place-with-git-worktrees/</link>
+      <description>&lt;h3&gt;The context-switching problem&lt;/h3&gt;
+&lt;p&gt;It happens often enough: you are in the middle of a feature branch, files scattered in various states of half-done work, and something urgent comes up.
+A bug needs a hotfix.
+A colleague asks you to review their branch.
+You need to run the app on a different branch to compare behaviour.&lt;/p&gt;
+&lt;p&gt;The usual answer is &lt;code&gt;git stash&lt;/code&gt; — push your work onto a temporary stack, switch branches, do what needs to be done, switch back, pop the stash.
+This works fine for small interruptions.
+But for longer context switches, stashing starts to feel clumsy.
+You lose the mental picture of where you were, and there is always a small risk of forgetting you left something on the stash.&lt;/p&gt;
+&lt;p&gt;Git worktrees offer a cleaner solution.&lt;/p&gt;
+&lt;h3&gt;What is a worktree?&lt;/h3&gt;
+&lt;p&gt;When you clone a repository, Git creates a single working tree — the directory where you see and edit files.
+A worktree is simply an additional working tree linked to the same repository.
+Each worktree can be checked out to a different branch simultaneously, and they all share the same underlying &lt;code&gt;.git&lt;/code&gt; data.&lt;/p&gt;
+&lt;p&gt;The result is that instead of switching branches within a single directory, you can navigate between branches the same way you navigate between directories.&lt;/p&gt;
+&lt;h3&gt;Basic usage&lt;/h3&gt;
+&lt;p&gt;To add a worktree, run the following from inside your existing repository:&lt;/p&gt;
+&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; worktree &lt;span class=&quot;token function&quot;&gt;add&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;/personal-site-hotfix hotfix/my-fix&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This creates a new directory at &lt;code&gt;../personal-site-hotfix&lt;/code&gt; (relative to your current position) and checks out the branch &lt;code&gt;hotfix/my-fix&lt;/code&gt; there.
+If the branch does not exist yet, you can add the &lt;code&gt;-b&lt;/code&gt; option:&lt;/p&gt;
+&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; worktree &lt;span class=&quot;token function&quot;&gt;add&lt;/span&gt; &lt;span class=&quot;token parameter variable&quot;&gt;-b&lt;/span&gt; hotfix/my-fix &lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;/personal-site-hotfix main&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This creates the branch &lt;code&gt;hotfix/my-fix&lt;/code&gt; from &lt;code&gt;main&lt;/code&gt; and checks it out in the new directory.&lt;/p&gt;
+&lt;p&gt;From this point, you have two independent working trees:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Your original directory, still on your feature branch, untouched.&lt;/li&gt;
+&lt;li&gt;A new directory at &lt;code&gt;../personal-site-hotfix&lt;/code&gt;, on the hotfix branch, ready to go.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You can open a second terminal, &lt;code&gt;cd&lt;/code&gt; into the new directory, make your changes, and commit — all without disturbing your original working tree.&lt;/p&gt;
+&lt;p&gt;To see all active worktrees, run:&lt;/p&gt;
+&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; worktree list&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Once you are done with the worktree, remove it:&lt;/p&gt;
+&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; worktree remove &lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;/personal-site-hotfix&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;Practical scenarios&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Hotfixes without losing your place&lt;/p&gt;
+&lt;p&gt;This is the scenario I use worktrees for most often.
+Rather than stashing half-done work, I add a worktree for the hotfix branch, make the fix, and remove the worktree when done.
+My feature branch remains exactly as I left it.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Reviewing a pull request&lt;/p&gt;
+&lt;p&gt;Reviewing code that requires actually running the application used to mean stashing or committing before switching branches.
+With a worktree, I can check out the branch under review into a separate directory, run the app there, and keep my own work running in the original directory at the same time.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Running parallel builds&lt;/p&gt;
+&lt;p&gt;If you maintain builds across multiple branches at once — say, a stable release branch and a development branch — worktrees let you keep them both ready without any branch switching overhead.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;A few things to keep in mind&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;You cannot check out the same branch in two worktrees at the same time.
+Git will prevent this and return an error.&lt;/li&gt;
+&lt;li&gt;Worktree directories persist on disk until you explicitly remove them.
+It is a good habit to clean them up once you are done to avoid accumulating stale directories.&lt;/li&gt;
+&lt;li&gt;Since all worktrees share the same &lt;code&gt;.git&lt;/code&gt; directory, any commits you make in a worktree are immediately visible from other worktrees and from the main repository.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;TL/DR&lt;/h3&gt;
+&lt;p&gt;Git worktrees let you work on multiple branches simultaneously without stashing or committing incomplete work.
+For quick context switches — hotfixes, PR reviews, parallel builds — they are a notably cleaner alternative to the usual branch-switching workflow.&lt;/p&gt;
+</description>
+      <pubDate>Fri, 03 Apr 2026 00:00:00 GMT</pubDate>
+      <dc:creator>Al Idian</dc:creator>
+      <guid>https://idian.io/posts/2026/keeping-your-place-with-git-worktrees/</guid>
+    </item>
+    <item>
       <title>Things That Made Me Happy in 2025</title>
       <link>https://idian.io/posts/2025/things-that-made-me-happy-in-2025/</link>
       <description>&lt;p&gt;
@@ -561,91 +630,6 @@ But in situations  where time and energy is constrained such that people cannot 
       <pubDate>Sun, 15 Aug 2021 00:00:00 GMT</pubDate>
       <dc:creator>Al Idian</dc:creator>
       <guid>https://idian.io/posts/2021/why-use-analogies-in-software-teams/</guid>
-    </item>
-    <item>
-      <title>Windows for Software Development</title>
-      <link>https://idian.io/posts/2021/windows-for-software-development/</link>
-      <description>&lt;p&gt;As an operating system for software development, Windows gets a bad rap.
-Although it is by far the most popular desktop OS, many discerning users fairly criticize Windows for the way it handles system updates, how it is often saddled with bloatware even on a fresh installation, and — perhaps most concerning — its unethical user data collection policies.&lt;/p&gt;
-&lt;p&gt;On the other hand, Mac users are often quick to cite that macOS is POSIX-compliant, which means a wide range of software for Unix-like systems can easily be made to run on it.
-Mac has also become synonymous with superior hardware aesthetics, reliability, and — more recently — extraordinary performance and efficiency (&lt;a href=&quot;https://en.wikipedia.org/wiki/Apple_M1#Performance_and_efficiency&quot;&gt;Wikipedia&lt;/a&gt;).&lt;/p&gt;
-&lt;p&gt;Lastly, Linux users love their OS because it is open source, endlessly customizable, performant, and cutting-edge.
-In my opinion, knowing your way around a Linux system is essential for developers because it is ubiquitous in the field.
-Linux is dominant in the cloud, in containers, in IOT…
-perhaps the only subsection of computing it has not conquered is the desktop.&lt;/p&gt;
-&lt;h3&gt;Why Windows?&lt;/h3&gt;
-&lt;p&gt;I have used macOS heavily for the past fifteen years and Linux for the past five — but after some deliberation, I have decided to use Windows as my sole desktop OS.
-After some initial cleanup and settings management, I find that Windows simply fits the way I work and looks the way I want my desktop OS to look.
-To be clear, this was not always the case — but in 2021, I think Windows is a great choice for software developers.&lt;/p&gt;
-&lt;p&gt;Here below are the things that set Windows apart for me.
-Each of these items might also be found in Linux and macOS but — for each item below — I found the way Windows does things best suits my personal taste:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;Beautiful UI&lt;/p&gt;
-&lt;p&gt;This might be a surprise to many but the first thing that sets Windows apart for me is its looks.
-Although I find it a bit busy by default, it is trivial to configure Windows to be clean, minimalistic, and very pleasing to look at.&lt;/p&gt;
-&lt;p&gt;Unlike the macOS dock, the Windows taskbar can stay visible without taking too much space.
-Personally, I have grown to dislike how the macOS dock leaves empty space to its left and right; I feel it really does not work with maximized app windows.&lt;/p&gt;
-&lt;p&gt;With Linux and its unmatched customizability on the other hand, I have struggled to no avail to configure a desktop to be as pretty as the near-default Windows desktop I have.
-I say this after dozens of hours tinkering with a number of Linux desktop environments, including GNOME, Plasma, LXQT, XFCE, MATE, Pantheon, and more.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Unmatched window management&lt;/p&gt;
-&lt;p&gt;True to the Windows name, window management really shines on Windows.
-Whether your workflow is mouse or keyboard-centric, it is incredibly easy to maximize and minimize windows, split your screen between multiple apps, switch applications, and switch desktops.&lt;/p&gt;
-&lt;p&gt;On the other hand, window management is perhaps macOS’ biggest weakness.
-In fact, many power users have taken to installing paid applications to improve the default macOS window management system.
-I have also done this myself — but even after having tried a couple of paid window managers, I found that none of them feel nearly as nice as the default Windows system.&lt;/p&gt;
-&lt;p&gt;Unlike macOS, Linux has some excellent window managers available.
-If you feel so inclined, you can even ditch floating window managers (i.e. Windows and macOS style) altogether and go for a tiling window manager instead.
-Still, I am partial to Windows-style window management.
-If I needed to use a Linux desktop environment, I feel I would be best served by looking for one that closely emulates Windows.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Supports real Linux&lt;/p&gt;
-&lt;p&gt;Perhaps the biggest developer-specific gripe about Windows is, unlike its two main competitors, it is not Unix-like.
-Its file system is different enough to be bothersome and its command-line tools pale in comparison to the plethora of Unix tools beloved by many developers.&lt;/p&gt;
-&lt;p&gt;Enter Windows Subsystem for Linux (WSL).
-Available in two distinct iterations (i.e. WSL1 and WSL2), users will do well to learn the differences between each one.
-In a nutshell, WSL1 allows better interoperability between your Windows and Linux systems, while WSL2 sacrifices interoperability for near-native performance and great compatibility on the Linux side.
-Essentially, WSL2 is much better if you can bear to treat your Linux subsystem more like an ever-available VPS rather than something that is fully-integrated into Windows.&lt;/p&gt;
-&lt;p&gt;In real-world use, I find that my Windows usage is usually limited to a browser and Visual Studio Code.
-The rest of my workflow happens through a terminal running packages (natively or in a container) on a Debian subsystem.
-This gives me access to all the great Unix tools I am used to, with great performance, while running my desktop environment of choice, Windows.&lt;/p&gt;
-&lt;p&gt;More about this in the next section…&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3&gt;Setup and workflow&lt;/h3&gt;
-&lt;p&gt;Currently, I maintain two personal Windows machines: (a) a compact yet robust Intel NUC (with an i5 processor) which I use whenever I am in my home office and (b) an adorable Surface Go 2 (with an m3 processor) for when I’m mobile.
-I generally keep the same settings and slew of apps across the two devices.
-However, I avoid auto-launching Docker Desktop on startup on the Surface to conserve battery.&lt;/p&gt;
-&lt;p&gt;In general, I keep my use of Windows pretty minimalistic.
-As my default browser, I use Microsoft Edge, which I find impeccable in terms of features, performance, and UI.
-To interact with my Windows file system, I use a combination of File Explorer and Windows PowerShell.
-I also install Microsoft PowerToys, a fantastic bundle of utilities which includes a keymapper (I always remap &lt;em&gt;caps lock&lt;/em&gt; to &lt;em&gt;control&lt;/em&gt;) and a convenient shortcuts cheat sheet.
-I also install my favourite GUI text editor Visual Studio Code, which doubles as a feature-rich yet lightweight IDE when I need one.&lt;/p&gt;
-&lt;p&gt;Using WSL2, I also run a Debian subsystem on my Windows machines.
-To interact with Debian, I use Windows Terminal, a great terminal emulator that is apparently coming preinstalled with Windows 11.
-Inside my Debian system is all the Linux/Unix stuff I like, including Git, Vim, Docker, and Bash.
-The Debian installation is also configured with my latest dotfiles and security-related files (like my GnuPG and SSH keys).
-This way, I get a consistent Unix experience regardless of which machine I am using.&lt;/p&gt;
-&lt;p&gt;Whenever I can, I try to avoid installing specialized software development tooling straight onto Debian.
-Instead, I make heavy use of containerized developer environments.
-For instance, I maintain a customized LaTeX development container image on Docker Hub.
-Whenever I need to work on a TeX document, I just pull this image and I am able to spin up a fresh LaTeX environment in no time.
-I do something similar whenever I work on something like Node.js or .NET or even something I am entirely unfamiliar with.&lt;/p&gt;
-&lt;p&gt;This setup has worked out really well for me so far.
-And while I don’t use it for my day job (I use the company-issued laptop for that), I am able to make good use of it for personal study, tinkering with software, and contributing to open source projects.
-This fall, I intend to use the same setup and workflow as I go back to school part-time to take my Masters in CS.&lt;/p&gt;
-&lt;h3&gt;TL/DR&lt;/h3&gt;
-&lt;p&gt;Windows is a good fit for me as a desktop environment because I enjoy its simple yet beautiful UI and its sensible and powerful window management.
-While I am a fan of the Windows GUI, I prefer a Unix-like command-line environment and file system to do my work.
-Thankfully, Windows supports this with WSL2.
-I am currently happy with the workflow Windows enables me to have — and I plan to continue building on it as I tackle new and fun things in the near future.&lt;/p&gt;
-</description>
-      <pubDate>Wed, 21 Jul 2021 00:00:00 GMT</pubDate>
-      <dc:creator>Al Idian</dc:creator>
-      <guid>https://idian.io/posts/2021/windows-for-software-development/</guid>
     </item>
   </channel>
 </rss>

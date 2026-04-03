@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Keeping Your Place with Git Worktrees | Al Idian</title>
+
+    <meta name="description" content="Git worktrees let you check out multiple branches simultaneously into separate directories&amp;mdash;a cleaner alternative to stashing when you need to context-switch without losing your place.">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Merriweather&amp;display=swap">
+
+    <link rel="stylesheet" href="/css/syntax-highlight.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicon/site.webmanifest">
+</head>
+<body>
+    <header>
+        <h3 id="site-title" class="no-margin no-padding"><a href="/">Al Idian</a></h3>
+    </header>
+
+    <main>
+        
+<h2 id="post-title">Keeping Your Place with Git Worktrees</h2>
+<p id="post-date" class="gray-text">2026-04-03</p>
+
+<h3>The context-switching problem</h3>
+<p>It happens often enough: you are in the middle of a feature branch, files scattered in various states of half-done work, and something urgent comes up.
+A bug needs a hotfix.
+A colleague asks you to review their branch.
+You need to run the app on a different branch to compare behaviour.</p>
+<p>The usual answer is <code>git stash</code> — push your work onto a temporary stack, switch branches, do what needs to be done, switch back, pop the stash.
+This works fine for small interruptions.
+But for longer context switches, stashing starts to feel clumsy.
+You lose the mental picture of where you were, and there is always a small risk of forgetting you left something on the stash.</p>
+<p>Git worktrees offer a cleaner solution.</p>
+<h3>What is a worktree?</h3>
+<p>When you clone a repository, Git creates a single working tree — the directory where you see and edit files.
+A worktree is simply an additional working tree linked to the same repository.
+Each worktree can be checked out to a different branch simultaneously, and they all share the same underlying <code>.git</code> data.</p>
+<p>The result is that instead of switching branches within a single directory, you can navigate between branches the same way you navigate between directories.</p>
+<h3>Basic usage</h3>
+<p>To add a worktree, run the following from inside your existing repository:</p>
+<pre class="language-bash"><code class="language-bash">$ <span class="token function">git</span> worktree <span class="token function">add</span> <span class="token punctuation">..</span>/personal-site-hotfix hotfix/my-fix</code></pre>
+<p>This creates a new directory at <code>../personal-site-hotfix</code> (relative to your current position) and checks out the branch <code>hotfix/my-fix</code> there.
+If the branch does not exist yet, you can add the <code>-b</code> option:</p>
+<pre class="language-bash"><code class="language-bash">$ <span class="token function">git</span> worktree <span class="token function">add</span> <span class="token parameter variable">-b</span> hotfix/my-fix <span class="token punctuation">..</span>/personal-site-hotfix main</code></pre>
+<p>This creates the branch <code>hotfix/my-fix</code> from <code>main</code> and checks it out in the new directory.</p>
+<p>From this point, you have two independent working trees:</p>
+<ul>
+<li>Your original directory, still on your feature branch, untouched.</li>
+<li>A new directory at <code>../personal-site-hotfix</code>, on the hotfix branch, ready to go.</li>
+</ul>
+<p>You can open a second terminal, <code>cd</code> into the new directory, make your changes, and commit — all without disturbing your original working tree.</p>
+<p>To see all active worktrees, run:</p>
+<pre class="language-bash"><code class="language-bash">$ <span class="token function">git</span> worktree list</code></pre>
+<p>Once you are done with the worktree, remove it:</p>
+<pre class="language-bash"><code class="language-bash">$ <span class="token function">git</span> worktree remove <span class="token punctuation">..</span>/personal-site-hotfix</code></pre>
+<h3>Practical scenarios</h3>
+<ol>
+<li>
+<p>Hotfixes without losing your place</p>
+<p>This is the scenario I use worktrees for most often.
+Rather than stashing half-done work, I add a worktree for the hotfix branch, make the fix, and remove the worktree when done.
+My feature branch remains exactly as I left it.</p>
+</li>
+<li>
+<p>Reviewing a pull request</p>
+<p>Reviewing code that requires actually running the application used to mean stashing or committing before switching branches.
+With a worktree, I can check out the branch under review into a separate directory, run the app there, and keep my own work running in the original directory at the same time.</p>
+</li>
+<li>
+<p>Running parallel builds</p>
+<p>If you maintain builds across multiple branches at once — say, a stable release branch and a development branch — worktrees let you keep them both ready without any branch switching overhead.</p>
+</li>
+</ol>
+<h3>A few things to keep in mind</h3>
+<ul>
+<li>You cannot check out the same branch in two worktrees at the same time.
+Git will prevent this and return an error.</li>
+<li>Worktree directories persist on disk until you explicitly remove them.
+It is a good habit to clean them up once you are done to avoid accumulating stale directories.</li>
+<li>Since all worktrees share the same <code>.git</code> directory, any commits you make in a worktree are immediately visible from other worktrees and from the main repository.</li>
+</ul>
+<h3>TL/DR</h3>
+<p>Git worktrees let you work on multiple branches simultaneously without stashing or committing incomplete work.
+For quick context switches — hotfixes, PR reviews, parallel builds — they are a notably cleaner alternative to the usual branch-switching workflow.</p>
+
+
+    </main>
+
+    <footer>
+        <p class="center-text no-margin no-padding">
+            <a href="https://github.com/idianal/personal-site/blob/main/LICENSE">MIT License</a> |
+            <a href="/feed.xml">RSS Feed</a>
+        </p>
+        <p class="center-text no-margin no-padding"><a href="https://github.com/idianal/personal-site">/idianal</a></p>
+    </footer>
+</body>
+</html>
