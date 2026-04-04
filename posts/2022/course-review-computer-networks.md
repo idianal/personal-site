@@ -7,7 +7,7 @@ description: "A review of the CS6250 Computer Networks graduate course from Geor
 
 {% include "_includes/omscs-header.njk" %}
 
-#### Overview
+### Overview
 
 CS6250 is a broad exploration of modern and traditional internet architecture.
 It is light on prerequisites, making it an ideal first course to take in the OMSCS program.
@@ -15,7 +15,7 @@ CS6250 deepens student knowledge on many internet-related technologies used in s
 
 Topics covered in the course include internet history and architecture, protocols and technologies used, router design, software-defined networking, internet security, and internet applications.
 
-#### Projects
+### Projects
 
 There were five full projects in the course this past semester, along with an optional one for extra credit.
 A custom x86 VM image (running Ubuntu) was provided for all of the projects below.
@@ -41,7 +41,7 @@ It is helpful to know basic ways to keep Python performant (e.g. using the corre
     Students are encouraged to use resources like IODA and Netblocks.org to identify candidates for study.
     Unlike the other projects, students are asked to use a Jupyter Notebook and the `matplotlib` library to present findings and methodology.
 
-#### Learning materials
+### Learning materials
 
 Learning materials for the course is primarily provided in text form.
 Some modules have accompanying videos but many do not.
@@ -60,7 +60,7 @@ Aside from this, each module has a collection of optional resources students can
 Some projects direct students to read tooling documentation or journal articles to provide guidance and context.
 I found it was enough just to scan these external materials and to only read more if I got stuck.
 
-#### Exams
+### Exams
 
 There were two exams.
 Both were closed-notes and proctored through Honorlock.
@@ -71,7 +71,7 @@ To do well on the exams and quizzes, I found it was enough to rely on the study 
 The study guide is a detailed set of questions for each of the twelve modules.
 It is easy to find answers to these questions as students are going through each module.
 
-#### Teaching staff
+### Teaching staff
 
 For the most part, this course is run by TAs.
 The professor appears in the pre-recorded lectures and sometimes conducts office hours and responds in Ed, the course's discussion platform.
@@ -84,7 +84,7 @@ Although I never made use of these daily timeslots, I believe this is going abov
 Lastly, project and exam results were provided within an acceptable timeframe.
 When there were delays (always due to students getting approved extensions), the class was informed.
 
-#### Difficulty
+### Difficulty
 
 I found this course mostly engaging yet easy.
 At no time during this course was I stuck on a problem that required some sort of mental leap.
@@ -93,7 +93,7 @@ The exams and quizzes were fair.
 
 I spent around 10-15 hours per week on this course.
 
-#### Conclusion
+### Conclusion
 
 CS6250 delivered on its goal of deepening my knowledge of internet technologies and computer networking in general.
 The material covered is interesting, and I think every computer science professional should probably know the contents of this course.

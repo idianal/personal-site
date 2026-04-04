@@ -7,7 +7,7 @@ description: "A review of the CS6035 Information Security graduate course from G
 
 {% include "_includes/omscs-header.njk" %}
 
-#### Overview
+### Overview
 
 CS6035 is a true introductory graduate course.
 It assumes an undergraduate-level familiarity with the course material and tackles a breadth of topics across the Information Security field.
@@ -15,7 +15,7 @@ CS6035 gives students the lay of the land in Information Security and aims to pr
 
 Topics covered in the course include software security, operating system security, authentication, database security, malware and malicious code, cryptography and encryption, and web security.
 
-#### Projects
+### Projects
 
 There were four full projects in the course this past semester, along with a short one for a little extra credit.
 A custom x86 VM image (either Debian or Kali) was provided for each of the projects below.
@@ -41,7 +41,7 @@ They also account for at least 80% of your grade.
     It is a modified version of Project 1 which requires the insertion of shell code in a buffer to manipulate code execution into invoking a new shell.
     I believe there are plans to eventually turn this mini-project into a full one in the future.
 
-#### Learning materials
+### Learning materials
 
 The lectures were all pre-recorded and are of generally good quality.
 I found them to be a good first pass at the material, before diving into the textbook readings.
@@ -54,7 +54,7 @@ I found that as I naturally progressed in the course, I read almost the entire b
 Several times in CS6035, students are required to read from other provided sources which include journal articles and technical blogs.
 I found many of these interesting and almost always helpful towards completing the projects.
 
-#### Exams
+### Exams
 
 There were two exams.
 Both were closed-notes and proctored through Honorlock.
@@ -62,7 +62,7 @@ There were also four quizzes, and they were open-notes and unproctored.
 Neither the exams or the quizzes were very difficult.
 I found them fair especially since they don't count for very much in the final grade.
 
-#### Teaching staff
+### Teaching staff
 
 The course feels like it is run solely by the TAs.
 The professor (along with a colleague) appeared mostly only in the pre-recorded lectures.
@@ -74,7 +74,7 @@ In general, they will not spoon-feed information to students (which is to be exp
 Interestingly, the TAs can also be quite stingy in giving out solutions to projects even after the due date.
 Students would need to find the answers by researching the material themselves.
 
-#### Difficulty
+### Difficulty
 
 This course was mostly easy.
 There were certainly components of the projects that I had to wrestle with for many hours but I was always able to complete the projects with time to spare.
@@ -83,7 +83,7 @@ The exams and quizzes were fair, and ample time was provided to complete each co
 I spent around 10-15 hours per week on this course.
 If you don't meet some of the prerequisites, expect to spend a little extra time to get yourself up to speed.
 
-#### Conclusion
+### Conclusion
 
 CS6035 was an excellent first course in OMSCS.
 The material covered is mostly interesting and not overly challenging.
