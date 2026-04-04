@@ -211,13 +211,13 @@ For now, the settings described above help me maintain a healthy relationship wi
     As I make my way through this program, I intend to write short, opinionated reviews of the courses I complete.
     My intended audience for this is the current or prospective OMSCS student who is considering taking these courses.
 &lt;/p&gt;
-&lt;h4&gt;Overview&lt;/h4&gt;
+&lt;h3&gt;Overview&lt;/h3&gt;
 &lt;p&gt;CS6300 is an introductory course on the software development process.
 It emphasizes skills and knowledge essential to anyone joining a modern software team and is probably one of the least challenging courses in the OMSCS program.
 If you have experience working in a software development team, expect to already know many of the things covered in this course.&lt;/p&gt;
 &lt;p&gt;Topics covered include the software development life cycle, version control systems, the fundamentals of system architecture and design, and software testing.
 Before taking this, make sure you are comfortable with Java and object-oriented programming.&lt;/p&gt;
-&lt;h4&gt;Projects&lt;/h4&gt;
+&lt;h3&gt;Projects&lt;/h3&gt;
 &lt;p&gt;This past semester, there were six assignments and two projects composed of several deliverables.
 All assignments and projects can be completed on any reasonably-modern machine, regardless of processor or operating system.&lt;/p&gt;
 &lt;p&gt;Each assignment was relatively short, meant to be completed in a week.
@@ -234,25 +234,25 @@ Just as important as the programming (done in Java or Kotlin) are ancillary task
 The ideal number of tests were between 50 and 90.
 Surprisingly, I found this exercise interesting and novel but, using the wrong approach, I can see how it can quickly become tedious.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4&gt;Learning materials&lt;/h4&gt;
+&lt;h3&gt;Learning materials&lt;/h3&gt;
 &lt;p&gt;Lectures were all pre-recorded and are of better quality than any other course I’ve seen so far in the OMSCS program.
 Much credit here goes to the instructor, Dr. Alessandro Orso, who succeeds at communicating his passion for the topics at hand.&lt;/p&gt;
 &lt;p&gt;There is no course textbook but two readings cited near the end of the semester are well worth reading for any software development professional: &lt;em&gt;The Cathedral and the Bazaar&lt;/em&gt; by Eric Raymonds and &lt;em&gt;No Silver Bullet&lt;/em&gt; by Frederick Brooks.&lt;/p&gt;
-&lt;h4&gt;Exams&lt;/h4&gt;
+&lt;h3&gt;Exams&lt;/h3&gt;
 &lt;p&gt;There are no graded exams in this course.
 Simple end-of-module (mini-) quizzes are provided to help gauge student engagement and understanding.&lt;/p&gt;
-&lt;h4&gt;Teaching staff&lt;/h4&gt;
+&lt;h3&gt;Teaching staff&lt;/h3&gt;
 &lt;p&gt;Unlike all other courses I have taken so far in OMSCS, the professor is heavily involved in the day-to-day of CS6300.
 He holds weekly office hours and is responsive (as much as can be expected) in the course discussion board.&lt;/p&gt;
 &lt;p&gt;In general, the course is managed impeccably by the professor and his TAs.
 TA Justin Durkin stands out as an absolute rockstar in the way he engages with students in the discussion board.&lt;/p&gt;
 &lt;p&gt;Project and assignment results were provided within an acceptable timeframe, and students are always apprised of any changes in schedule.&lt;/p&gt;
-&lt;h4&gt;Difficulty&lt;/h4&gt;
+&lt;h3&gt;Difficulty&lt;/h3&gt;
 &lt;p&gt;CS6300 is the easiest course I have taken so far in the OMSCS program.
 Having had significant work experience as a software developer, this was something I expected.
 I was unsure of how the group project would go but I was fortunately teamed up with some great performers who wanted to succeed in the course just as much as I did.&lt;/p&gt;
 &lt;p&gt;On average, I spent less than ten hours per week on this course.&lt;/p&gt;
-&lt;h4&gt;Conclusion&lt;/h4&gt;
+&lt;h3&gt;Conclusion&lt;/h3&gt;
 &lt;p&gt;CS6300 is well-run but does not really seem to be a graduate-level course.
 It is a great one to take for those with little-to-no work experience in a software development team.
 Taking CS6300 in the summer allowed me to ease off and recharge in preparation for a heavy semester ahead in the fall.&lt;/p&gt;
@@ -323,12 +323,12 @@ To make this process easier, one can use a Time Machine image &lt;em&gt;from a f
     As I make my way through this program, I intend to write short, opinionated reviews of the courses I complete.
     My intended audience for this is the current or prospective OMSCS student who is considering taking these courses.
 &lt;/p&gt;
-&lt;h4&gt;Overview&lt;/h4&gt;
+&lt;h3&gt;Overview&lt;/h3&gt;
 &lt;p&gt;CS6250 is a broad exploration of modern and traditional internet architecture.
 It is light on prerequisites, making it an ideal first course to take in the OMSCS program.
 CS6250 deepens student knowledge on many internet-related technologies used in software development and computer science.&lt;/p&gt;
 &lt;p&gt;Topics covered in the course include internet history and architecture, protocols and technologies used, router design, software-defined networking, internet security, and internet applications.&lt;/p&gt;
-&lt;h4&gt;Projects&lt;/h4&gt;
+&lt;h3&gt;Projects&lt;/h3&gt;
 &lt;p&gt;There were five full projects in the course this past semester, along with an optional one for extra credit.
 A custom x86 VM image (running Ubuntu) was provided for all of the projects below.
 While some projects can be completed on any reasonable host OS or in a Docker container, others require the use of the VM provided.
@@ -352,7 +352,7 @@ It is also much more open-ended and involves using BGPStream and PyBGPStream to 
 Students are encouraged to use resources like IODA and Netblocks.org to identify candidates for study.
 Unlike the other projects, students are asked to use a Jupyter Notebook and the &lt;code&gt;matplotlib&lt;/code&gt; library to present findings and methodology.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4&gt;Learning materials&lt;/h4&gt;
+&lt;h3&gt;Learning materials&lt;/h3&gt;
 &lt;p&gt;Learning materials for the course is primarily provided in text form.
 Some modules have accompanying videos but many do not.
 Even when videos are present, they don’t offer more than the text.
@@ -366,7 +366,7 @@ In the process, I constructed a resource that helped me do well in the exams and
 Aside from this, each module has a collection of optional resources students can look into should they want to dig deeper.&lt;/p&gt;
 &lt;p&gt;Some projects direct students to read tooling documentation or journal articles to provide guidance and context.
 I found it was enough just to scan these external materials and to only read more if I got stuck.&lt;/p&gt;
-&lt;h4&gt;Exams&lt;/h4&gt;
+&lt;h3&gt;Exams&lt;/h3&gt;
 &lt;p&gt;There were two exams.
 Both were closed-notes and proctored through Honorlock.
 There were also end-of-module quizzes for each of the twelve modules, which were open-notes and unproctored.
@@ -374,7 +374,7 @@ None of the exams or quizzes were difficult.&lt;/p&gt;
 &lt;p&gt;To do well on the exams and quizzes, I found it was enough to rely on the study guide provided at the start of the term.
 The study guide is a detailed set of questions for each of the twelve modules.
 It is easy to find answers to these questions as students are going through each module.&lt;/p&gt;
-&lt;h4&gt;Teaching staff&lt;/h4&gt;
+&lt;h3&gt;Teaching staff&lt;/h3&gt;
 &lt;p&gt;For the most part, this course is run by TAs.
 The professor appears in the pre-recorded lectures and sometimes conducts office hours and responds in Ed, the course’s discussion platform.
 I did not mind this at all — I don’t think I would have taken away more from the course if the professor was more involved.&lt;/p&gt;
@@ -383,13 +383,13 @@ Not only do the TAs conduct weekly office hours, they have daily timeslots where
 Although I never made use of these daily timeslots, I believe this is going above and beyond and deserves a kudos! I can also point to specific instances in the course where TAs made reasonable adjustments on-the-fly to accommodate student requests.&lt;/p&gt;
 &lt;p&gt;Lastly, project and exam results were provided within an acceptable timeframe.
 When there were delays (always due to students getting approved extensions), the class was informed.&lt;/p&gt;
-&lt;h4&gt;Difficulty&lt;/h4&gt;
+&lt;h3&gt;Difficulty&lt;/h3&gt;
 &lt;p&gt;I found this course mostly engaging yet easy.
 At no time during this course was I stuck on a problem that required some sort of mental leap.
 The projects were interesting but I was always able to complete the projects with time to spare.
 The exams and quizzes were fair.&lt;/p&gt;
 &lt;p&gt;I spent around 10-15 hours per week on this course.&lt;/p&gt;
-&lt;h4&gt;Conclusion&lt;/h4&gt;
+&lt;h3&gt;Conclusion&lt;/h3&gt;
 &lt;p&gt;CS6250 delivered on its goal of deepening my knowledge of internet technologies and computer networking in general.
 The material covered is interesting, and I think every computer science professional should probably know the contents of this course.
 Although I don’t foresee myself working directly on the technologies discussed here, they are ubiquitous enough to be helpful no matter which area of computer science I end up in.&lt;/p&gt;
@@ -449,12 +449,12 @@ The following quote by Abraham Lincoln comes to mind: “Give me six hours to ch
     As I make my way through this program, I intend to write short, opinionated reviews of the courses I complete.
     My intended audience for this is the current or prospective OMSCS student who is considering taking these courses.
 &lt;/p&gt;
-&lt;h4&gt;Overview&lt;/h4&gt;
+&lt;h3&gt;Overview&lt;/h3&gt;
 &lt;p&gt;CS6035 is a true introductory graduate course.
 It assumes an undergraduate-level familiarity with the course material and tackles a breadth of topics across the Information Security field.
 CS6035 gives students the lay of the land in Information Security and aims to prepare them for more focused study in one or more of its subfields.&lt;/p&gt;
 &lt;p&gt;Topics covered in the course include software security, operating system security, authentication, database security, malware and malicious code, cryptography and encryption, and web security.&lt;/p&gt;
-&lt;h4&gt;Projects&lt;/h4&gt;
+&lt;h3&gt;Projects&lt;/h3&gt;
 &lt;p&gt;There were four full projects in the course this past semester, along with a short one for a little extra credit.
 A custom x86 VM image (either Debian or Kali) was provided for each of the projects below.
 This means Apple Silicon machines are not a viable option here.&lt;/p&gt;
@@ -478,7 +478,7 @@ While the programming component is easy to grasp even for beginners, the project
 It is a modified version of Project 1 which requires the insertion of shell code in a buffer to manipulate code execution into invoking a new shell.
 I believe there are plans to eventually turn this mini-project into a full one in the future.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4&gt;Learning materials&lt;/h4&gt;
+&lt;h3&gt;Learning materials&lt;/h3&gt;
 &lt;p&gt;The lectures were all pre-recorded and are of generally good quality.
 I found them to be a good first pass at the material, before diving into the textbook readings.&lt;/p&gt;
 &lt;p&gt;The textbook &lt;em&gt;Computer Security&lt;/em&gt; by Stallings is comprehensive (if a little dry).
@@ -487,13 +487,13 @@ Since the quizzes are all open-book and many questions are derived from the text
 I found that as I naturally progressed in the course, I read almost the entire book.&lt;/p&gt;
 &lt;p&gt;Several times in CS6035, students are required to read from other provided sources which include journal articles and technical blogs.
 I found many of these interesting and almost always helpful towards completing the projects.&lt;/p&gt;
-&lt;h4&gt;Exams&lt;/h4&gt;
+&lt;h3&gt;Exams&lt;/h3&gt;
 &lt;p&gt;There were two exams.
 Both were closed-notes and proctored through Honorlock.
 There were also four quizzes, and they were open-notes and unproctored.
 Neither the exams or the quizzes were very difficult.
 I found them fair especially since they don’t count for very much in the final grade.&lt;/p&gt;
-&lt;h4&gt;Teaching staff&lt;/h4&gt;
+&lt;h3&gt;Teaching staff&lt;/h3&gt;
 &lt;p&gt;The course feels like it is run solely by the TAs.
 The professor (along with a colleague) appeared mostly only in the pre-recorded lectures.
 This might be a deliberate strategy on the part of the teaching staff.
@@ -502,13 +502,13 @@ I found I did not mind this at all — I don’t think I would have taken away m
 In general, they will not spoon-feed information to students (which is to be expected in a graduate-level course).
 Interestingly, the TAs can also be quite stingy in giving out solutions to projects even after the due date.
 Students would need to find the answers by researching the material themselves.&lt;/p&gt;
-&lt;h4&gt;Difficulty&lt;/h4&gt;
+&lt;h3&gt;Difficulty&lt;/h3&gt;
 &lt;p&gt;This course was mostly easy.
 There were certainly components of the projects that I had to wrestle with for many hours but I was always able to complete the projects with time to spare.
 The exams and quizzes were fair, and ample time was provided to complete each component of the course.&lt;/p&gt;
 &lt;p&gt;I spent around 10-15 hours per week on this course.
 If you don’t meet some of the prerequisites, expect to spend a little extra time to get yourself up to speed.&lt;/p&gt;
-&lt;h4&gt;Conclusion&lt;/h4&gt;
+&lt;h3&gt;Conclusion&lt;/h3&gt;
 &lt;p&gt;CS6035 was an excellent first course in OMSCS.
 The material covered is mostly interesting and not overly challenging.
 Although some aspects of security is exciting to me (e.g. operating system security, cryptography, etc.), I was not as keen on the organizational security topics in the course.
