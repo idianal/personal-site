@@ -269,12 +269,12 @@ Taking CS6300 in the summer allowed me to ease off and recharge in preparation f
 While on Windows, users typically use an uninstaller or the &lt;em&gt;Add or Remove Programs&lt;/em&gt; utility, uninstalling apps on macOS simply means dragging the .app file to trash.
 For many, this minimalistic process triggers distrust and disbelief.
 What about preference files and other gunk written by the application that presumably remain in the system?&lt;/p&gt;
-&lt;p&gt;I recently wrote an app uninstaller called &lt;a href=&quot;https://github.com/idianal/zap&quot;&gt;&lt;code&gt;zap&lt;/code&gt;&lt;/a&gt; that deals with this problem.
+&lt;p&gt;I recently wrote an app uninstaller called &lt;a href=&quot;https://github.com/idianal/toys-python/tree/main/zap&quot;&gt;&lt;code&gt;zap&lt;/code&gt;&lt;/a&gt; that deals with this problem.
 It is command-line only and is packaged as a script that can be downloaded from GitHub and run without installation.&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;zap&lt;/code&gt; is similar to other uninstaller applications on macOS like &lt;a href=&quot;http://freemacsoft.net/appcleaner/&quot;&gt;AppCleaner&lt;/a&gt; in that it tries to accomplish the same task.
 Unlike AppCleaner, &lt;code&gt;zap&lt;/code&gt; is free and open source.
 Users can be confident that &lt;code&gt;zap&lt;/code&gt; does only what it says it does.&lt;/p&gt;
-&lt;p&gt;For a short usage guide, see the readme &lt;a href=&quot;https://github.com/idianal/zap&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For a short usage guide, see the readme &lt;a href=&quot;https://github.com/idianal/toys-python/tree/main/zap&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;h3&gt;Decisions, decisions…&lt;/h3&gt;
 &lt;p&gt;To find files to remove, &lt;code&gt;zap&lt;/code&gt; first checks inside the .app file.
 In macOS, .app files are directories that contain the binaries and ancillary files related to the application.
