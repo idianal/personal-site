@@ -12,14 +12,14 @@ While on Windows, users typically use an uninstaller or the *Add or Remove Progr
 For many, this minimalistic process triggers distrust and disbelief.
 What about preference files and other gunk written by the application that presumably remain in the system?
 
-I recently wrote an app uninstaller called [`zap`](https://github.com/idianal/zap) that deals with this problem.
+I recently wrote an app uninstaller called [`zap`](https://github.com/idianal/toys-python/tree/main/zap) that deals with this problem.
 It is command-line only and is packaged as a script that can be downloaded from GitHub and run without installation.
 
 `zap` is similar to other uninstaller applications on macOS like [AppCleaner](http://freemacsoft.net/appcleaner/) in that it tries to accomplish the same task.
 Unlike AppCleaner, `zap` is free and open source.
 Users can be confident that `zap` does only what it says it does.
 
-For a short usage guide, see the readme [here](https://github.com/idianal/zap).
+For a short usage guide, see the readme [here](https://github.com/idianal/toys-python/tree/main/zap).
 
 ### Decisions, decisions...
 
