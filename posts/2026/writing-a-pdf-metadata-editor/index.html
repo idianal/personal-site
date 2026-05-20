@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Writing a PDF Metadata Editor | Al Idian</title>
+
+    <meta name="description" content="`etch` is a simple PDF metadata editor. Here I write some thoughts around creating `etch`, a lightweight tool for viewing and editing the metadata of PDF files.">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Merriweather&amp;display=swap">
+
+    <link rel="stylesheet" href="/css/syntax-highlight.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicon/site.webmanifest">
+</head>
+<body>
+    <header>
+        <h3 id="site-title" class="no-margin no-padding"><a href="/">Al Idian</a></h3>
+    </header>
+
+    <main>
+        
+<h2 id="post-title">Writing a PDF Metadata Editor</h2>
+<p id="post-date" class="gray-text">2026-05-19</p>
+
+<h3>What did I make?</h3>
+<p>PDF files often carry incorrect or incomplete metadata.
+A paper downloaded from a server might have a title like <em>draft_final.docx</em>.
+A document exported from another program might have a completely empty author field.
+For users who rely on a PDF reader to organize a library of documents, this matters.</p>
+<p>I recently wrote a tool called <a href="https://github.com/idianal/toys-python/tree/main/etch"><code>etch</code></a> that deals with this problem.
+It is command-line only and is packaged as a script that can be downloaded from GitHub and run without installation.</p>
+<p>Running <code>etch</code> with just a file path displays the current metadata.
+Passing <code>--title</code> or <code>--author</code> or both shows a before-and-after preview and asks for confirmation before making any changes.</p>
+<p>For a short usage guide, see the readme <a href="https://github.com/idianal/toys-python/tree/main/etch">here</a>.</p>
+<h3>Implementation details</h3>
+<p>Rather than reading and writing PDF metadata directly, <code>etch</code> delegates this work to <a href="https://exiftool.org/"><code>exiftool</code></a>, a well-established utility created by Phil Harvey that handles metadata for many file formats.
+<code>etch</code> checks that it is installed at startup and exits with a clear message if it is not.</p>
+<p>When writing changes, <code>etch</code> passes <code>-overwrite_original</code> to <code>exiftool</code>.
+This flag alters <code>exiftool</code>’s default behaviour of keeping a  backup of the original file before modifying it.
+Instead of keeping a backup, I opted to ask the user to confirm their change.</p>
+<p>Limitations of this tool include the following:</p>
+<ol>
+<li><code>etch</code> can only edit title and author.
+Other metadata fields are not supported.</li>
+<li><code>etch</code> requires <code>exiftool</code> to be installed.</li>
+</ol>
+<h3>Keeping a curated document library</h3>
+<p>The quality of PDF metadata varies widely and is largely determined by the tool used to create the file.
+Unfortunately, most tools do a poor job.
+Files exported from word processors tend to carry over whatever document title was last saved, and scanned documents often have no metadata at all.
+This is mostly outside the user’s control.</p>
+<p>Correcting PDF metadata by hand is a low-priority task for most people.
+But for those building a well-organized document library, it is worth doing.</p>
+
+
+    </main>
+
+    <footer>
+        <p class="center-text no-margin no-padding">
+            <a href="https://github.com/idianal/personal-site/blob/main/LICENSE">MIT License</a> |
+            <a href="/feed.xml">RSS Feed</a>
+        </p>
+        <p class="center-text no-margin no-padding"><a href="https://github.com/idianal/personal-site">/idianal</a></p>
+    </footer>
+</body>
+</html>

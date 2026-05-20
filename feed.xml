@@ -7,6 +7,43 @@
     <description>A personal site about software engineering, computer science, and open source development</description>
     <language>en</language>
     <item>
+      <title>Writing a PDF Metadata Editor</title>
+      <link>https://idian.io/posts/2026/writing-a-pdf-metadata-editor/</link>
+      <description>&lt;h3&gt;What did I make?&lt;/h3&gt;
+&lt;p&gt;PDF files often carry incorrect or incomplete metadata.
+A paper downloaded from a server might have a title like &lt;em&gt;draft_final.docx&lt;/em&gt;.
+A document exported from another program might have a completely empty author field.
+For users who rely on a PDF reader to organize a library of documents, this matters.&lt;/p&gt;
+&lt;p&gt;I recently wrote a tool called &lt;a href=&quot;https://github.com/idianal/toys-python/tree/main/etch&quot;&gt;&lt;code&gt;etch&lt;/code&gt;&lt;/a&gt; that deals with this problem.
+It is command-line only and is packaged as a script that can be downloaded from GitHub and run without installation.&lt;/p&gt;
+&lt;p&gt;Running &lt;code&gt;etch&lt;/code&gt; with just a file path displays the current metadata.
+Passing &lt;code&gt;--title&lt;/code&gt; or &lt;code&gt;--author&lt;/code&gt; or both shows a before-and-after preview and asks for confirmation before making any changes.&lt;/p&gt;
+&lt;p&gt;For a short usage guide, see the readme &lt;a href=&quot;https://github.com/idianal/toys-python/tree/main/etch&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;Implementation details&lt;/h3&gt;
+&lt;p&gt;Rather than reading and writing PDF metadata directly, &lt;code&gt;etch&lt;/code&gt; delegates this work to &lt;a href=&quot;https://exiftool.org/&quot;&gt;&lt;code&gt;exiftool&lt;/code&gt;&lt;/a&gt;, a well-established utility created by Phil Harvey that handles metadata for many file formats.
+&lt;code&gt;etch&lt;/code&gt; checks that it is installed at startup and exits with a clear message if it is not.&lt;/p&gt;
+&lt;p&gt;When writing changes, &lt;code&gt;etch&lt;/code&gt; passes &lt;code&gt;-overwrite_original&lt;/code&gt; to &lt;code&gt;exiftool&lt;/code&gt;.
+This flag alters &lt;code&gt;exiftool&lt;/code&gt;’s default behaviour of keeping a  backup of the original file before modifying it.
+Instead of keeping a backup, I opted to ask the user to confirm their change.&lt;/p&gt;
+&lt;p&gt;Limitations of this tool include the following:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;etch&lt;/code&gt; can only edit title and author.
+Other metadata fields are not supported.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;etch&lt;/code&gt; requires &lt;code&gt;exiftool&lt;/code&gt; to be installed.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Keeping a curated document library&lt;/h3&gt;
+&lt;p&gt;The quality of PDF metadata varies widely and is largely determined by the tool used to create the file.
+Unfortunately, most tools do a poor job.
+Files exported from word processors tend to carry over whatever document title was last saved, and scanned documents often have no metadata at all.
+This is mostly outside the user’s control.&lt;/p&gt;
+&lt;p&gt;Correcting PDF metadata by hand is a low-priority task for most people.
+But for those building a well-organized document library, it is worth doing.&lt;/p&gt;
+</description>
+      <pubDate>Tue, 19 May 2026 00:00:00 GMT</pubDate>
+      <dc:creator>Al Idian</dc:creator>
+      <guid>https://idian.io/posts/2026/writing-a-pdf-metadata-editor/</guid>
+    </item>
+    <item>
       <title>Keeping Your Place with Git Worktrees</title>
       <link>https://idian.io/posts/2026/keeping-your-place-with-git-worktrees/</link>
       <description>&lt;h3&gt;The context-switching problem&lt;/h3&gt;
@@ -605,31 +642,6 @@ As an alternative, I suggest using a keyboard that either has this layout by def
       <pubDate>Sat, 30 Oct 2021 00:00:00 GMT</pubDate>
       <dc:creator>Al Idian</dc:creator>
       <guid>https://idian.io/posts/2021/remap-caps-lock-to-control/</guid>
-    </item>
-    <item>
-      <title>Why Use Analogies in Software Teams?</title>
-      <link>https://idian.io/posts/2021/why-use-analogies-in-software-teams/</link>
-      <description>&lt;p&gt;Software developers and technologists are often afforded the time to learn niche and complex material through study and deep interaction.
-Many times, it is simply part of the job to wrestle with obtuse concepts and systems in the process of delivering something of value to the company or organization.
-This learning can come from deliberate study or merely from doing regular work duties, such as creating or maintaining a computer program or system.&lt;/p&gt;
-&lt;p&gt;Colleagues in other roles, like managers, directors, and analysts, might not be provided the same opportunities to gain the specific knowledge developers pick up as part of the job.
-As a result, developers often become the natural subject matter experts on the things they work on.&lt;/p&gt;
-&lt;p&gt;As the technical experts, software developers are counted on to provide insight into the behaviour and effects of software systems.
-This is often not an easy task.
-Understanding how an application or a system works internally may require specialized knowledge that non-developers cannot be expected to pick up within a short conversation or meeting.&lt;/p&gt;
-&lt;p&gt;The question then is: &lt;em&gt;How can developers provide stakeholders just enough information to minimize complexity and yet allow them to understand important details and make informed decisions?&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Fortunately, as a matter of necessity, any good programmer is already intimately familiar with managing complexity.
-A pervasive Computer Science concept that comes to mind is &lt;em&gt;abstraction&lt;/em&gt;, which involves “filtering out — essentially, ignoring — the characteristics that we don’t need in order to concentrate on those that we do.” (&lt;a href=&quot;https://www.bbc.co.uk/bitesize/guides/zttrcdm/revision/1&quot;&gt;BBC&lt;/a&gt;).&lt;/p&gt;
-&lt;p&gt;In programming, constructs like functions, classes, libraries, and APIs are all created as a means to reduce complexity while allowing informed interaction.
-In conversation and writing, analogies take a similar role.
-Analogies convey the rough shape of an idea by comparing it to something already familiar to the recipient.
-The good use of analogy is a tool developers can use to communicate the important bits of information to stakeholders in a way that is easy to understand and reason about.&lt;/p&gt;
-&lt;p&gt;Of course, all analogies break down — and so they are not meant to take the place of technical descriptions or documentation.
-But in situations  where time and energy is constrained such that people cannot be expected to pour swathes of time into reading documentation, good analogies are often sufficient.&lt;/p&gt;
-</description>
-      <pubDate>Sun, 15 Aug 2021 00:00:00 GMT</pubDate>
-      <dc:creator>Al Idian</dc:creator>
-      <guid>https://idian.io/posts/2021/why-use-analogies-in-software-teams/</guid>
     </item>
   </channel>
 </rss>
