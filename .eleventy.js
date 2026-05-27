@@ -19,8 +19,12 @@ module.exports = eleventyConfig => {
 
             if (!foundElement)
                 throw new Error(
-                    "Element with " + propertyToCompare + "=\"" +
-                    valueToCompare + "\" not found");
+                    "Element with " +
+                    propertyToCompare +
+                    "=\"" +
+                    valueToCompare +
+                    "\" not found"
+                );
 
             return foundElement[propertyToReturn];
         }
@@ -52,5 +56,6 @@ module.exports = eleventyConfig => {
     eleventyConfig.setLibrary(
         "md",
         markdownIt({ html: true, typographer: true })
-            .use(markdownItSup));
+            .use(markdownItSup)
+    );
 };
