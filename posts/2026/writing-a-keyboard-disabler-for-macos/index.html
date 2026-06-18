@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Writing a Keyboard Disabler for macOS | Al Idian</title>
+
+    <meta name="description" content="`heel` disables the macOS keyboard. It is useful when you want to clean your laptop without triggering stray input.">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Merriweather&amp;display=swap">
+
+    <link rel="stylesheet" href="/css/syntax-highlight.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicon/site.webmanifest">
+</head>
+<body>
+    <header>
+        <h3 id="site-title" class="no-margin no-padding"><a href="/">Al Idian</a></h3>
+    </header>
+
+    <main>
+        
+<h2 id="post-title">Writing a Keyboard Disabler for macOS</h2>
+<p id="post-date" class="gray-text">2026-06-18</p>
+
+<h3>What did I make?</h3>
+<p>Whenever I wipe down my laptop keyboard, I prefer to disable the keys first.
+There are apps that can do this, but none of them are a good fit for me: some are paid, some are closed source, and some do far more than I need.</p>
+<p><a href="https://github.com/idianal/toys-python/tree/main/heel"><code>heel</code></a> is a small tool that deals with this problem.
+It is command-line only and is packaged as a script that can be downloaded from GitHub and run without installation.</p>
+<p>Running <code>heel</code> disables all keyboard input, including special keys like brightness and volume.
+To re-enable the keyboard, press <code>ctrl + c</code>.</p>
+<p><code>heel</code> requires macOS Accessibility permission.
+For a short usage guide, see the readme <a href="https://github.com/idianal/toys-python/tree/main/heel">here</a>.</p>
+<h3>Implementation details</h3>
+<p><code>heel</code> works by creating a <code>CGEventTap</code> — a low-level hook into macOS’s input event pipeline provided by the CoreGraphics framework.
+The tap sits at the Human Interface Device (HID) level and intercepts keyboard events before they reach any application.
+When an event arrives, the callback tells the system to discard it.</p>
+<p>Rather than depend on a third-party library, <code>heel</code> calls into the CoreGraphics and CoreFoundation system frameworks directly using Python’s built-in <code>ctypes</code> module.
+This keeps the tool dependency-free.</p>
+<p>The callback is wrapped in a <code>ctypes.CFUNCTYPE</code> object, which must be kept alive for as long as the tap is active.
+If it is garbage-collected, the callback pointer becomes invalid and the program will crash.
+To prevent this, <code>heel</code> holds an explicit reference to the object.</p>
+<p>The <code>ctrl + c</code> escape hatch is implemented inside the callback itself rather than as a signal handler.
+When a key-down event arrives, <code>heel</code> checks whether the key is <code>c</code> and whether the <code>control</code> modifier flag is set.
+If so, it calls <code>CFRunLoopStop</code> to exit the run loop and proceed to re-enable the keyboard.
+All other key events are swallowed.</p>
+<p>Limitations of this tool include:</p>
+<ol>
+<li>It is macOS only.
+The <code>CGEventTap</code> API is specific to macOS.</li>
+<li><code>ctrl + c</code> cannot be suppressed.
+By design, there must be a way to escape.</li>
+<li>Accessibility permission is required.</li>
+</ol>
+<h3>The case for small tools</h3>
+<p><code>heel</code> is short enough to read in a few minutes and has no dependencies beyond Python’s standard library.
+Being open source, users can verify what it does before granting it Accessibility permission.
+Since input monitoring is involved, this is a reasonable thing to want.</p>
+<p>Small, focused tools tend to be easier to trust for this reason.
+When the scope is narrow and the source is available, there is nothing to take on faith.</p>
+
+
+    </main>
+
+    <footer>
+        <p class="center-text no-margin no-padding">
+            <a href="https://github.com/idianal/personal-site/blob/main/LICENSE">MIT License</a> |
+            <a href="/feed.xml">RSS Feed</a>
+        </p>
+        <p class="center-text no-margin no-padding"><a href="https://github.com/idianal/personal-site">/idianal</a></p>
+    </footer>
+</body>
+</html>

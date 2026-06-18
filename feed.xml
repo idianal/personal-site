@@ -7,6 +7,50 @@
     <description>A personal site about software engineering, computer science, and open source development</description>
     <language>en</language>
     <item>
+      <title>Writing a Keyboard Disabler for macOS</title>
+      <link>https://idian.io/posts/2026/writing-a-keyboard-disabler-for-macos/</link>
+      <description>&lt;h3&gt;What did I make?&lt;/h3&gt;
+&lt;p&gt;Whenever I wipe down my laptop keyboard, I prefer to disable the keys first.
+There are apps that can do this, but none of them are a good fit for me: some are paid, some are closed source, and some do far more than I need.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/idianal/toys-python/tree/main/heel&quot;&gt;&lt;code&gt;heel&lt;/code&gt;&lt;/a&gt; is a small tool that deals with this problem.
+It is command-line only and is packaged as a script that can be downloaded from GitHub and run without installation.&lt;/p&gt;
+&lt;p&gt;Running &lt;code&gt;heel&lt;/code&gt; disables all keyboard input, including special keys like brightness and volume.
+To re-enable the keyboard, press &lt;code&gt;ctrl + c&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;heel&lt;/code&gt; requires macOS Accessibility permission.
+For a short usage guide, see the readme &lt;a href=&quot;https://github.com/idianal/toys-python/tree/main/heel&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;Implementation details&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;heel&lt;/code&gt; works by creating a &lt;code&gt;CGEventTap&lt;/code&gt; — a low-level hook into macOS’s input event pipeline provided by the CoreGraphics framework.
+The tap sits at the Human Interface Device (HID) level and intercepts keyboard events before they reach any application.
+When an event arrives, the callback tells the system to discard it.&lt;/p&gt;
+&lt;p&gt;Rather than depend on a third-party library, &lt;code&gt;heel&lt;/code&gt; calls into the CoreGraphics and CoreFoundation system frameworks directly using Python’s built-in &lt;code&gt;ctypes&lt;/code&gt; module.
+This keeps the tool dependency-free.&lt;/p&gt;
+&lt;p&gt;The callback is wrapped in a &lt;code&gt;ctypes.CFUNCTYPE&lt;/code&gt; object, which must be kept alive for as long as the tap is active.
+If it is garbage-collected, the callback pointer becomes invalid and the program will crash.
+To prevent this, &lt;code&gt;heel&lt;/code&gt; holds an explicit reference to the object.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;ctrl + c&lt;/code&gt; escape hatch is implemented inside the callback itself rather than as a signal handler.
+When a key-down event arrives, &lt;code&gt;heel&lt;/code&gt; checks whether the key is &lt;code&gt;c&lt;/code&gt; and whether the &lt;code&gt;control&lt;/code&gt; modifier flag is set.
+If so, it calls &lt;code&gt;CFRunLoopStop&lt;/code&gt; to exit the run loop and proceed to re-enable the keyboard.
+All other key events are swallowed.&lt;/p&gt;
+&lt;p&gt;Limitations of this tool include:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;It is macOS only.
+The &lt;code&gt;CGEventTap&lt;/code&gt; API is specific to macOS.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ctrl + c&lt;/code&gt; cannot be suppressed.
+By design, there must be a way to escape.&lt;/li&gt;
+&lt;li&gt;Accessibility permission is required.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;The case for small tools&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;heel&lt;/code&gt; is short enough to read in a few minutes and has no dependencies beyond Python’s standard library.
+Being open source, users can verify what it does before granting it Accessibility permission.
+Since input monitoring is involved, this is a reasonable thing to want.&lt;/p&gt;
+&lt;p&gt;Small, focused tools tend to be easier to trust for this reason.
+When the scope is narrow and the source is available, there is nothing to take on faith.&lt;/p&gt;
+</description>
+      <pubDate>Thu, 18 Jun 2026 00:00:00 GMT</pubDate>
+      <dc:creator>Al Idian</dc:creator>
+      <guid>https://idian.io/posts/2026/writing-a-keyboard-disabler-for-macos/</guid>
+    </item>
+    <item>
       <title>Writing a PDF Metadata Editor</title>
       <link>https://idian.io/posts/2026/writing-a-pdf-metadata-editor/</link>
       <description>&lt;h3&gt;What did I make?&lt;/h3&gt;
@@ -554,94 +598,6 @@ CS6035 did for me exactly what an introductory graduate course should do: tell m
       <pubDate>Mon, 29 Nov 2021 00:00:00 GMT</pubDate>
       <dc:creator>Al Idian</dc:creator>
       <guid>https://idian.io/posts/2021/course-review-information-security/</guid>
-    </item>
-    <item>
-      <title>Remap Caps Lock to Control</title>
-      <link>https://idian.io/posts/2021/remap-caps-lock-to-control/</link>
-      <description>&lt;h3&gt;Displace the Caps Lock key&lt;/h3&gt;
-&lt;p&gt;The Caps Lock key occupies a prominent position on modern keyboards.
-This placement was inherited from the Shift Lock key on mechanical typewriters where pressing the key physically shifted the mechanism allowing consecutive typing of uppercase letters.
-The key was relatively large and prominently placed because it required more force to press compared to other keys, which often meant that typists preferred to push it down with two fingers.
-(&lt;a href=&quot;https://ux.stackexchange.com/a/41877&quot;&gt;Stack Overflow&lt;/a&gt;)&lt;/p&gt;
-&lt;p&gt;Today, the Caps Lock key has a much less important role.
-For most typists, typing in all caps is rare.
-In internet-based communication, like email, instant messaging, or social media, typing in all caps is generally frowned upon as it is associated with yelling (&lt;a href=&quot;https://en.wikipedia.org/wiki/All_caps&quot;&gt;Wikipedia&lt;/a&gt;).
-Even when a few consecutive uppercase words are required, it is usually easy enough for a capable typist to use the shift key/s instead.
-This makes the Caps Lock key an excellent candidate to remap to a more useful key instead.&lt;/p&gt;
-&lt;h3&gt;Promote the Control key&lt;/h3&gt;
-&lt;p&gt;As a software developer and an avid user of Vim and Vim-style keybindings, my preference is to remap Caps Lock to Control.
-Not only is the Control key heavily-used within a typical software development workflow, the Control key on most keyboards is usually relatively difficult to reach.&lt;/p&gt;
-&lt;p&gt;Here are some examples of keyboard shortcuts involving the Control key that I use frequently:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Vim
-&lt;ul&gt;
-&lt;li&gt;Control + [ - Escape&lt;/li&gt;
-&lt;li&gt;Control + f - Move down a page&lt;/li&gt;
-&lt;li&gt;Control + b - Move up a page&lt;/li&gt;
-&lt;li&gt;Control + d - Move down a half page&lt;/li&gt;
-&lt;li&gt;Control + u - Move up a half page&lt;/li&gt;
-&lt;li&gt;Control + r - Redo changes&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Terminal
-&lt;ul&gt;
-&lt;li&gt;Control + a - Move to the beginning&lt;/li&gt;
-&lt;li&gt;Control + e - Move to the end&lt;/li&gt;
-&lt;li&gt;Control + f - Move forward one character&lt;/li&gt;
-&lt;li&gt;Control + b - Move backwards one character&lt;/li&gt;
-&lt;li&gt;Control + w - Delete all prior characters until the next space&lt;/li&gt;
-&lt;li&gt;Control + u - Delete all characters&lt;/li&gt;
-&lt;li&gt;Control + c - Send interrupt signal (SIGINT) to the current process&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Visual Studio Code
-&lt;ul&gt;
-&lt;li&gt;Control + Shift + p - Launch Command Palette (Windows and Linux)&lt;/li&gt;
-&lt;li&gt;Control + ` - Launch Terminal&lt;/li&gt;
-&lt;li&gt;Control + / - Toggle line comment (Windows and Linux)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Other
-&lt;ul&gt;
-&lt;li&gt;Control + x - Cut (Windows and Linux)&lt;/li&gt;
-&lt;li&gt;Control + c - Copy (Windows and Linux)&lt;/li&gt;
-&lt;li&gt;Control + v - Paste (Windows and Linux)&lt;/li&gt;
-&lt;li&gt;Control + z - Undo changes (Windows and Linux)&lt;/li&gt;
-&lt;li&gt;Control + y - Redo changes (Windows and Linux)&lt;/li&gt;
-&lt;li&gt;Control + t - Open new tab (Windows and Linux)&lt;/li&gt;
-&lt;li&gt;Control + w - Close current tab (Windows and Linux)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;If you use an IDE or another type of technical program, chances are that keyboard shortcuts in that program also make heavy use of the Control key.
-Clearly, the Control key deserves a prominent position on many software developers’ keyboards.&lt;/p&gt;
-&lt;h3&gt;How to Remap Caps Lock to Control&lt;/h3&gt;
-&lt;p&gt;The most convenient way to replace Caps Lock with Control is not to remap at all.
-An excellent line of keyboards called the &lt;a href=&quot;https://pixelfed.social/p/idian.io/360138290466426027&quot;&gt;Happy Hacking Keyboard&lt;/a&gt; (HHKB) is set up by default to have the Control key in the recommended position.
-Alternatively, any programmable keyboard (with onboard memory) can also be easily configured to have this feature.
-With one of these solutions, your operating system needs no further configuration; you can connect your keyboard to any computer and keep the same mapping you are used to.&lt;/p&gt;
-&lt;p&gt;Remapping Caps Lock to Control is most simple on macOS.
-All that is needed is to change the Modifier Keys configuration in the Keyboard settings.
-This performs the remapping on the OS-level.
-A similar setting exists on iPadOS.&lt;/p&gt;
-&lt;p&gt;On Windows, I recommend installing the &lt;a href=&quot;https://docs.microsoft.com/en-us/windows/powertoys/&quot;&gt;PowerToys&lt;/a&gt; utility from Microsoft.
-PowerToys is an excellent open-source project that give power users more ways to configure Windows.
-Note that you probably want to set PowerToys to run on startup and to run as administrator.
-The latter allows your PowerToys keymappings to take effect even when running an application as administrator.&lt;/p&gt;
-&lt;p&gt;Per usual, there are myriad ways to remap keys on Linux.
-The way you might want to do it would depend on your preference, your distro, and your desktop environment.
-On Pop!_OS 20.04 LTS (GNOME), my favourite way is to run this in the command line:&lt;/p&gt;
-&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;gsettings &lt;span class=&quot;token builtin class-name&quot;&gt;set&lt;/span&gt; org.gnome.desktop.input-sources xkb-options &lt;span class=&quot;token string&quot;&gt;&quot;[&#39;ctrl:nocaps&#39;]&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;In my experience, this method is simple, reliable, and requires no additional installation.&lt;/p&gt;
-&lt;h3&gt;TL/DR&lt;/h3&gt;
-&lt;p&gt;The Caps Lock key has limited use but occupies a prominent position in modern keyboards.
-On the other hand, the Control key is much more useful but is more difficult to reach.
-In this post, I recommend remapping Caps Lock to Control and provide ways to do this in popular operating systems.
-As an alternative, I suggest using a keyboard that either has this layout by default or can be programmed with this layout.&lt;/p&gt;
-</description>
-      <pubDate>Sat, 30 Oct 2021 00:00:00 GMT</pubDate>
-      <dc:creator>Al Idian</dc:creator>
-      <guid>https://idian.io/posts/2021/remap-caps-lock-to-control/</guid>
     </item>
   </channel>
 </rss>
