@@ -1,6 +1,6 @@
 ---
 layout: post.njk
-title: "Writing a PDF Metadata Editor"
+title: "Side Project: A PDF Metadata Editor"
 date: 2026-05-19
 description: "`etch` is a simple PDF metadata editor. Here I write some thoughts around creating `etch`, a lightweight tool for viewing and editing the metadata of PDF files."
 ---

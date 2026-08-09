@@ -1,6 +1,6 @@
 ---
 layout: post.njk
-title: "Writing an App Uninstaller for macOS"
+title: "Side Project: An App Uninstaller"
 date: 2022-08-16
 description: "`zap` is a simple app uninstaller for macOS. Here I write some thoughts around creating `zap`, an effective and user-friendly uninstaller to help users remove applications and associated files."
 ---

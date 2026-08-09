@@ -1,6 +1,6 @@
 ---
 layout: post.njk
-title: "Writing a Keyboard Disabler for macOS"
+title: "Side Project: A Keyboard Disabler"
 date: 2026-06-18
 description: "`heel` disables the macOS keyboard. It is useful when you want to clean your laptop without triggering stray input."
 ---
