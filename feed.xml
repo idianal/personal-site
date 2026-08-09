@@ -7,8 +7,8 @@
     <description>A personal site about software engineering, computer science, and open source development</description>
     <language>en</language>
     <item>
-      <title>Writing a Keyboard Disabler for macOS</title>
-      <link>https://idian.io/posts/2026/writing-a-keyboard-disabler-for-macos/</link>
+      <title>Things I Made: A Keyboard Disabler for macOS</title>
+      <link>https://idian.io/posts/2026/things-i-made-a-keyboard-disabler-for-macos/</link>
       <description>&lt;h3&gt;What did I make?&lt;/h3&gt;
 &lt;p&gt;Whenever I wipe down my laptop keyboard, I prefer to disable the keys first.
 There are apps that can do this, but none of them are a good fit for me: some are paid, some are closed source, and some do far more than I need.&lt;/p&gt;
@@ -48,11 +48,11 @@ When the scope is narrow and the source is available, there is nothing to take o
 </description>
       <pubDate>Thu, 18 Jun 2026 00:00:00 GMT</pubDate>
       <dc:creator>Al Idian</dc:creator>
-      <guid>https://idian.io/posts/2026/writing-a-keyboard-disabler-for-macos/</guid>
+      <guid>https://idian.io/posts/2026/things-i-made-a-keyboard-disabler-for-macos/</guid>
     </item>
     <item>
-      <title>Writing a PDF Metadata Editor</title>
-      <link>https://idian.io/posts/2026/writing-a-pdf-metadata-editor/</link>
+      <title>Things I Made: A PDF Metadata Editor</title>
+      <link>https://idian.io/posts/2026/things-i-made-a-pdf-metadata-editor/</link>
       <description>&lt;h3&gt;What did I make?&lt;/h3&gt;
 &lt;p&gt;PDF files often carry incorrect or incomplete metadata.
 A paper downloaded from a server might have a title like &lt;em&gt;draft_final.docx&lt;/em&gt;.
@@ -85,7 +85,7 @@ But for those building a well-organized document library, it is worth doing.&lt;
 </description>
       <pubDate>Tue, 19 May 2026 00:00:00 GMT</pubDate>
       <dc:creator>Al Idian</dc:creator>
-      <guid>https://idian.io/posts/2026/writing-a-pdf-metadata-editor/</guid>
+      <guid>https://idian.io/posts/2026/things-i-made-a-pdf-metadata-editor/</guid>
     </item>
     <item>
       <title>Keeping Your Place with Git Worktrees</title>
@@ -396,8 +396,8 @@ Taking CS6300 in the summer allowed me to ease off and recharge in preparation f
       <guid>https://idian.io/posts/2022/course-review-software-development-process/</guid>
     </item>
     <item>
-      <title>Writing an App Uninstaller for macOS</title>
-      <link>https://idian.io/posts/2022/writing-an-app-uninstaller-for-macos/</link>
+      <title>Things I Made: An App Uninstaller for macOS</title>
+      <link>https://idian.io/posts/2022/things-i-made-an-app-uninstaller-for-macos/</link>
       <description>&lt;h3&gt;What did I make?&lt;/h3&gt;
 &lt;p&gt;The process of uninstalling apps on macOS can be disorienting for new users.
 While on Windows, users typically use an uninstaller or the &lt;em&gt;Add or Remove Programs&lt;/em&gt; utility, uninstalling apps on macOS simply means dragging the .app file to trash.
@@ -445,7 +445,7 @@ To make this process easier, one can use a Time Machine image &lt;em&gt;from a f
 </description>
       <pubDate>Tue, 16 Aug 2022 00:00:00 GMT</pubDate>
       <dc:creator>Al Idian</dc:creator>
-      <guid>https://idian.io/posts/2022/writing-an-app-uninstaller-for-macos/</guid>
+      <guid>https://idian.io/posts/2022/things-i-made-an-app-uninstaller-for-macos/</guid>
     </item>
     <item>
       <title>Course Review: Computer Networks</title>
