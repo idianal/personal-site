@@ -109,7 +109,7 @@ When the call to the wait function was made, a long-running function was trigger
 Any click events triggered were placed in the event queue --- but these events were only handled once the execution stack was empty.
 As a result, the string "The event handler was run" is always printed *after* "Long-running function completed", never before.
 
-### TL/DR
+### Summary
 
 The JavaScript engine is synchronous, and event handlers are only executed when the execution stack is empty.
 Long-running queries are a particularly nasty hazard in JavaScript.

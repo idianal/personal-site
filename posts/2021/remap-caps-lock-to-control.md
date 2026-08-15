@@ -83,7 +83,7 @@ gsettings set org.gnome.desktop.input-sources xkb-options "['ctrl:nocaps']"
 
 In my experience, this method is simple, reliable, and requires no additional installation.
 
-### TL/DR
+### Summary
 
 The Caps Lock key has limited use but occupies a prominent position in modern keyboards.
 On the other hand, the Control key is much more useful but is more difficult to reach.

@@ -91,7 +91,7 @@ The interpreter finds an implementation of &#95;&#95;init&#95;&#95;() as soon as
 Had the interpreter instead performed a [depth-first search](https://en.wikipedia.org/wiki/Depth-first_search), then it would have arrived at the value 41.
 In fact: this was actually the case up to Python 2.1.
 
-### TL/DR
+### Summary
 
 Multiple inheritance in Python: "Learn it in depth, and then avoid using it as much as possible" ([Vasquez](https://www.quora.com/Multiple-inheritance-in-C%2B%2B-Should-we-embrace-it-or-avoid-it/answer/Fernando-Vazquez-2?srid=uucQM)).
 I would avoid it in other languages too.

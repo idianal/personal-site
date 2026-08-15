@@ -88,7 +88,7 @@ $ git worktree remove ../personal-site-hotfix
     It is a good habit to clean them up once you are done to avoid accumulating stale directories.
 -   Since all worktrees share the same `.git` directory, any commits you make in a worktree are immediately visible from other worktrees and from the main repository.
 
-### TL/DR
+### Summary
 
 Git worktrees let you work on multiple branches simultaneously without stashing or committing incomplete work.
 For quick context switches --- hotfixes, PR reviews, parallel builds --- they are a notably cleaner alternative to the usual branch-switching workflow.

@@ -80,7 +80,7 @@ Note that we use the exponent 3 since our floats have precision 3 (three decimal
 We were able to simulate float division using integer division, as well as return both the integer and non-integer portions of the quotient.
 This approach does the job!
 
-### TL/DR
+### Summary
 
 Tableau 9.3 only allows integer division.
 To perform a division operation between two floats, multiply the dividend by 10^x^ before dividing (where *x* is the precision of the floats).

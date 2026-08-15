@@ -95,7 +95,7 @@ This setup has worked out really well for me so far.
 And while I don't use it for my day job (I use the company-issued laptop for that), I am able to make good use of it for personal study, tinkering with software, and contributing to open source projects.
 This fall, I intend to use the same setup and workflow as I go back to school part-time to take my Masters in CS.
 
-### TL/DR
+### Summary
 
 Windows is a good fit for me as a desktop environment because I enjoy its simple yet beautiful UI and its sensible and powerful window management.
 While I am a fan of the Windows GUI, I prefer a Unix-like command-line environment and file system to do my work.

@@ -96,7 +96,7 @@ Only after authentication is the SSH connection dropped and the new Mosh connect
 -   I am not a network security expert and cannot speak to the viability of Mosh over SSH for highly-sensitive systems.
     [This guy](https://www.youtube.com/watch?v=P_Jd5k0S_AQ) is of the opinion that it is probably safe for personal and small business use but perhaps not for enterprise.
 
-### TL/DR
+### Summary
 
 Mosh has real and distinctive benefits over SSH, especially when working over an unreliable network connection.
 Set up and daily use of Mosh alongside SSH is easy so there is little reason for any remote tech worker not to add it to their toolbelt.

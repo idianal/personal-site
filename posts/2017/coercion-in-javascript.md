@@ -105,7 +105,7 @@ Since the JavaScript engine coerces b to be equal to *null* even if its value is
 Method C is the most elegant solution and also demonstrates knowledge of coercion.
 If c is either *null* or *undefined*, the alternate value "Hello world" is printed in its stead.
 
-### TL/DR
+### Summary
 
 Understanding coercion (along with *equality* and *strict equality* in JavaScript) allows developers to avoid common pitfalls and write cleaner, more elegant code.
 

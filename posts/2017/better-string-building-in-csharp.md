@@ -84,6 +84,6 @@ foreach (int = 0; i < stringArray.Length, i++)
 Console.WriteLine(builder.ToString()); // prints "This is a string"
 ```
 
-### TL/DR
+### Summary
 
 When writing code that appends to a string many times (probably through a loop), consider using the *StringBuilder* class which is more performant at this task than the *String* class.

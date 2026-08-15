@@ -73,7 +73,7 @@ In the snippet above, the variable *sample_variable* is assigned the integer val
 Then it is reassigned the string value "two".
 This is not an issue for Python; it prints the expected string "two".
 
-### TL/DR
+### Summary
 
 Strong/weak typing and static/dynamic typing are orthogonal concepts.
 Strong and weak typing is determined by whether the type of a value can change throughout the life of the program.

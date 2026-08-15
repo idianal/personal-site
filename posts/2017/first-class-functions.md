@@ -121,7 +121,7 @@ function simpleMap(objArray, functionArg) {
 
 With a map function available (i.e. *simpleMap()*), we are able to abstract away some functionality such that any function can be passed to our map function (along with a compatible collection of objects) and the function will be applied to every object in the collection.
 
-### TL/DR
+### Summary
 
 The concept of first-class functions constitutes a paradigm shift for programmers who have only ever worked with non-functional languages.
 Learning both and pondering their differences can be a worthwhile and enjoyable experience.

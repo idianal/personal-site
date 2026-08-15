@@ -82,7 +82,7 @@ We can avoid writing to standard output if we want by redirecting standard outpu
 
 ```
 
-### TL/DR
+### Summary
 
 Although a little cryptic for beginners, the Vim command discussed in this post allows users to save to a file in Vim as super user.
 It requires no foresight that `sudo` is required and allows the user to use their individual Vim settings (through `vimrc`).

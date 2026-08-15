@@ -39,7 +39,7 @@ If you've always had an eye on learning a quirky programming language but it's n
 If you want to see whether you can churn out a non-trivial app using just your iPad, give it a try.
 And if you are considering going for a Masters even if it's unlikely you'll get a high enough raise to make it worthwhile, maybe just do it for learning and personal fulfillment.
 
-### TL/DR
+### Summary
 
 Knowing the distinction between software development as craft and as work --- and tracking which one my tasks fall under has helped me with certain kinds of decision-making.
 Making time to do software development as play has helped me sustain a high level of enthusiasm and interest in my field of work.
