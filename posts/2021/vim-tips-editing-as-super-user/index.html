@@ -86,7 +86,7 @@ The command is able to write it because it is run with sudo privileges.</p>
 <p>Since <code>tee</code> always writes to one or more files plus standard output, the command above always writes to standard output.
 We can avoid writing to standard output if we want by redirecting standard output to <code>/dev/null</code> but this is not required:</p>
 <pre class="language-bash"><code class="language-bash">:w <span class="token operator">!</span>sudo <span class="token function">tee</span> % <span class="token operator">&amp;></span>/dev/null<br></code></pre>
-<h3>TL/DR</h3>
+<h3>Summary</h3>
 <p>Although a little cryptic for beginners, the Vim command discussed in this post allows users to save to a file in Vim as super user.
 It requires no foresight that <code>sudo</code> is required and allows the user to use their individual Vim settings (through <code>vimrc</code>).</p>
 

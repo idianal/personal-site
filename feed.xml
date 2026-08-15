@@ -148,7 +148,7 @@ Git will prevent this and return an error.&lt;/li&gt;
 It is a good habit to clean them up once you are done to avoid accumulating stale directories.&lt;/li&gt;
 &lt;li&gt;Since all worktrees share the same &lt;code&gt;.git&lt;/code&gt; directory, any commits you make in a worktree are immediately visible from other worktrees and from the main repository.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3&gt;TL/DR&lt;/h3&gt;
+&lt;h3&gt;Summary&lt;/h3&gt;
 &lt;p&gt;Git worktrees let you work on multiple branches simultaneously without stashing or committing incomplete work.
 For quick context switches — hotfixes, PR reviews, parallel builds — they are a notably cleaner alternative to the usual branch-switching workflow.&lt;/p&gt;
 </description>
