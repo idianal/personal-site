@@ -1,0 +1,96 @@
+---
+layout: post.njk
+title: "Course Review: Operating Systems"
+date: 2026-08-16
+description: "A review of the CS6200 Operating Systems graduate course from Georgia Tech's Online Master of Science in Computer Science (OMSCS) program&mdash;covering projects, exams, learning materials, and whether it's worth taking for systems-minded software engineers."
+---
+
+{% include "_includes/omscs-header.njk" %}
+
+### Overview
+
+CS6200 is the most challenging course I have taken so far in OMSCS.
+It is heavy on systems programming, mostly in C.
+Unlike some of the more theory-first OMSCS courses, CS6200 enforces deep understanding by asking you to write software.
+
+Topics covered in the course include processes and process management, threads and concurrency, scheduling, memory management, synchronization constructs, inter-process communication, I/O management, virtualization, remote procedure calls, distributed file systems, and distributed shared memory.
+
+Because this course's concepts are ubiquitous in the field, CS6200 is useful for anyone in the OMSCS program.
+But those who have very little experience in C and systems programming will want to prepare well in advance.
+
+### Projects
+
+There were three projects this past semester.
+Each one was graded through Gradescope, and you get a limited number of submissions.
+Since there are often many edge cases to consider, I strongly recommend implementing your own functional tests in a language you are comfortable in.
+I did mine in Python, with the `unittest` library.
+
+Aside from the code, each project requires a short PDF readme that explains your design decisions.
+In my experience, writing this readme also took a significant chunk of time, so I suggest taking notes as you go --- including simple flow and component diagrams for each project.
+These help with comprehension as well as the readme itself.
+I wrote mine in AsciiDoc and converted to the required format.
+
+-   The first project covers multithreading and is done in C.
+    It starts with warm-up exercises on raw socket programming before moving into the main task: implementing a client and server library for a simplified HTTP-like protocol.
+    First, it asks for a single-threaded implementation, and then it asks for multithreading using `pthreads` and a boss-worker thread pool model.
+-   The second project is on inter-process communication (IPC).
+    Like the first project, it is done in C.
+    It takes the server from the previous project and turns it into something closer to a real piece of infrastructure.
+    First, you convert your server into an HTTP proxy using libcurl.
+    Then you implement a shared-memory cache process that the proxy talks to over IPC.
+-   Last is a project on gRPC and distributed systems.
+    It is the only one in this course done in C++.
+    The first part implements some basic file transfer calls, and the second part layers a synchronization system on top.
+    This project has by far the most moving parts, and reading the provided starter code carefully pays off.
+
+The projects were the most challenging, time-consuming, and rewarding part of this course.
+I recommend approaching them with an engineering mindset, working in iterations and writing tests as you go.
+
+### Learning materials
+
+Lectures are the same pre-recorded videos Georgia Tech has used for CS6200 for years.
+Each lecture is alright but there are too many.
+I was dreading them by the end (and may have skipped an entire module).
+
+There is no assigned textbook, but several units point you to real systems papers.
+The papers are very interesting, but note that they are *optional*.
+I would have liked the projects to be easier so I could have time to give these the attention they deserve.
+
+### Exams
+
+There were two exams: a mid-term and a final.
+The final was not cumulative, i.e. it only covered the second half of the course.
+Per usual in OMSCS, these were proctored through a browser extension.
+
+Both exams were fair and well-made.
+If you pay attention to the lectures and take notes, do the projects, and do a bit of review, you will likely do fine.
+
+### Teaching staff
+
+There were weekly office hours but I never attended them.
+I am not sure if the professor made an appearance.
+
+Most of my interactions with the teaching staff were through the discussion boards on Canvas.
+I found them helpful and pleasant to deal with, and they often gave excellent suggestions that helped with doing well in the course.
+In one instance, I found a bug in the provided project code, and a TA generously suggested I report it in my readme, which earned me a bit of extra credit.
+
+### Difficulty
+
+I found this course difficult.
+In fact, it has likely dissuaded me from pursuing more advanced Operating Systems courses in the program.
+Although surely doable, I realized I just wasn't interested enough in the topic to merit the effort required.
+
+Prior experience in C and systems programming definitely helped here.
+Software engineering experience also helped, especially with testing and iteration.
+
+### Conclusion
+
+CS6200 was more demanding than its reputation suggests, and all of the difficulty was from the projects.
+
+Through this course, I realized I don't have enough interest in Operating Systems to keep pursuing the topic further in the program.
+I am still glad I completed this course.
+I just found the subject less compelling than the effort it asked of me.
+
+I would still recommend CS6200 to most people in OMSCS.
+Its concepts are foundational and worth the struggle.
+Assuming you already have some systems experience going in, the workload is heavy but ultimately manageable.
