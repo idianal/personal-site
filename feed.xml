@@ -7,6 +7,86 @@
     <description>A personal site about software engineering, computer science, and open source development</description>
     <language>en</language>
     <item>
+      <title>Course Review: Operating Systems</title>
+      <link>https://idian.io/posts/2026/course-review-operating-systems/</link>
+      <description>&lt;p&gt;
+    Georgia Tech Online Master of Science in Computer Science (OMSCS) is an innovative, award-winning graduate program offered by the College of Computing at Georgia Tech. (&lt;a href=&quot;https://en.wikipedia.org/wiki/Georgia_Tech_Online_Master_of_Science_in_Computer_Science&quot;&gt;Wikipedia&lt;/a&gt;)
+&lt;/p&gt;
+&lt;p&gt;
+    As I make my way through this program, I intend to write short, opinionated reviews of the courses I complete.
+    My intended audience for this is the current or prospective OMSCS student who is considering taking these courses.
+&lt;/p&gt;
+&lt;h3&gt;Overview&lt;/h3&gt;
+&lt;p&gt;CS6200 is the most challenging course I have taken so far in OMSCS.
+It is heavy on systems programming, mostly in C.
+Unlike some of the more theory-first OMSCS courses, CS6200 enforces deep understanding by asking you to write software.&lt;/p&gt;
+&lt;p&gt;Topics covered in the course include processes and process management, threads and concurrency, scheduling, memory management, synchronization constructs, inter-process communication, I/O management, virtualization, remote procedure calls, distributed file systems, and distributed shared memory.&lt;/p&gt;
+&lt;p&gt;Because this course’s concepts are ubiquitous in the field, CS6200 is useful for anyone in the OMSCS program.
+But those who have very little experience in C and systems programming will want to prepare well in advance.&lt;/p&gt;
+&lt;h3&gt;Projects&lt;/h3&gt;
+&lt;p&gt;There were three projects this past semester.
+Each one was graded through Gradescope, and you get a limited number of submissions.
+Since there are often many edge cases to consider, I strongly recommend implementing your own functional tests in a language you are comfortable in.
+I did mine in Python, with the &lt;code&gt;unittest&lt;/code&gt; library.&lt;/p&gt;
+&lt;p&gt;Aside from the code, each project requires a short PDF readme that explains your design decisions.
+In my experience, writing this readme also took a significant chunk of time, so I suggest taking notes as you go — including simple flow and component diagrams for each project.
+These help with comprehension as well as the readme itself.
+I wrote mine in AsciiDoc and converted to the required format.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The first project covers multithreading and is done in C.
+It starts with warm-up exercises on raw socket programming before moving into the main task: implementing a client and server library for a simplified HTTP-like protocol.
+First, it asks for a single-threaded implementation, and then it asks for multithreading using &lt;code&gt;pthreads&lt;/code&gt; and a boss-worker thread pool model.&lt;/li&gt;
+&lt;li&gt;The second project is on inter-process communication (IPC).
+Like the first project, it is done in C.
+It takes the server from the previous project and turns it into something closer to a real piece of infrastructure.
+First, you convert your server into an HTTP proxy using libcurl.
+Then you implement a shared-memory cache process that the proxy talks to over IPC.&lt;/li&gt;
+&lt;li&gt;Last is a project on gRPC and distributed systems.
+It is the only one in this course done in C++.
+The first part implements some basic file transfer calls, and the second part layers a synchronization system on top.
+This project has by far the most moving parts, and reading the provided starter code carefully pays off.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The projects were the most challenging, time-consuming, and rewarding part of this course.
+I recommend approaching them with an engineering mindset, working in iterations and writing tests as you go.&lt;/p&gt;
+&lt;h3&gt;Learning materials&lt;/h3&gt;
+&lt;p&gt;Lectures are the same pre-recorded videos Georgia Tech has used for CS6200 for years.
+Each lecture is alright but there are too many.
+I was dreading them by the end (and may have skipped an entire module).&lt;/p&gt;
+&lt;p&gt;There is no assigned textbook, but several units point you to real systems papers.
+The papers are very interesting, but note that they are &lt;em&gt;optional&lt;/em&gt;.
+I would have liked the projects to be easier so I could have time to give these the attention they deserve.&lt;/p&gt;
+&lt;h3&gt;Exams&lt;/h3&gt;
+&lt;p&gt;There were two exams: a mid-term and a final.
+The final was not cumulative, i.e. it only covered the second half of the course.
+Per usual in OMSCS, these were proctored through a browser extension.&lt;/p&gt;
+&lt;p&gt;Both exams were fair and well-made.
+If you pay attention to the lectures and take notes, do the projects, and do a bit of review, you will likely do fine.&lt;/p&gt;
+&lt;h3&gt;Teaching staff&lt;/h3&gt;
+&lt;p&gt;There were weekly office hours but I never attended them.
+I am not sure if the professor made an appearance.&lt;/p&gt;
+&lt;p&gt;Most of my interactions with the teaching staff were through the discussion boards on Canvas.
+I found them helpful and pleasant to deal with, and they often gave excellent suggestions that helped with doing well in the course.
+In one instance, I found a bug in the provided project code, and a TA generously suggested I report it in my readme, which earned me a bit of extra credit.&lt;/p&gt;
+&lt;h3&gt;Difficulty&lt;/h3&gt;
+&lt;p&gt;I found this course difficult.
+In fact, it has likely dissuaded me from pursuing more advanced Operating Systems courses in the program.
+Although surely doable, I realized I just wasn’t interested enough in the topic to merit the effort required.&lt;/p&gt;
+&lt;p&gt;Prior experience in C and systems programming definitely helped here.
+Software engineering experience also helped, especially with testing and iteration.&lt;/p&gt;
+&lt;h3&gt;Conclusion&lt;/h3&gt;
+&lt;p&gt;CS6200 was more demanding than its reputation suggests, and all of the difficulty was from the projects.&lt;/p&gt;
+&lt;p&gt;Through this course, I realized I don’t have enough interest in Operating Systems to keep pursuing the topic further in the program.
+I am still glad I completed this course.
+I just found the subject less compelling than the effort it asked of me.&lt;/p&gt;
+&lt;p&gt;I would still recommend CS6200 to most people in OMSCS.
+Its concepts are foundational and worth the struggle.
+Assuming you already have some systems experience going in, the workload is heavy but ultimately manageable.&lt;/p&gt;
+</description>
+      <pubDate>Sun, 16 Aug 2026 00:00:00 GMT</pubDate>
+      <dc:creator>Al Idian</dc:creator>
+      <guid>https://idian.io/posts/2026/course-review-operating-systems/</guid>
+    </item>
+    <item>
       <title>Side Project: A Keyboard Disabler</title>
       <link>https://idian.io/posts/2026/side-project-a-keyboard-disabler/</link>
       <description>&lt;h3&gt;What did I make?&lt;/h3&gt;
@@ -572,85 +652,6 @@ The following quote by Abraham Lincoln comes to mind: “Give me six hours to ch
       <pubDate>Sun, 17 Apr 2022 00:00:00 GMT</pubDate>
       <dc:creator>Al Idian</dc:creator>
       <guid>https://idian.io/posts/2022/on-shorter-retry-loops-in-elden-ring/</guid>
-    </item>
-    <item>
-      <title>Course Review: Information Security</title>
-      <link>https://idian.io/posts/2021/course-review-information-security/</link>
-      <description>&lt;p&gt;
-    Georgia Tech Online Master of Science in Computer Science (OMSCS) is an innovative, award-winning graduate program offered by the College of Computing at Georgia Tech. (&lt;a href=&quot;https://en.wikipedia.org/wiki/Georgia_Tech_Online_Master_of_Science_in_Computer_Science&quot;&gt;Wikipedia&lt;/a&gt;)
-&lt;/p&gt;
-&lt;p&gt;
-    As I make my way through this program, I intend to write short, opinionated reviews of the courses I complete.
-    My intended audience for this is the current or prospective OMSCS student who is considering taking these courses.
-&lt;/p&gt;
-&lt;h3&gt;Overview&lt;/h3&gt;
-&lt;p&gt;CS6035 is a true introductory graduate course.
-It assumes an undergraduate-level familiarity with the course material and tackles a breadth of topics across the Information Security field.
-CS6035 gives students the lay of the land in Information Security and aims to prepare them for more focused study in one or more of its subfields.&lt;/p&gt;
-&lt;p&gt;Topics covered in the course include software security, operating system security, authentication, database security, malware and malicious code, cryptography and encryption, and web security.&lt;/p&gt;
-&lt;h3&gt;Projects&lt;/h3&gt;
-&lt;p&gt;There were four full projects in the course this past semester, along with a short one for a little extra credit.
-A custom x86 VM image (either Debian or Kali) was provided for each of the projects below.
-This means Apple Silicon machines are not a viable option here.&lt;/p&gt;
-&lt;p&gt;In my opinion, the projects were by far the most interesting and challenging part of this course.
-They also account for at least 80% of your grade.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Project 1 tasks students with exploiting a buffer overflow exploit in &lt;code&gt;C&lt;/code&gt;.
-The bulk of this project involved reading and understanding &lt;code&gt;C&lt;/code&gt;, applying buffer overflow concepts, and using &lt;code&gt;gdb&lt;/code&gt; for debugging in order to successfully complete a buffer overflow attack to invoke a new shell.
-Familiarity with &lt;code&gt;c&lt;/code&gt; and &lt;code&gt;gdb&lt;/code&gt; is helpful here, as well as being comfortable with using a shell and perhaps a command-line editor like &lt;code&gt;vi&lt;/code&gt;.
-Some review of low-level OS concepts like registers and memory is recommended.&lt;/li&gt;
-&lt;li&gt;Project 2 applies machine learning concepts to categorize malware using a tool called &lt;code&gt;malheur&lt;/code&gt;.
-There is no programming here — but general comfort with using a shell and introductory machine learning knowledge are helpful.&lt;/li&gt;
-&lt;li&gt;Project 3 uses &lt;code&gt;python&lt;/code&gt; to complete some interesting cryptography-related exercises.
-For instance, it explores interesting ways the RSA protocol can be broken (due to its mathematical idiosyncrasies).
-This is the most programming-intensive project in this course — but it is mostly just filling out stub methods and writing helper functions.
-A basic-to-intermediate-level knowledge of &lt;code&gt;python&lt;/code&gt; is sufficient.
-The ability and willingness to quickly grok mathematical relationships (e.g. modular math) is helpful here.&lt;/li&gt;
-&lt;li&gt;Project 4 is about web security and requires some ability to read and write JavaScript and PHP.
-While the programming component is easy to grasp even for beginners, the project more intensively tests for understanding of concepts like cross-site scripting (XSS), cross-site request forgery (CSRF), and SQL injection.&lt;/li&gt;
-&lt;li&gt;Project 5 is shorter and is done only for extra credit.
-It is a modified version of Project 1 which requires the insertion of shell code in a buffer to manipulate code execution into invoking a new shell.
-I believe there are plans to eventually turn this mini-project into a full one in the future.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Learning materials&lt;/h3&gt;
-&lt;p&gt;The lectures were all pre-recorded and are of generally good quality.
-I found them to be a good first pass at the material, before diving into the textbook readings.&lt;/p&gt;
-&lt;p&gt;The textbook &lt;em&gt;Computer Security&lt;/em&gt; by Stallings is comprehensive (if a little dry).
-In my opinion, anyone taking this course should get it.
-Since the quizzes are all open-book and many questions are derived from the textbook, it helps to have a digital version handy so you can &lt;code&gt;ctrl + f&lt;/code&gt;.
-I found that as I naturally progressed in the course, I read almost the entire book.&lt;/p&gt;
-&lt;p&gt;Several times in CS6035, students are required to read from other provided sources which include journal articles and technical blogs.
-I found many of these interesting and almost always helpful towards completing the projects.&lt;/p&gt;
-&lt;h3&gt;Exams&lt;/h3&gt;
-&lt;p&gt;There were two exams.
-Both were closed-notes and proctored through Honorlock.
-There were also four quizzes, and they were open-notes and unproctored.
-Neither the exams or the quizzes were very difficult.
-I found them fair especially since they don’t count for very much in the final grade.&lt;/p&gt;
-&lt;h3&gt;Teaching staff&lt;/h3&gt;
-&lt;p&gt;The course feels like it is run solely by the TAs.
-The professor (along with a colleague) appeared mostly only in the pre-recorded lectures.
-This might be a deliberate strategy on the part of the teaching staff.
-I found I did not mind this at all — I don’t think I would have taken away more from the course if the professor was more involved in office hours or in the discussion boards.&lt;/p&gt;
-&lt;p&gt;The TAs were usually patient, helpful, and responsive.
-In general, they will not spoon-feed information to students (which is to be expected in a graduate-level course).
-Interestingly, the TAs can also be quite stingy in giving out solutions to projects even after the due date.
-Students would need to find the answers by researching the material themselves.&lt;/p&gt;
-&lt;h3&gt;Difficulty&lt;/h3&gt;
-&lt;p&gt;This course was mostly easy.
-There were certainly components of the projects that I had to wrestle with for many hours but I was always able to complete the projects with time to spare.
-The exams and quizzes were fair, and ample time was provided to complete each component of the course.&lt;/p&gt;
-&lt;p&gt;I spent around 10-15 hours per week on this course.
-If you don’t meet some of the prerequisites, expect to spend a little extra time to get yourself up to speed.&lt;/p&gt;
-&lt;h3&gt;Conclusion&lt;/h3&gt;
-&lt;p&gt;CS6035 was an excellent first course in OMSCS.
-The material covered is mostly interesting and not overly challenging.
-Although some aspects of security is exciting to me (e.g. operating system security, cryptography, etc.), I was not as keen on the organizational security topics in the course.
-CS6035 did for me exactly what an introductory graduate course should do: tell me which parts of the Information Security field I might want to study more deeply.&lt;/p&gt;
-</description>
-      <pubDate>Mon, 29 Nov 2021 00:00:00 GMT</pubDate>
-      <dc:creator>Al Idian</dc:creator>
-      <guid>https://idian.io/posts/2021/course-review-information-security/</guid>
     </item>
   </channel>
 </rss>
