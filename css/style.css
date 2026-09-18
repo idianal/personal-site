@@ -69,6 +69,11 @@ td {
     color: var(--color-text);
 }
 
+#hello-world {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
 #post-title {
     padding-bottom: 0px;
     margin-bottom: 0px;
