@@ -27,7 +27,7 @@
         <h3 id="site-title" class="no-margin no-padding"><a href="{{ '/' | url }}">{{ metadata.title }}</a></h3>
     </header>
 
-    <main>
+    <main{% if width %} class="{{ width }}"{% endif %}>
         {{ content | safe }}
     </main>
 
