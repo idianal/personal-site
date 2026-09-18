@@ -24,6 +24,10 @@ main {
     padding: 0 5%;
 }
 
+main.narrow {
+    max-width: 600px;
+}
+
 h1,
 h2,
 h3,
@@ -68,11 +72,6 @@ td {
 #site-title,
 #site-title a {
     color: var(--color-text);
-}
-
-#hello-world {
-    max-width: 600px;
-    margin: auto;
 }
 
 #post-title {
