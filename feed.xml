@@ -88,8 +88,8 @@ But for those building a well-organized document library, it is worth doing.&lt;
       <guid>https://idian.io/posts/2026/side-project-a-pdf-metadata-editor/</guid>
     </item>
     <item>
-      <title>Keeping Your Place with Git Worktrees</title>
-      <link>https://idian.io/posts/2026/keeping-your-place-with-git-worktrees/</link>
+      <title>Using Git Worktrees</title>
+      <link>https://idian.io/posts/2026/using-git-worktrees/</link>
       <description>&lt;h3&gt;The context-switching problem&lt;/h3&gt;
 &lt;p&gt;It happens often enough: you are in the middle of a feature branch, files scattered in various states of half-done work, and something urgent comes up.
 A bug needs a hotfix.
@@ -154,7 +154,7 @@ For quick context switches — hotfixes, PR reviews, parallel builds — they ar
 </description>
       <pubDate>Fri, 03 Apr 2026 00:00:00 GMT</pubDate>
       <dc:creator>Al Idian</dc:creator>
-      <guid>https://idian.io/posts/2026/keeping-your-place-with-git-worktrees/</guid>
+      <guid>https://idian.io/posts/2026/using-git-worktrees/</guid>
     </item>
     <item>
       <title>What I Loved in 2025</title>
@@ -388,8 +388,8 @@ To make this process easier, one can use a Time Machine image &lt;em&gt;from a f
       <guid>https://idian.io/posts/2022/side-project-an-app-uninstaller/</guid>
     </item>
     <item>
-      <title>On Shorter Retry Loops in Elden Ring</title>
-      <link>https://idian.io/posts/2022/on-shorter-retry-loops-in-elden-ring/</link>
+      <title>Shorter Retry Loops in Elden Ring</title>
+      <link>https://idian.io/posts/2022/shorter-retry-loops-in-elden-ring/</link>
       <description>&lt;p&gt;Elden Ring is the newest game from acclaimed Dark Souls developer FromSoftware.
 It has released to near-universal praise and currently sits among the most highly-rated games of all time according to Metacritic.
 Elden Ring retains and refines many design patterns present in other FromSoftware games like Dark Souls, Bloodborne, and Sekiro.
@@ -426,7 +426,7 @@ The following quote by Abraham Lincoln comes to mind: “Give me six hours to ch
 </description>
       <pubDate>Sun, 17 Apr 2022 00:00:00 GMT</pubDate>
       <dc:creator>Al Idian</dc:creator>
-      <guid>https://idian.io/posts/2022/on-shorter-retry-loops-in-elden-ring/</guid>
+      <guid>https://idian.io/posts/2022/shorter-retry-loops-in-elden-ring/</guid>
     </item>
     <item>
       <title>Remap Caps Lock to Control</title>
@@ -517,8 +517,8 @@ As an alternative, I suggest using a keyboard that either has this layout by def
       <guid>https://idian.io/posts/2021/remap-caps-lock-to-control/</guid>
     </item>
     <item>
-      <title>Why Use Analogies in Software Teams?</title>
-      <link>https://idian.io/posts/2021/why-use-analogies-in-software-teams/</link>
+      <title>Using Analogies in Software Teams</title>
+      <link>https://idian.io/posts/2021/using-analogies-in-software-teams/</link>
       <description>&lt;p&gt;Software developers and technologists are often afforded the time to learn niche and complex material through study and deep interaction.
 Many times, it is simply part of the job to wrestle with obtuse concepts and systems in the process of delivering something of value to the company or organization.
 This learning can come from deliberate study or merely from doing regular work duties, such as creating or maintaining a computer program or system.&lt;/p&gt;
@@ -539,7 +539,7 @@ But in situations  where time and energy is constrained such that people cannot 
 </description>
       <pubDate>Sun, 15 Aug 2021 00:00:00 GMT</pubDate>
       <dc:creator>Al Idian</dc:creator>
-      <guid>https://idian.io/posts/2021/why-use-analogies-in-software-teams/</guid>
+      <guid>https://idian.io/posts/2021/using-analogies-in-software-teams/</guid>
     </item>
     <item>
       <title>Windows for Software Development</title>
