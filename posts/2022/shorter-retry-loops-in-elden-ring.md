@@ -1,6 +1,6 @@
 ---
 layout: post.njk
-title: "On Shorter Retry Loops in Elden Ring"
+title: "Shorter Retry Loops in Elden Ring"
 date: 2022-04-17
 description: "Explore the concept of shorter retry loops in Elden Ring and how they can improve gameplay experience. Dive into strategies for reducing frustration and enhancing the challenge without sacrificing fun."
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post.njk
-title: "Keeping Your Place with Git Worktrees"
+title: "Using Git Worktrees"
 date: 2026-04-03
 description: "Git worktrees let you check out multiple branches simultaneously into separate directories&mdash;a cleaner alternative to stashing when you need to context-switch without losing your place."
 ---

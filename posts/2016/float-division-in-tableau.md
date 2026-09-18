@@ -1,6 +1,6 @@
 ---
 layout: post.njk
-title: "Improvising Float Division in Tableau"
+title: "Float Division in Tableau"
 date: 2016-09-10
 description: "Work around the lack of built-in float division in Tableau 9.3 by multiplying your operands by the right power of 10, using integer division, and scaling back to deliver a precise float result."
 ---

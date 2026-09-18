@@ -1,6 +1,6 @@
 ---
 layout: post.njk
-title: "Real Wood Keyboard Skins from WoodWe"
+title: "Real Wood Keyboard Skins by WoodWe"
 date: 2020-08-07
 description: "Explore a detailed review of the walnut keyboard skin from WoodWe for MacBooks&mdash;luxury feel, premium build, anti-smudge appeal, and one major compatibility caveat."
 ---

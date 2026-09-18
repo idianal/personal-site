@@ -1,6 +1,6 @@
 ---
 layout: post.njk
-title: "Synchrony and Event Handling in JavaScript"
+title: "JavaScript Event Handling"
 date: 2016-06-13
 description: "JavaScript handles execution and event-queue flow in interesting ways. Uncover how its synchronous engine works, how the execution stack and event queue interact, and why long-running tasks can delay your event handlers."
 ---
