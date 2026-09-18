@@ -70,8 +70,8 @@ td {
 }
 
 #hello-world {
-    margin-left: 30px;
-    margin-right: 30px;
+    max-width: 600px;
+    margin: auto;
 }
 
 #post-title {
